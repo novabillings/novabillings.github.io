@@ -12,9 +12,9 @@
   <meta http-equiv="Expires" content="0">
 
   {{ $styles := resources.Get "css/main.css" }}
-  {{ $styles = $styles | css.PostCSS }}
+  {{ $styles = $styles | css.PostCSS (dict "use" "autoprefixer") }}
   {{ if hugo.IsProduction }}
-    {{ $styles = $styles | minify | fingerprint | css.PostProcess }}
+    {{ $styles = $styles | minify | fingerprint }}
   {{ else }}
     {{ $styles = $styles | fingerprint }}
   {{ end }}
