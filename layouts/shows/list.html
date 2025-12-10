@@ -1,0 +1,145 @@
+{{ define "main" }}
+
+<!-- Page Header -->
+<section class="bg-gradient-to-r from-theatre-purple to-purple-800 text-white py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-5xl font-sans font-bold mb-4">Current & Upcoming Shows</h1>
+    <p class="text-xl text-purple-100">Discover our exciting lineup of performances</p>
+  </div>
+</section>
+
+<!-- Current Shows -->
+{{ with .Site.Data.shows.current }}
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="section-title text-center mb-12">Now Showing</h2>
+    <div class="space-y-16">
+      {{ range . }}
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- Poster -->
+        <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg aspect-[11/17]">
+          {{ if .poster_placeholder }}
+          <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-theatre-purple to-purple-600">
+            <div class="text-center text-white p-8">
+              <div class="text-6xl mb-4">🎭</div>
+              <p class="text-2xl font-sans font-bold">{{ .title }}</p>
+            </div>
+          </div>
+          {{ else }}
+          <img src="{{ .poster }}" alt="{{ .title }} Poster" class="w-full h-full object-cover">
+          {{ end }}
+        </div>
+
+        <!-- Show Details -->
+        <div>
+          <h3 class="text-3xl font-sans font-bold text-theatre-purple mb-2">{{ .title }}</h3>
+          <p class="text-lg text-gray-600 mb-4">By {{ .playwright }}</p>
+          {{ if .director }}
+          <p class="text-md text-gray-600 mb-4">Directed by {{ .director }}</p>
+          {{ end }}
+          <p class="text-gray-700 mb-6 leading-relaxed">{{ .description }}</p>
+
+          <div class="bg-theatre-gold bg-opacity-10 border-l-4 border-theatre-gold p-4 mb-6">
+            <p class="font-sans font-bold text-theatre-navy mb-2">Performance Details</p>
+            <p class="text-gray-700"><span class="font-semibold">Dates:</span> {{ .dates }}</p>
+            {{ range .showtimes }}
+            <p class="text-gray-700">{{ . }}</p>
+            {{ end }}
+            <p class="text-gray-700 mt-2"><span class="font-semibold">Venue:</span> {{ .venue }}</p>
+            <p class="text-gray-700"><span class="font-semibold">Tickets:</span> {{ .ticket_price }}</p>
+          </div>
+
+          {{ if .tickets_url }}
+          <a href="{{ .tickets_url }}" target="_blank" class="btn-primary inline-block">Get Tickets</a>
+          {{ else }}
+          <a href="https://novabillings.ludus.com/index.php?sections=events" target="_blank" class="btn-primary inline-block">Get Tickets</a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Upcoming Shows -->
+{{ with .Site.Data.shows.upcoming }}
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="section-title text-center mb-12">Upcoming This Season</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      {{ range . }}
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+        <!-- Poster -->
+        <div class="bg-gray-200 aspect-[11/17] rounded-lg">
+          {{ if .poster_placeholder }}
+          <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-theatre-purple to-purple-600">
+            <div class="text-center text-white p-8">
+              <div class="text-5xl mb-4">🎭</div>
+              <p class="text-xl font-sans font-bold">{{ .title }}</p>
+            </div>
+          </div>
+          {{ else }}
+          <img src="{{ .poster }}" alt="{{ .title }} Poster" class="w-full h-full object-cover">
+          {{ end }}
+        </div>
+
+        <!-- Show Details -->
+        <div class="p-6">
+          <h3 class="text-2xl font-sans font-bold text-theatre-purple mb-2">{{ .title }}</h3>
+          <p class="text-md text-gray-600 mb-3">By {{ .playwright }}</p>
+          {{ if .director }}
+          <p class="text-sm text-gray-600 mb-3">Directed by {{ .director }}</p>
+          {{ end }}
+          <p class="text-gray-700 mb-4 line-clamp-3">{{ .description }}</p>
+
+          <div class="border-t border-gray-200 pt-4 mb-4">
+            <p class="text-sm text-gray-700 mb-1"><span class="font-semibold">Performance Dates:</span> {{ .dates }}</p>
+            <p class="text-sm text-gray-700 mb-1"><span class="font-semibold">Venue:</span> {{ .venue }}</p>
+            <p class="text-sm text-gray-700"><span class="font-semibold">Tickets:</span> {{ .ticket_price }}</p>
+            {{ if .audition_date }}
+            <p class="text-sm text-theatre-purple font-semibold mt-2">Auditions: {{ .audition_date }}</p>
+            {{ end }}
+          </div>
+
+          <div class="flex gap-3">
+            {{ if .tickets_url }}
+            <a href="{{ .tickets_url }}" target="_blank" class="text-theatre-purple font-semibold hover:text-purple-700 transition duration-300">
+              Get Tickets →
+            </a>
+            {{ else }}
+            <a href="https://novabillings.ludus.com/index.php?sections=events" target="_blank" class="text-theatre-purple font-semibold hover:text-purple-700 transition duration-300">
+              Get Tickets →
+            </a>
+            {{ end }}
+            {{ if .audition_date }}
+            <a href="/auditions" class="text-theatre-gold font-semibold hover:text-yellow-600 transition duration-300">
+              Audition Info →
+            </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Call to Action -->
+<section class="py-16 bg-theatre-purple text-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-sans font-bold mb-6">Join Us for a Show</h2>
+    <p class="text-xl mb-8">
+      Experience the thrill of live theatre. Get your tickets today or subscribe for the full season!
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://novabillings.ludus.com/index.php?sections=events" target="_blank" class="btn-secondary">Buy Tickets</a>
+      <a href="/subscribe" class="bg-white hover:bg-gray-100 text-theatre-purple font-sans font-bold py-3 px-6 rounded-lg transition duration-300">
+        Season Subscription
+      </a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

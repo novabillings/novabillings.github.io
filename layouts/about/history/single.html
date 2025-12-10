@@ -1,0 +1,165 @@
+{{ define "main" }}
+
+{{ $seasonId := .Params.season_id }}
+{{ $seasonData := index .Site.Data.seasons $seasonId }}
+
+<!-- Page Header -->
+<section class="bg-gradient-to-r from-theatre-purple to-purple-800 text-white py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-6">
+      <a href="/about/history" class="text-theatre-gold hover:text-yellow-300 transition duration-300 flex items-center">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        Back to History
+      </a>
+    </div>
+    <h1 class="text-5xl font-sans font-bold mb-4">{{ .Title }}</h1>
+    <p class="text-xl text-purple-100">NOVA Center Productions</p>
+  </div>
+</section>
+
+<!-- Season Shows -->
+{{ if $seasonData }}
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {{ if $seasonData.shows }}
+    <div class="space-y-12">
+      {{ range $seasonData.shows }}
+      <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+        <div class="md:flex">
+          <!-- Poster -->
+          <div class="md:w-1/3 bg-gray-200">
+            {{ if .poster_placeholder }}
+            <div class="w-full h-full min-h-[400px] flex items-center justify-center bg-gradient-to-br from-theatre-purple to-purple-600">
+              <div class="text-center text-white p-8">
+                <div class="text-6xl mb-4">🎭</div>
+                <p class="text-2xl font-sans font-bold">{{ .title }}</p>
+              </div>
+            </div>
+            {{ else if .poster }}
+            <img src="{{ .poster }}" alt="{{ .title }} Poster" class="w-full h-full object-cover">
+            {{ else }}
+            <div class="w-full h-full min-h-[400px] flex items-center justify-center bg-gradient-to-br from-theatre-purple to-purple-600">
+              <div class="text-center text-white p-8">
+                <div class="text-6xl mb-4">🎭</div>
+                <p class="text-2xl font-sans font-bold">{{ .title }}</p>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+
+          <!-- Show Details -->
+          <div class="md:w-2/3 p-8">
+            <h2 class="text-3xl font-sans font-bold text-theatre-purple mb-2">{{ .title }}</h2>
+            <p class="text-lg text-gray-600 mb-2">By {{ .playwright }}</p>
+            {{ if .director }}
+            <p class="text-md text-gray-600 mb-6">Directed by {{ .director }}</p>
+            {{ end }}
+
+            <p class="text-gray-700 mb-6 leading-relaxed">
+              {{ .description }}
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-lg p-4 border border-gray-200">
+                <h3 class="font-sans font-bold text-theatre-navy mb-2">Performance Dates</h3>
+                <p class="text-sm text-gray-700">{{ .dates }}</p>
+                {{ if .showtimes }}
+                {{ range .showtimes }}
+                <p class="text-sm text-gray-700">{{ . }}</p>
+                {{ end }}
+                {{ end }}
+              </div>
+              <div class="bg-white rounded-lg p-4 border border-gray-200">
+                <h3 class="font-sans font-bold text-theatre-navy mb-2">Venue</h3>
+                <p class="text-sm text-gray-700">{{ .venue }}</p>
+                {{ if .ticket_price }}
+                <h3 class="font-sans font-bold text-theatre-navy mb-2 mt-4">Ticket Price</h3>
+                <p class="text-sm text-gray-700">{{ .ticket_price }}</p>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ else }}
+    <div class="text-center py-12">
+      <div class="text-6xl mb-6">🎭</div>
+      <h2 class="text-3xl font-sans font-bold text-theatre-navy mb-4">No Shows Listed</h2>
+      <p class="text-lg text-gray-700">
+        Show information for this season is being compiled. Check back soon!
+      </p>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ else }}
+<section class="py-16 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="text-6xl mb-6">🎭</div>
+    <h2 class="text-3xl font-sans font-bold text-theatre-navy mb-4">Season Data Not Available</h2>
+    <p class="text-lg text-gray-700">
+      We're working on compiling the information for this season. Please check back later.
+    </p>
+  </div>
+</section>
+{{ end }}
+
+<!-- Navigation to Other Seasons -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="section-title text-center mb-12">Explore Other Seasons</h2>
+
+    {{ $currentPage := . }}
+    <!-- Get all pages with season_id parameter (all season pages) -->
+    {{ $allPages := .Site.RegularPages }}
+    {{ $pages := slice }}
+    {{ range $allPages }}
+      {{ if .Params.season_id }}
+        {{ $pages = $pages | append . }}
+      {{ end }}
+    {{ end }}
+    {{ $pages = $pages.ByDate.Reverse }}
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+      {{ range $index, $page := $pages }}
+        {{ if eq $page.RelPermalink $currentPage.RelPermalink }}
+          {{ $prevIndex := sub $index 1 }}
+          {{ $nextIndex := add $index 1 }}
+
+          <!-- Previous Season -->
+          {{ if ge $prevIndex 0 }}
+            {{ $prevPage := index $pages $prevIndex }}
+            <a href="{{ $prevPage.RelPermalink }}" class="group flex items-center px-6 py-3 bg-white border-2 border-theatre-purple text-theatre-purple rounded-lg hover:bg-theatre-purple hover:text-white transition duration-300 shadow-md hover:shadow-lg">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              <span class="font-semibold">{{ $prevPage.Title }}</span>
+            </a>
+          {{ end }}
+
+          <!-- View All Link -->
+          <a href="/about/history" class="px-6 py-3 bg-theatre-gold text-white rounded-lg hover:bg-yellow-600 transition duration-300 shadow-md hover:shadow-lg font-semibold">
+            View All Seasons
+          </a>
+
+          <!-- Next Season -->
+          {{ if lt $nextIndex (len $pages) }}
+            {{ $nextPage := index $pages $nextIndex }}
+            <a href="{{ $nextPage.RelPermalink }}" class="group flex items-center px-6 py-3 bg-white border-2 border-theatre-purple text-theatre-purple rounded-lg hover:bg-theatre-purple hover:text-white transition duration-300 shadow-md hover:shadow-lg">
+              <span class="font-semibold">{{ $nextPage.Title }}</span>
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

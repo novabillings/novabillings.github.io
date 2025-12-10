@@ -1,0 +1,92 @@
+season: "2023-2024"
+shows:
+  - title: "Stuart Little"
+    playwright: ""
+    director: "DeLaney Hardy Ray"
+    description: "The tale of a lovable mouse who is born into an ordinary New York family, just trying to survive the great big world. A Youth Conservatory production."
+    dates: "September 15-24, 2023"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2023-Stuart.webp"
+    poster_placeholder: false
+
+  - title: "Orpheus and Eurydice"
+    playwright: ""
+    director: "Janie Sutton"
+    description: "This tragic love story tells of losing someone you love and having the opportunity to get them back if you can follow one simple rule. A NOVA Opera production."
+    dates: "October 13-22, 2023"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2023-Orpheus.webp"
+    poster_placeholder: false
+
+  - title: "The Game's Afoot"
+    playwright: "Ken Ludwig"
+    director: "Gustavo Belotta"
+    description: "An eccentric stage actor known for his portrayal of Sherlock Holmes invites colorful characters for a weekend of games that turns deadly."
+    dates: "November 10-19, 2023"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2023-Games.webp"
+    poster_placeholder: false
+
+  - title: "A Christmas Carol Musical"
+    playwright: ""
+    director: "Gary Treglown"
+    description: "A beloved NOVA Christmas tradition, which lots more music, both new and traditional, including the same characters and insights of the original."
+    dates: "December 7-17, 2023"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2023-Christmas.webp"
+    poster_placeholder: false
+
+  - title: "Gaslight"
+    playwright: ""
+    director: "Marisa Clark"
+    description: "The story that gave rise to the term “gaslighting”, when the manipulation and sinister trickery of a cruel husband leads his wife to believe she is insane."
+    dates: "January 12-21, 2024"
+    venue: "NOVA Black Box"
+    poster: "/posters/2023-Gaslight.webp"
+    poster_placeholder: false
+
+  - title: "The Most Epic Birthday Party Ever"
+    playwright: ""
+    director: "Janie Sutton"
+    description: "A fun musical! What happens when sibling rivalry reaches epic proportions, without a single adult in sight. A NOVA Youth Conservatory production."
+    dates: "February 9-18, 2024"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2023-Birthday.webp"
+    poster_placeholder: false
+
+  - title: "Barefoot in the Park"
+    playwright: "Neil Simon"
+    director: "Jorden Gilfeather"
+    description: "The comedic story of newlyweds trying to make a home in a tiny New York apartment, while dealing with their wacky neighbors and meddling family."
+    dates: "March 8-17, 2024"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2024-Barefoot.webp"
+    poster_placeholder: false
+
+  - title: "Cinderella"
+    playwright: "Pauline Viardot"
+    director: "Jan Michael Kliewer"
+    description: "Cinderella is an operetta in three acts by Pauline Viardot. The operetta has a cast of seven with piano orchestration, and premiered in Viardot’s Paris salon on April 23, 1904."
+    dates: "April 12-21, 2024"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2024-Cinderella.webp"
+    poster_placeholder: false
+
+  - title: "Tuck Everlasting"
+    playwright: ""
+    director: "Samantha Pfeifer"
+    description: "“What would you do if you had all eternity?” Winnie Foster, yearning for adventure, meets the Tuck family and gets more than she could ever imagine. A NOVA Youth Conservatory production."
+    dates: "May 10-19, 2024"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2024-Tuck.webp"
+    poster_placeholder: false
+
+  - title: "Brigadoon"
+    playwright: ""
+    director: "Precious McKenzie"
+    description: "A delightful musical about two American tourists who stumble upon a misty Scottish burg that only comes to life once every 100 years."
+    dates: "June 14-23, 2024"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2024-Brigadoon.webp"
+    poster_placeholder: false
+

@@ -1,0 +1,88 @@
+season: "2017-2018"
+shows:
+  - title: "The Complete History of America (Abridged)"
+    playwright: ""
+    director: ""
+    description: "Tackling such controversial questions as: Who really discovered America? Why did Abe Lincoln free the slaves? How many Democrats does it take to screw in a light bulb?"
+    dates: "September 8-24, 2017"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "Brundibar: A Children's Opera"
+    playwright: "Hans Krasa"
+    director: "Janie Sutton"
+    description: "In 'Brundibar,' Aninka (Annette, in English) and Pepicek (Little Joe) are a fatherless sister and brother. Their mother is ill, and the doctor tells them she needs milk to recover. But they have no money. They decide to sing in the marketplace to raise the needed money. But the evil organ grinder Brundibar (who represents Hitler) chases them away."
+    dates: "September 30-October 15, 2017"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2017-Brundibar.webp"
+    poster_placeholder: false
+
+  - title: "Festival of One-Act Operas: The Lantern Marriage / The Telephone / Bon Appetit!"
+    playwright: "Jacques Offenbach (The Lantern Marriage) / Gian Carlo Menotti (The Telephone) / Lee Hoiby (Bon Appetit!)"
+    director: "Douglas Nagel (The Lantern Marriage) / Dodie Rife (The Telephone) / Stela Fong (Bon Appetit!)"
+    description: "The Lantern Marriage - A young farmer Guillot has affection for his orphan cousin Denise, who was entrusted to him by their uncle Mathurin. He hides his feelings by treating her roughly, driving her to despair. Both write to their uncle: him for money, her for advice. The Telephone - Lucy spends much of her time on the telephone. When her boyfriend, Ben, visits her intending to propose marriage, the telephone rings repeatedly, interrupting Ben every time he is about to pop the question. Bon Appetit - With an abandon that is characteristically Julia Child, singer Michelle Berger she stages a race between a hand beater and a mixing machine and is caught up in the exercise."
+    dates: "October 14-22, 2017"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2017-Festival.webp"
+    poster_placeholder: false
+
+  - title: "The Mouse Trap"
+    playwright: "Agatha Cristie"
+    director: "Christopher Greensweight"
+    description: "It's a classic whodunit by Agatha Christie, the woman who helped popularize the genre."
+    dates: "November 10-19, 2017"
+    venue: "NOVA Black Box"
+    poster: "/posters/2017-Mouse-Trap.webp"
+    poster_placeholder: false
+
+  - title: "A Celtic Christmas"
+    playwright: "Teri Hammerquist & Steve Zediker"
+    director: "Steve Zediker"
+    description: "It's a rare thing — coming up with an original Christmas show, let alone two. Steve Zediker has scripted his second holiday show with the help of pianist Teri Hammerquist. Zediker, a well-known Billings composer, producer and vocalist, has brought his band, Slainte, into the show, positioning them right up front on stage to showcase their authentic sound. They sing and play Celtic instruments including an autoharp, a concertina accordion and a bodrahn, which is an Irish drum. The band usually jams Friday night at Pug Mahon's, so you could say they've been rehearsing this show for a decade or more."
+    dates: "December 8-23, 2017"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2017-Celtic-Christmas.webp"
+    poster_placeholder: false
+
+  - title: "Jonathan Swift's Gulliver's Travels"
+    playwright: ""
+    director: ""
+    description: ""
+    dates: "January 27-February 11, 2018"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "Quilters"
+    playwright: "Barbara Damashek and Molly Newman"
+    director: "Gary Treglown, Kathy McLain (Musical Director)"
+    description: "The emotional roller coaster is appropriate for the subject matter — pioneer women overcoming adversity with humor and tenacity. Even though the show is set in the mid-1800s, many of the issues exist today. The production is part of NOVA’s long-running Rankin File series, which showcases stories written by and about women."
+    dates: "February 9-18, 2018"
+    venue: "NOVA Black Box"
+    poster: "/posters/2017-Quilters.webp"
+    poster_placeholder: false
+
+  - title: "Pirates of Penzance"
+    playwright: "Gilbert & Sullivan"
+    director: "Jeffrey Grant Kitto"
+    description: "Gilbert and Sullivan’s hilarious, hopeful farce follows young Frederic, an orphan who has mistakenly been apprenticed to an ineffectual but raucous band of pirates. He disavows the pirates’ way of life and falls for the beautiful Mabel."
+    dates: "March 23-31, 2018"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2018-Pirates.webp"
+    poster_placeholder: false
+
+  - title: "Madeline & the Gypsies"
+    playwright: "Ludwig Bemelmans"
+    director: "Janie Sutton"
+    description: "When Madeline and her friend, Pepito, get lost during a visit to the carnival and end up being carried away by gypsies, their rousing adventures with a traveling circus begin! But poor Miss Clavel won’t rest until she has brought them safely home. This new musical bursts with daring circus acts, song and sweet silliness."
+    dates: "April 28-May 11, 2018"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2018-Madeline-Banner.webp"
+    poster_placeholder: false
+
+  - title: "School House Rock Live!"
+    playwright: ""
+    director: ""
+    description: "Follows Tom, a nerve-wracked school teacher who is nervous about his first day of teaching. He tries to relax by watching TV, when various characters representing facets of his personality emerge from the set and how him how to win students over with imagination, music, and through  such songs as, 'Just a Bill', 'Lolly, Lolly, Lolly', and 'Conjunction Junction.'"
+    dates: "July 14-29, 2018"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true

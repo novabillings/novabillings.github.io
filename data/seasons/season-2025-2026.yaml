@@ -1,0 +1,28 @@
+season: "2025-2026"
+shows: 
+  - title: "The Phantom Tollbooth"
+    playwright: "Susan Nanus, based on the book by Norton Juster"
+    director: "DeLaney Hardy Ray"
+    description: ""
+    dates: "September 12-21, 2025"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2025-Phantom.webp"
+    poster_placeholder: false
+
+  - title: "Trouble in Tahiti / The Filthy Habit"
+    playwright: "Leonard Bernstein (Trouble in Tahiti), Peter Hilliard (Composer The Filthy Habit), Matt Boresi (Libretto The Filthy Habit)"
+    director: "William Stearns"
+    description: ""
+    dates: "October 10-19, 2025"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2025-OneActs.webp"
+    poster_placeholder: false
+
+  - title: "9 to 5 the Musical"
+    playwright: "Patricia Resnick, Music and Lyrics by Dolly Parton, Based on the Twentieth Century Fox Film"
+    director: "Marisa Clark"
+    description: ""
+    dates: "November 7-16, 2025"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2025-9To5.webp"
+    poster_placeholder: false

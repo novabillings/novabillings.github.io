@@ -1,0 +1,117 @@
+season: "2015-2016"
+shows:
+  - title: "The Wizard of Oz"
+    playwright: "L. Frank Baum, Harold Arlen & E.Y. Harburg (Music & Lyrics), Herbert Stothart (Background Music), John Kane (Book Adaptation)"
+    director: "Dan Nickerson"
+    description: "Like so many girls her age, little Dorothy Gale of Kansas dreams of what lies over the rainbow. One day a twister hits her farm and carries her away to another world. Join Dorothy, the Scarecrow, the Tin Woodman, the Cowardly Lion and Toto as they travel the universe of Dorothy’s imagination."
+    dates: "July 17-26, 2015"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2015-Wizard.webp"
+    poster_placeholder: false
+
+  - title: "The Fantasticks"
+    playwright: "Tom Jones (Book & Lyrics), Harvey Schmidt (Music)"
+    director: "Gerry Roe"
+    description: "The Fantasticks is the longest-running musical in the world, and with good reason: at the heart of its breathtaking poetry and subtle theatrical sophistication is a purity and simplicity that transcends cultural barriers. The result is a timeless fable of love that manages to be nostalgic and universal at the same time."
+    dates: "September 11-26, 2015"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2015-Fantasticks.webp"
+    poster_placeholder: false
+
+  - title: "A Post on the Prairie"
+    playwright: "Ryan Gage"
+    director: "Patrick Wilson"
+    description: "In a world where societies have evaporated, civilizations have disappeared and relationships are the toughest resource to find, two men of opposite backgrounds discover each other on a deserted prairie in Montana. Striving to survive in a harsh, brutal world, the men are forced to search within themselves to find what it takes for life to continue."
+    dates: "October 2-17, 2015"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2015-Prairie.webp"
+    poster_placeholder: false
+
+  - title: "Festival of One-Act Operas: The Old Maid and the Thief & Gianni Schicchi"
+    playwright: "Gian Carlo Menotti (The Old Maid and the Theif) and Giacomo Puccini (Gianni Schicchi)"
+    director: "Douglas Nagel"
+    description: "Set in the early 1950s, The Old Maid and the Thief tells the tale of the persuasive powers of women. The spinster, Miss Todd, takes in a strange man. Laetitia, her maid, becomes enamored of him. Together the two steal everything from Miss Todd, including her car, while Miss Pinkerton, a spinster friend of Miss Todd’s, is hot on their trail. (55 minutes) Florence, Italy, 1299: a hilarious sitcom? Yes, indeed. Gianni Schicchi (say Johnny SKEE-kee) is exactly that. Like vultures, a conniving family tries to redirect their rich relative’s will from a monastery to their own benefit through disguise, impersonation, and bribery, only to be out-foxed in the end. Laughs abound and young love triumphs in this one-act production which includes one of opera’s most beloved arias."
+    dates: "October 23-November 1, 2015"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2015-OMT.webp"
+    poster_placeholder: false
+
+  - title: "Youth Cabaret"
+    playwright: "Various"
+    director: "Kevin Schweigert, Amanda Schott, and C.J. Armstrong"
+    description: "Imagine going to a real cabaret show: cafe’ tables, intimate lighting, and an emcee to guide you through the evening. The young actors will showcase a variety of solo, duet and ensemble numbers."
+    dates: "November 13-15, 2015"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2015-Youth_Cabaret_Logo.webp"
+    poster_placeholder: false
+
+  - title: "The Greek Myth Projects"
+    playwright: "Various"
+    director: "Dan Nickerson"
+    description: "True to the style of ensemble building, each myth is written, designed and executed by the young dramatists. Over the past three years, it has been Nickerson’s goal to teach kids how to work as a group. The Greek Myth Projects gives testament to how well the cast has creatively solved problems as an ensemble. The project showcases the work of Brianna Tepnergalland, Brennen Sunderland, Gianna Johnson, Sean Nichols, Emma Johnson and Anastasia Hayes."
+    dates: "November 20-22, 2015"
+    venue: "NOVA Black Box"
+    poster: "/posters/2015-Greek_Logo.webp"
+    poster_placeholder: false
+
+  - title: "Christmas Time's A-Comin' - A Bluegrass Christmas"
+    playwright: "Christie Anderson and Steve Zediker"
+    director: "Christie Anderson"
+    description: "Come on in...pull up your rockin' chair and sit a spell. Join us for a down-home Christmas with some of the best local bluegrass musicians and performers Billins has to offer. It's a cozy get-together of friends, family, and a whole lot of fun and hi-jinxed entertainment. You never know who may stop by!"
+    dates: "December 4-19, 2015"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true    
+
+  - title: "The Complete Works of William Shakespeare (abridged)"
+    playwright: "Alan Long, Daniel Singer, & Jess Winfield"
+    director: "Craig Huisenga"
+    description: "See all 37 plays in 97 minutes in an irreverent, fast-paced romp through the Bard’s plays. This is one wild ride through all of Shakespeare’s Comedies, Histories and Tragedies that will leave you breathless and helpless with laughter."
+    dates: "January 22-February 6, 2016"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2016-Shakespear_Logo.webp"
+    poster_placeholder: false
+
+  - title: "Turandot"
+    playwright: "Giacomo Puccini"
+    director: "Matthew Haney"
+    description: "Turandot is an opera about a cruel, icy princess named Turandot who decrees she will only marry a prince who can solve three riddles; any who fail are beheaded. A mysterious prince, Calaf, accepts the challenge, not only to win her but also to save his father, Timur, who has been living in exile with his loyal servant, Liù. After solving the riddles, Calaf kisses Turandot and she is changed, eventually revealing his name to be 'Love'."
+    dates: "February 27, 2016"
+    venue: "Alberta Bair Theater"
+    poster: "/posters/2016-Turandot.webp"
+    poster_placeholder: false
+
+  - title: "Charlotte's Web"
+    playwright: "E.B. White, Joseph Robinette (Adaptation)"
+    director: "DeLaney Kay Hardy"
+    description: "It follows the story of how Wilbur, the runt of the litter, overcomes this and shows the world, or at least the county, that he is 'some pig!'"
+    dates: "March 11-20, 2016"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "Five Women Wearing the Same Dress"
+    playwright: "Alan Ball"
+    director: "Anjanett Hawk"
+    description: "An ostentatious show about five women of different backgrounds, who are brought together for a wedding."
+    dates: "April 1-16, 2016"
+    venue: "NOVA Black Box"
+    poster: "/posters/2016-Five_Women_Logo.webp"
+    poster_placeholder: false
+
+  - title: "Rita"
+    playwright: "Gaetano Donizetti"
+    director: "Dodie Rife"
+    description: "Rita, or The Beaten Husband, is a delightful dose of Donizetti in a one-act comic opera with high octane musical numbers connected by bits of snappy dialogue on the 'politically incorrect' side. The Other Side is a cabaret performance by Michelle Berger."
+    dates: "April 15-24, 2016"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2015-Rita.webp"
+    poster_placeholder: false
+
+  - title: "Sweet Charity"
+    playwright: "Neil Simon, Cy Coleman (Music), Dorothy Fiellds (Lyrics)"
+    director: "Susan Kennedy Sommerfeld"
+    description: "Sweet Charity is a tender, poignant and consistently funny look at the adventures, or rather misadventures, in the ways of love encountered by Charity Agnes Valentine, the “lady of the evening” who always gives her heart to the worst man."
+    dates: "May 6-21, 2016"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2015-Sweet-Charity.webp"
+    poster_placeholder: false
+  

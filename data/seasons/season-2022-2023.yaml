@@ -1,0 +1,84 @@
+season: "2022-2023"
+shows:
+  - title: "Tinker Bell"
+    playwright: ""
+    director: "Janie Sutton"
+    description: "Everyone thinks they know Peter Pan, but until you have heard Tinker Bell’s side of the store, you really have not heard it at all."
+    dates: "September 16-25, 2022"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "Carmen's Tragedy"
+    playwright: ""
+    director: "Janie Sutton"
+    description: "Carmen is a sizzling seductress–but when you play with fire, you’re going to get burned!"
+    dates: "September 30-October 9, 2022"
+    venue: "NOVA Black Box"
+    poster_placeholder: true
+
+  - title: "Spider's Web"
+    playwright: ""
+    director: "Mary Ann Connors"
+    description: "Spider’s Web is a conscious parody of the detective thriller. Christie delivers a unique blend of suspense and humor."
+    dates: "November 11-20, 2022"
+    venue: "NOVA Black Box"
+    poster_placeholder: true
+
+  - title: "A Celtic Christmas"
+    playwright: "Steve Zediker and Teri Hammerquist"
+    director: "Steve Zediker and Teri Hammerquist"
+    description: "A Celtic Christmas combines the music and traditions of Ireland, Scotland, Wales and beyond; from jigs and reels to Christmas favorites performed with Celtic flair."
+    dates: "December 2-18, 2022"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "Itty Bitty Festival"
+    playwright: ""
+    director: "DeLaney Hardy Ray, Janie Sutton and Dulais Rhys"
+    description: "Fun and familiar tales and tunes filled with imagination and creativity from the minds of youngsters under the age of 8."
+    dates: "January 13-22, 2023"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "The Taming of the Shrew"
+    playwright: "William Shakespeare"
+    director: "Richard Leeds"
+    description: "Shakespeare’s classic battle of the sexes featuring puns, insults, foul tempers, sharp tongues and biting verbal acuity, all in the name of love…or something like it."
+    dates: "March 10-19, 2023"
+    venue: "NOVA Black Box"
+    poster: "/posters/2023-Taming.webp"
+    poster_placeholder: false
+
+  - title: "Salome"
+    playwright: "Oscar Wilde"
+    director: "Douglas Nagel"
+    description: "Salome is Oscar Wilde’s twist on the biblical story of Herod, Herodias, and Salomé. The story tells of a lovely young girl Salomé, her step-father Herod’s obsession with her, and Salome’s infatuation with the prophet John the Baptist (Jokanaan). The opera is famous for its “Dance of the Seven Veils.”"
+    dates: "April 7-16, 2023"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2023-Salome.webp"
+    poster_placeholder: false
+
+  - title: "An Inspector Calls"
+    playwright: ""
+    director: "Gustavo Belotta"
+    description: "912, a prosperous family dinner is interrupted with the news that shakes every member of the family. A scathing criticism of hypocrisy and an example of the interconnected nature of society."
+    dates: "April 21-30, 2023"
+    venue: "NOVA Black Box"
+    poster_placeholder: true
+
+  - title: "The Borrowers"
+    playwright: ""
+    director: "DeLaney Hardy Ray"
+    description: "This childhood favorite tells of tiny people living in a giant world. With both suspense and humor it illustrates the tussle every family goes through as children grow up and yearn for independence."
+    dates: "May 12-21, 2023"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2023-Borrowers.webp"
+    poster_placeholder: false
+
+  - title: "Funny Girl"
+    playwright: ""
+    director: "Gary Treglown"
+    description: "Funny Girl is a musical that first opened on Broadway in 1964. The semi-biographical plot is based on the life and career of Broadway star, film actress, and comedian Fanny Brice."
+    dates: "June 16-25, 2023"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true

@@ -1,0 +1,104 @@
+season: "2018-2019"
+shows:
+  - title: "No Strings Attached"
+    playwright: "Mary Donnelly & George L.O. Strid"
+    director: "Wanda Morales, Music Direction by Donna Ayers"
+    description: "In this musical adaptation of Italian writer Carlo Collodi's 'The Adventures of Pinocchio' (1883), Geppetto and his marionette come to life. The performance features clever characters and lessons to be learned, as curiosity and temptation get Pinocchio into trouble when he meets up with the characters made famous by the 1940s Disney cartoon, including the Puppet Master, Sly Foxx, Klever Katt, String Bean, the Donkey Children, and the Terrible Shark."
+    dates: "September 8-23, 2018"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2017-No-Strings.webp"
+    poster_placeholder: false
+
+  - title: "War of the Worlds: Radio Play"
+    playwright: "H.G. Wells, adapted by Howard E. Koch"
+    director: "Director Name"
+    description: "Brief description of the show. This is placeholder content that should be replaced with actual show information from the 2018-2019 season."
+    dates: "October 5-14, 2018"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2018-War.webp"
+    poster_placeholder: false
+
+  - title: "Nosferatu"
+    playwright: "Alva Henderson (Composer) and Dana Gioia (Libretto)"
+    director: "Director Name"
+    description: "Based on F.W. Murnau's 1922 silent vampire film--a classic of German Expressionist cinema-- Nosferatu creates a poetic version of the Dracula story."
+    dates: "October 27, 2018"
+    venue: "Alberta Bair Theater"
+    poster_placeholder: true
+
+  - title: "The Mikado (sort of...)"
+    playwright: "Gilbert & Sullivan"
+    director: "Janie Sutton, DeLaney Hardy, & Ginger Roll"
+    description: "The Mikado (Sort of) is based on the Gilbert and Sullivan production of the same name. This re-imagining takes place in a galaxy far, far, away. Nanki-Who, son of the potentate of Mars-apan, The Mikado, fled his father’s imperial court to escape a forced marriage with Katisha, a not-so-attractive, elderly robot. Nanki-Who met and fell in love with Hum-Hum, a lovely young woman with two protective sisters. Hum-Hum, however, was already betrothed to her overlord, which forced Nanki-Who to contemplate leaving ZuZu-Who, once again, in despair."
+    dates: "November 3-11, 2018"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2018-Mikado.webp"
+    poster_placeholder: false
+
+  - title: "A Christmas Carol"
+    playwright: "Charles Dickens"
+    director: "Gary Treglown"
+    description: "Brief description of the show. This is placeholder content that should be replaced with actual show information from the 2018-2019 season."
+    dates: "December 7-16, 2018"
+    venue: "NOVA Black Box"
+    poster: "/posters/2018-Christmas.webp"
+    poster_placeholder: false
+
+  - title: "Little Women"
+    playwright: "Louisa M. Alcott, adapted by Peter Clapham"
+    director: "Susan Hayes"
+    description: "The well-loved tale has been dramatized by Peter Clapham in a play that faithfully interweaves the lives of the March girls: Meg, Jo, Beth, and Amy, and Laurie (the boy next door) and their tumultuous year together."
+    dates: "January 11-20, 2019"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2019-Little-Women.webp"
+    poster_placeholder: false
+
+  - title: "Our Town"
+    playwright: "Thornton Wilder"
+    director: "Director Name"
+    description: "Narrated by a stage manager and performed with minimal props and sets, audiences follow the Webb and Gibbs families as their children fall in love, marry, and eventually – in one of the most famous scenes in American theatre – die."
+    dates: "February 15-24, 2019"
+    venue: "NOVA Black Box"
+    poster_placeholder: true
+
+  - title: "Festival of One-Act Operas: Buoso's Ghost / Bastien und Bastienne / Musical Event at Choufleuri's"
+    playwright: "Playwright Name"
+    director: "Director Name"
+    description: "Brief description of the show. This is placeholder content that should be replaced with actual show information from the 2018-2019 season."
+    dates: "March 29-April 7, 2019"
+    venue: "NOVA Black Box"
+    poster_placeholder: true
+
+  - title: "Metamorphoses"
+    playwright: "Mary Zimmerman"
+    director: "Mary Ann Connors"
+    description: "This Tony Award winning play is a magical journey into Ovid’s world of transformation and enchantment. In breathtaking images, the characters experience love and loss, joy and pain, and discover the inevitable consequences of their own actions."
+    dates: "April 5-14, 2019"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2019-Meta.webp"
+    poster_placeholder: false
+
+  - title: "Blodwen"
+    playwright: "Dr. Joseph Parry (Music), Richard Davies (Libretto)"
+    director: "Osian Rhys"
+    description: "Following the pattern of Romantic Italian opera, the story takes place in 14 th century Wales and includes a wedding, lovers, dying heroes and a dramatic final twist. The opera’s stirring music shows Parry at his dramatic best: heroic and romantic solos, exciting ensembles, powerful choruses and of course, the famous ‘Hywel a Blodwen’ love duet which remains popular as a concert item and is considered one of the highlights of amateur performances of the opera."
+    dates: "May 10-19, 2019"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "Much Ado About Nothing"
+    playwright: "Playwright Name"
+    director: "Director Name"
+    description: "Brief description of the show. This is placeholder content that should be replaced with actual show information from the 2018-2019 season."
+    dates: "May 31-June 9, 2019"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "BFG"
+    playwright: "Playwright Name"
+    director: "Director Name"
+    description: "Brief description of the show. This is placeholder content that should be replaced with actual show information from the 2018-2019 season."
+    dates: "July 13-28, 2019"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2019-BFG.webp"
+    poster_placeholder: false

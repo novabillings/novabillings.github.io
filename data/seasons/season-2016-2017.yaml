@@ -1,0 +1,108 @@
+season: "2016-2017"
+shows:
+  - title: "You're a Good Man, Charlie Brown"
+    playwright: "Clark Gesner (Music & Lyrics)"
+    director: "DeLaney Hardy"
+    description: "Everyone’s favorite 2D gang is coming to life at NOVA! Charlie Brown has fallen for, 'the little red-headed girl,' but can’t seem to muster up the confidence to talk to her. With the help of his friends, both two legged and four legged, Charlie Brown learns that he is a good man!"
+    dates: "July 22-31, 2016"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2016-Good_Man_Logo.webp"
+    poster_placeholder: false
+
+  - title: "In Conflict"
+    playwright: "Yvonne Letty, Douglas C. Wager (Adaptation)"
+    director: "Christopher M. Greensweight"
+    description: "Based on the book In Conflict: Iraq War Veterans Speak Out on Duty, Loss and the Fight to Stay Alive by Yvonne Letty and Adapted by Douglas C. Wager In Conflict is a collection of true accounts from Iraqi war veterans. This moving piece uncovers the hidden world of war and explores what it means to be both human and hero."
+    dates: "September 2-11, 2016"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2016-In_Conflict_Logo.webp"
+    poster_placeholder: false
+
+  - title: "Don Pasquale"
+    playwright: "Gaetano Danozetti"
+    director: "Douglas Nagel"
+    description: "Composed by Gaetano Danozetti, the opera made its debut in Paris in 1843, but the tale of a rich heir falling for the poor girl is a story that could be told today. NOVA Center for the Performing Arts is giving it a 1960s twist, performing it in English and dressing the performers in a mod wardrobe."
+    dates: "October 7-16, 2016"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2016-Don_P_Logo.webp"
+    poster_placeholder: false
+
+  - title: "Cinderella: A Children's Opera"
+    playwright: "Peter Maxwell Davies"
+    director: "Janie Sutton"
+    description: "This is not your average fairy tale. In this Cinderella, composed by Peter Maxwell Davies and directed by Janie Sutton, a young Cinderella travels from home to become the au pair for three young women who dream of nothing but marrying rich. This retelling includes a trusty fairy 'cat' mother, a chorus of kittens, and of course a midnight striking clock."
+    dates: "November 11-20, 2016"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2016-Cinderella_Logo.webp"
+    poster_placeholder: false
+
+  - title: "The Wonderful World of Christmas"
+    playwright: "Various"
+    director: "Brenda Ward"
+    description: "When it opens Friday at NOVA Center for the Performing Arts, the audience will get a glimpse into Christmas hijinks and some of the best voices around spreading holiday cheer."
+    dates: "December 9-18, 2016"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2016-Wonderful_Christmas_Logo.webp"
+    poster_placeholder: false
+
+  - title: "The Norwegians"
+    playwright: "C. Denby Swanson"
+    director: "Amanda Megyesi-McCave"
+    description: "This play tells the story of two badly scorned women who hire two hitmen to take care of their boyfriends. Uff-da! — those Norwegian hitmen aren’t exactly what the girls had in mind."
+    dates: "January 6-15, 2017"
+    venue: "NOVA Black Box"
+    poster: "/posters/2017-The_Norwegians_Logo.webp"
+    poster_placeholder: false
+
+  - title: "The Magic Flute"
+    playwright: "Wolfgang Amadeus Mozart"
+    director: "Daniel Helfgot (Stage), Barbara Day Turner (Conductor)"
+    description: "The Magic Flute is a fairy tale opera by Mozart about Prince Tamino's quest to rescue the princess Pamina from the high priest Sarastro. Saved from a serpent by three ladies of the Queen of the Night, Tamino falls in love with a portrait of Pamina and agrees to rescue her. Accompanied by the comical birdcatcher Papageno, they journey to Sarastro's temple, only to discover the Queen is the true villain and Sarastro is a wise leader guiding them to enlightenment through trials of wisdom and virtue."
+    dates: "February 25, 2017"
+    venue: "Alberta Bair Theater"
+    poster: "/posters/2017-Magic-Flute.webp"
+    poster_placeholder: false
+
+  - title: "James and the Giant Peach"
+    playwright: "Roald Dahl, David Wood (Adaptation)"
+    director: "Kelsey Steffan"
+    description: "James and the Giant Peach is sure to have you amazed! Adapted by David Wood from Roald Dahl’s popular children’s story, James and the Giant Peach tells the story of James Henry Trotter and his incredible escape from his evil aunts."
+    dates: "March 10-19, 2017"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2017-Peach_Logo.webp"
+    poster_placeholder: false
+
+  - title: "Love, Loss and What I Wore"
+    playwright: "Nora Ephron and Della Ephron based on the book by Ilene Beckerman"
+    director: "Mary Ann Connors"
+    description: "This is a play of monologues and ensemble pieces about women.The pieces run the gamut from clothes and memories of mothers, prom dresses, buying bras, hating purses and why some women only wear black."
+    dates: "March 31-April 9, 2017"
+    venue: "NOVA Black Box"
+    poster: "/posters/2016-Love_Loss.webp"
+    poster_placeholder: false
+
+  - title: "Festival of One-Act Operas: The Scarf / Speed Dating Tonight"
+    playwright: "Lee Hoiby (The Scarf) / Michael Ching (Speed Dating Tonight)"
+    director: "Douglas Nagel & Gary Treglown"
+    description: "The Scarf takes place in an isolated farmhouse during a snowy February night. The story follows Miriam, a young woman, unhappily married to the oppressive Reuel. Miriam invokes witch craft to hypnotize the postman to love her."
+    dates: "April 28-May 7, 2017"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "Suds the Musical"
+    playwright: "Steve Gundersen, Bryan Scott, & Melinda Guild"
+    director: "Justin Ward"
+    description: "Loaded with good clean fun, bubbling energy and some of th 60’s greatest hits, SUDS is the delightful story of a woman and her guardian angels who come to teach her about finding true love in a laundromat."
+    dates: "May 12-27, 2017"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2017-suds_Poster.webp"
+    poster_placeholder: false
+
+  - title: "School of Rock the Musical"
+    playwright: "Julian Fellows, Glen Slater (Lyrics), Andrew Llyod Weber (Music), Based on the Paramount movie by Mike White"
+    director: "Caitlin Hart"
+    description: "The musical follows Dewey Finn, a failed, wannabe rock star who decides to earn a few extra bucks by posing as a substitute teacher at a prestigious prep school. Completely disinterested in academic work, Dewey decides to create his own curriculum, turning his class into a guitar-shredding, bass-slapping, mind-blowing rock band. With its sensational live kids’ rock band, is a loving testimony to the transforming power of music."
+    dates: "July 21-30, 2017"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2017-School_Of_Rock_Logo.webp"
+    poster_placeholder: false

@@ -1,0 +1,51 @@
+season: "2019-2020"
+shows:
+  - title: "The Jungle Book"
+    playwright: "Rudyard Kipling, adapted by Monica Flory"
+    director: "Ginger Roll"
+    description: "Jungle Book (Rudyard Kipling, adapted by Monica Flory) - In this action-packed adaptation of the classic adventure story, precocious Mowgli grows up believing he's as fierce a wolf as any of the members of his pack. When he learns he is actually a human, he must discover how to reconcile these very different identities, and decide whether to remain with the pack, or return to the human world from which he was born. What will he choose? And will he be trained in the Law of the Jungle in time to defeat Shere Khan, the most feared animal of all?"
+    dates: "October 4-13, 2019"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "The Marriage of Figaro"
+    playwright: "Wolfgang Amadeus Mozart"
+    director: "Douglas Nagel"
+    description: "Marriage of Figaro (Wolfgang Amadeus Mozart) continues the plot of The Barber of Seville several years later, and recounts a single 'day of madness' in the palace of Count Almaviva near Seville, Spain. Rosina is now the Countess; Dr. Bartolo is seeking revenge against Figaro for thwarting his plans to marry Rosina himself; and Count Almaviva has degenerated from the romantic youth as the Barber into a scheming, bullying, skirt-chasing man. Having gratefully given Figaro a job as head of his servant-staff, the Count is now persistently trying to exercise his right to bed a servant girl on her wedding night with Figaro's bride-to-be, Susanna, who is the Countess's maid. The Count continually attempts to delay the civil part of the wedding of his two servants. Figaro, Susanna, and the Countess conspire to embarrass the Count and expose his scheming. Will the love between the Count and Countess be restored?"
+    dates: "November 8-17, 2019"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "A Christmas Carol"
+    playwright: ""
+    director: "Gary Treglown"
+    description: "The Dickens tale is a journey from greedy self-absorption to the warmth and hope recognized in every human heart, a poignant reminder that each of us has the power to see what’s best in ourselves and others."
+    dates: "December 6-15, 2019"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "One-Act Play Double Feature: No Exit & Free Birdie"
+    playwright: ""
+    director: ""
+    description: ""
+    dates: "January 10-19, 2020"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "An Evening With Sherlock Holmes"
+    playwright: "Jules Tasca"
+    director: "Mary Ann Connors"
+    description: "An Evening with Sherlock Holmes is, indeed, unique. Three one-act plays showcase the skills of Sherlock Holmes and Dr. Watson, aided by housekeeper Mrs. Hudson and the Baker Street Irregulars. A collection of memorable characters, both good and evil, enhance the action. Reminiscent of a 19th century London pub, this production offers a variety of performers sharing their talents. Much like a revue, there will be short performances before the “Evening” gets under way, as well as a bit of fun and music between each individual “case” that is presented. The game’s afoot with mayhem, mystery, music and merriment."
+    dates: "January 31-February 9, 2020"
+    venue: "NOVA Black Box"
+    poster: "/posters/2020-Sherlock.webp"
+    poster_placeholder: false
+
+  - title: "Inside Out"
+    playwright: "Doug Haverty & Adryan Russ"
+    director: "Michelle Berger"
+    description: "A therapy group, headed by group leader (Grace), is transformed forever when a new person (Dena) joins the group and winds up being a catalyst for change in the lives of a flower child of the ‘80s (Sage), a powerful businesswoman (Liz), a gay bank employee and single mom of a teenage son (Chlo), and a mother of two young children who’s dealing with weight issues (Molly)."
+    dates: "February 28-March 8, 2020"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2020-Inside.webp"
+    poster_placeholder: false

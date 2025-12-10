@@ -1,0 +1,133 @@
+{{ define "main" }}
+
+<!-- Page Header -->
+<section class="bg-gradient-to-r from-theatre-purple to-purple-800 text-white py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-5xl font-sans font-bold mb-4">Venue Rentals</h1>
+    <p class="text-xl text-purple-100">A professional performance space for your event</p>
+  </div>
+</section>
+
+<!-- Rental Info -->
+<section class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="section-title">Rent Our Space</h2>
+      <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+        NOVA Center for the Performing Arts offers a professional venue for performances, rehearsals, meetings,
+        and special events. Our facility provides a welcoming space with professional-grade equipment and amenities.
+      </p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+      <div class="bg-gray-50 rounded-lg shadow-lg p-6 text-center">
+        <div class="text-5xl mb-4">🎭</div>
+        <h3 class="text-xl font-sans font-bold text-theatre-navy mb-3">Main Stage</h3>
+        <p class="text-gray-700">
+          Professional performance space with seating for audiences, stage lighting, and sound system.
+        </p>
+      </div>
+
+      <div class="bg-gray-50 rounded-lg shadow-lg p-6 text-center">
+        <div class="text-5xl mb-4">🎵</div>
+        <h3 class="text-xl font-sans font-bold text-theatre-navy mb-3">Rehearsal Rooms</h3>
+        <p class="text-gray-700">
+          Multiple spaces available for rehearsals, workshops, and intimate performances.
+        </p>
+      </div>
+
+      <div class="bg-gray-50 rounded-lg shadow-lg p-6 text-center">
+        <div class="text-5xl mb-4">🎤</div>
+        <h3 class="text-xl font-sans font-bold text-theatre-navy mb-3">Technical Equipment</h3>
+        <p class="text-gray-700">
+          Professional lighting, sound, and projection equipment available for use.
+        </p>
+      </div>
+    </div>
+
+    <!-- What We Accommodate -->
+    <div class="bg-theatre-purple bg-opacity-10 rounded-lg p-8 mb-12">
+      <h3 class="text-2xl font-sans font-bold text-theatre-navy mb-6 text-center">What We Accommodate</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-theatre-gold mr-2">✓</span>
+              <span>Theatrical performances and productions</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-theatre-gold mr-2">✓</span>
+              <span>Musical concerts and recitals</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-theatre-gold mr-2">✓</span>
+              <span>Dance performances and rehearsals</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-theatre-gold mr-2">✓</span>
+              <span>Film screenings and presentations</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-3 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-theatre-gold mr-2">✓</span>
+              <span>Corporate events and meetings</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-theatre-gold mr-2">✓</span>
+              <span>Community gatherings</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-theatre-gold mr-2">✓</span>
+              <span>Workshops and educational programs</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-theatre-gold mr-2">✓</span>
+              <span>Special celebrations and events</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rental Rates -->
+    <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+      <h3 class="text-2xl font-sans font-bold text-theatre-navy mb-6 text-center">Rental Information</h3>
+      <div class="space-y-4 text-gray-700">
+        <p class="text-center">
+          Rental rates vary based on the space needed, duration, and technical requirements.
+          We offer both hourly and daily rental options.
+        </p>
+        <div class="bg-theatre-gold bg-opacity-10 border-l-4 border-theatre-gold p-4 mt-6">
+          <p class="font-semibold text-theatre-navy mb-2">Non-Profit Discounts Available</p>
+          <p class="text-sm">
+            NOVA Center supports the arts community by offering discounted rates for qualifying non-profit organizations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="py-16 bg-theatre-navy text-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-sans font-bold mb-6">Ready to Book?</h2>
+    <p class="text-xl mb-8 text-gray-300">
+      Contact us to discuss your rental needs, check availability, and get a custom quote.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="mailto:{{ .Site.Params.contact_email }}" class="btn-primary inline-block">
+        Email for Rental Inquiry
+      </a>
+      <a href="tel:{{ .Site.Params.contact_phone }}" class="bg-white hover:bg-gray-100 text-theatre-navy font-sans font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">
+        Call {{ .Site.Params.contact_phone }}
+      </a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

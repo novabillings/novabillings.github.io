@@ -1,0 +1,62 @@
+{{ define "main" }}
+
+<!-- Page Header -->
+<section class="bg-gradient-to-r from-theatre-purple to-purple-800 text-white py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-5xl font-sans font-bold mb-4">Board of Directors</h1>
+    <p class="text-xl text-purple-100">Dedicated volunteers guiding our mission</p>
+  </div>
+</section>
+
+<!-- Board Info -->
+<section class="py-16 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+    <p class="text-lg text-gray-700 leading-relaxed">
+      The NOVA Center Board of Directors is composed of community members who volunteer their time and expertise
+      to ensure the organization fulfills its mission and maintains financial sustainability.
+    </p>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {{ range $index, $member := .Site.Data.board.members }}
+      <div class="bg-gray-50 rounded-lg shadow-lg p-6">
+        <!-- Headshot -->
+        {{ if .headshot_placeholder }}
+        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br {{ if (mod $index 2) }}from-theatre-gold to-yellow-600 text-theatre-navy{{ else }}from-theatre-purple to-purple-600 text-white{{ end }} flex items-center justify-center text-4xl">
+          👤
+        </div>
+        {{ else if .headshot }}
+        <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+          <img src="{{ .headshot }}" alt="{{ .name }}" class="w-full h-full object-cover">
+        </div>
+        {{ end }}
+
+        <!-- Member Info -->
+        <div class="text-center">
+          <h3 class="text-xl font-sans font-bold text-theatre-navy mb-1">{{ .position }}</h3>
+          <p class="text-theatre-gold font-semibold mb-3">{{ .name }}</p>
+          <div class="text-gray-700 text-sm space-y-3">
+            {{ .bio | markdownify }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Join Board CTA -->
+<section class="py-16 bg-theatre-navy text-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-sans font-bold mb-6">Interested in Joining Our Board?</h2>
+    <p class="text-xl mb-8 text-gray-300">
+      We're always looking for dedicated community members who are passionate about the performing arts.
+    </p>
+    <a href="mailto:{{ .Site.Params.contact_email }}" class="btn-primary inline-block">
+      Contact Us to Learn More
+    </a>
+  </div>
+</section>
+
+{{ end }}

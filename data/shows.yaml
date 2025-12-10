@@ -1,0 +1,102 @@
+current:
+  - title: "A Seussified Christmas Carol"
+    playwright: "Peter Bloedel"
+    director: "Dakota Hunter"
+    description: "A whimsical reinvention of Dickens' most beloved Christmas story in wacky rhymed couplets. With zoot fruited juices and binka bird geese, from Bed-Headed Fred to Timmy Loo Hoo, this tale of glorious holiday cheer is similar to something Dr. Seuss might have come up with -- if he ever had his way with the story."
+    dates: "December 4-14, 2025"
+    showtimes:
+      - "Thursdays, Fridays & Saturdays at 7:30 PM"
+      - "Sundays at 2:00 PM"
+    venue: "NOVA Main Stage"
+    ticket_price: "$12-22"
+    poster: "/posters/2025-a-seussified-christmas-carol.webp"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/show_page.php?show_id=200486863"
+
+upcoming:
+  - title: "A Crazy Little Café Called Love"
+    playwright: "Luigi Jannuzzi"
+    director: "Ginger Role"
+    description: "Linda has a blind date, Bob is casting a movie, the waitress likes the monk, old Mr. Philips wants a séance and the bride’s dad is livid! Throw in a frantic bride, her theatrical mother, a dancing nun and an apologetic groom, and you have a comic hit! And all happening one crazy day in the one-set Love Café."
+    dates: "January 30-February, 8 2026"
+    showtimes:
+      - "Fridays & Saturdays at 7:30 PM"
+      - "Sundays at 2:00 PM"
+    venue: "NOVA Black Box"
+    ticket_price: "$12-22"
+    poster: "https://81498.cdn.cke-cs.com/cg1lNgGCab87vY1cyfMd/images/8009345b3b79736003807d92e33ec1cb04743ba9806e54ef.png/w_1294"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/show_page.php?show_id=200486865"
+
+  - title: "Snow White and the Seven Endings"
+    playwright: "Tracy Wells"
+    director: "Deyja Whitcomb"
+    description: "Thornton Wilder's Pulitzer Prize-winning drama explores the universal themes of love, loss, and the beauty of everyday life in the fictional town of Grover's Corners, New Hampshire. This American classic reminds us to appreciate the precious moments that make up our lives."
+    dates: "February 20-March 1, 2026"
+    showtimes:
+      - "Fridays & Saturdays at 7:30 PM"
+      - "Sundays at 2:00 PM"
+    venue: "NOVA Main Stage"
+    ticket_price: "$15-22"
+    audition_date: "December 13, 2025 at 1:00 PM"
+    poster: "https://81498.cdn.cke-cs.com/cg1lNgGCab87vY1cyfMd/images/faf7b501744d3b04012a97b41336c0efa505fd22016abc62.png/w_1294"
+    poster_placeholder: false
+    tickets_url: "hhttps://novabillings.ludus.com/show_page.php?show_id=200486871"
+
+  - title: "As You Like It"
+    playwright: "William Shakespeare"
+    director: "Glenda Brauneis"
+    description: "As You Like It, follows Rosalind, who is banished by her uncle, Duke Frederick, and seeks refuge in the Forest of Arden. She disguises herself as Ganymede, a boy, and begins to teach a love-sick Orlando about the nature of love. In the forest, she meets other characters, including Celia, Oliver, and Touchstone, who experience their own romantic entanglements and personal growth. The play explores themes of love, exile, and the relationship between courtly life and the simpler life in the natural world. "
+    dates: "March 13-22, 2026"
+    showtimes:
+      - "Fridays & Saturdays at 7:30 PM"
+      - "Sundays at 2:00 PM"
+    venue: "NOVA Black Box"
+    ticket_price: "$12-22"
+    audition_date: "December 7-8, 2025 at 5:30 PM"
+    poster: "https://81498.cdn.cke-cs.com/cg1lNgGCab87vY1cyfMd/images/5e58a38aacd0e66226dedb8746573eb66ee5ec5ccd3f2af5.png/w_1294"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/show_page.php?show_id=200486873"
+
+  - title: "Imagine a Dragon"
+    playwright: "Kathryn Funkhouser, Music & Lyrics by Denver Casado, Music Arrangements by Jeff Daye"
+    director: "Janie Sutton"
+    description: "The dragon is back in town! Well… not really. That’s the story a ragtag band of innkeepers makes up, desperate to draw questing heroes to the struggling Dancing Dragon Inn. Soon the inn is full of unexpected guests, from an army of princesses out to prove their bravery, to a group of overwhelmed heroes trying to hold onto their fame. But what happens if they all discover the innkeepers’ dragon story is made up? Could there be more than one way to save the day? An epic folk-rock score brings magic to this funny, heartfelt fantasy musical."
+    dates: "April 1-19, 2026"
+    showtimes:
+      - "Fridays & Saturdays at 7:30 PM"
+      - "Saturdays & Sundays at 2:00 PM"
+    venue: "NOVA Main Stage"
+    ticket_price: "$12-22"
+    poster: "https://81498.cdn.cke-cs.com/cg1lNgGCab87vY1cyfMd/images/c342a9e69277cba7d529a5cb65506571c404727dbb4bf886.png/w_1294"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/show_page.php?show_id=200486874"
+
+  - title: "This Murder Was Staged"
+    playwright: "Patrick Greene & Jason Pazzarello"
+    director: "Gustavo Belotta"
+    description: "It's opening night of a brand-new mystery play, but just as the killer is about to be revealed, the body of the play's director falls on stage instead. In that moment, the theater becomes an active crime scene, and everyone from cast to crew to even the audience becomes a suspect. But how is the intrepid detective supposed to find the killer when everyone and their mother (literally) has a motive to want the demanding director gone?"
+    dates: "May 8-17, 2026"
+    showtimes:
+      - "Fridays & Saturdays at 7:30 PM"
+      - "Saturdays & Sundays at 2:00 PM"
+    venue: "NOVA Main Stage"
+    audition_date: "March 1-2, 2026 at 6:30 PM"
+    ticket_price: "$12-22"
+    poster: "https://81498.cdn.cke-cs.com/cg1lNgGCab87vY1cyfMd/images/4b9ab1cd31e52bb1795ebee543afa1975faef79c7bc52975.png/w_1170"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/show_page.php?show_id=200486875"
+
+  - title: "Chicago"
+    playwright: "Patrick Greene & Jason Pazzarello"
+    director: "DeLaney Hardy Ray"
+    description: "In roaring twenties Chicago, Roxie Hart murders a faithless lover and convinces her hapless husband, Amos, to take the rap...until he finds out he's been duped and turns on Roxie. Convicted and sent to death row, Roxie and another 'Merry Murderess', Velma Kelly, vie for the spotlight and the headlines, ultimately joining forces in search of the 'American Dream': fame, fortune, and acquittal. This sharp-edged satire features a dazzling score that sparked immortal staging by Bob Fosse."
+    dates: "June 12-21, 2026"
+    showtimes:
+      - "Fridays & Saturdays at 7:30 PM"
+      - "Saturdays & Sundays at 2:00 PM"
+    venue: "NOVA Main Stage"
+    ticket_price: "$12-22"
+    poster: "https://81498.cdn.cke-cs.com/cg1lNgGCab87vY1cyfMd/images/933e5150ef0c779ffd05aca732572310b34611f4c4e9d120.png/w_1170"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/show_page.php?show_id=200486876"

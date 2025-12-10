@@ -1,0 +1,186 @@
+{{ define "main" }}
+
+<!-- Page Header -->
+<section class="bg-gradient-to-r from-theatre-purple to-purple-800 text-white py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-5xl font-sans font-bold mb-4">Events</h1>
+    <p class="text-xl text-purple-100">Special celebrations and monthly gatherings at NOVA</p>
+  </div>
+</section>
+
+<!-- Introduction -->
+<section class="py-16 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="section-title">More Than Just Shows</h2>
+    <p class="text-gray-700 leading-relaxed mb-6">
+      NOVA Center hosts a variety of special events throughout the year, from our signature fundraising gala
+      to intimate monthly performance gatherings. Join us for celebrations, community events, and unique
+      theatrical experiences beyond our main stage productions.
+    </p>
+  </div>
+</section>
+
+<!-- Special Events -->
+{{ with .Site.Data.events.special_events }}
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="section-title text-center mb-12">Special Events</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {{ range . }}
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+        <!-- Event Image/Placeholder -->
+        <div class="bg-gray-200 h-64">
+          {{ if .poster_placeholder }}
+          <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-theatre-purple to-purple-600">
+            <div class="text-center text-white p-8">
+              <div class="text-6xl mb-4">🎭</div>
+              <p class="text-xl font-sans font-bold">{{ .title }}</p>
+            </div>
+          </div>
+          {{ else if .poster }}
+          <img src="{{ .poster }}" alt="{{ .title }}" class="w-full h-full object-cover">
+          {{ else }}
+          <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-theatre-gold to-yellow-600">
+            <div class="text-center text-theatre-navy p-8">
+              <div class="text-6xl mb-4">🎉</div>
+              <p class="text-xl font-sans font-bold">{{ .title }}</p>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+
+        <!-- Event Details -->
+        <div class="p-6">
+          <h3 class="text-2xl font-sans font-bold text-theatre-purple mb-2">{{ .title }}</h3>
+          <p class="text-gray-700 mb-4 leading-relaxed">
+            {{ .description }}
+          </p>
+
+          <div class="space-y-2 mb-6">
+            <div class="flex items-start text-sm">
+              <svg class="w-5 h-5 text-theatre-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <div>
+                <p class="font-sans font-bold text-theatre-navy">{{ .date }}</p>
+                {{ if .time }}
+                <p class="text-gray-700">{{ .time }}</p>
+                {{ end }}
+              </div>
+            </div>
+
+            <div class="flex items-start text-sm">
+              <svg class="w-5 h-5 text-theatre-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <p class="text-gray-700">{{ .venue }}</p>
+            </div>
+
+            {{ if .ticket_price }}
+            <div class="flex items-start text-sm">
+              <svg class="w-5 h-5 text-theatre-purple mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
+              </svg>
+              <p class="text-gray-700 font-sans font-bold">{{ .ticket_price }}</p>
+            </div>
+            {{ end }}
+          </div>
+
+          {{ if .registration_url }}
+          <a href="{{ .registration_url }}" target="_blank" class="block w-full text-center bg-theatre-gold hover:bg-yellow-600 text-theatre-navy font-sans font-bold py-3 px-6 rounded-lg transition duration-300">
+            Get Tickets
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Recurring Monthly Events -->
+{{ with .Site.Data.events.recurring_events }}
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="section-title text-center mb-12">Monthly Events</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      {{ range . }}
+      <div class="bg-gradient-to-br from-theatre-purple to-purple-600 rounded-lg shadow-lg p-8 text-white hover:shadow-xl transition duration-300">
+        <div class="flex items-start mb-6">
+          <div class="bg-theatre-gold rounded-full p-4 mr-4">
+            <svg class="w-8 h-8 text-theatre-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-2xl font-sans font-bold mb-2">{{ .title }}</h3>
+            <p class="text-theatre-gold font-sans font-bold text-lg">{{ .recurrence }}</p>
+          </div>
+        </div>
+
+        <p class="text-purple-100 mb-6 leading-relaxed">
+          {{ .description }}
+        </p>
+
+        <div class="bg-white bg-opacity-10 rounded-lg p-4 mb-6 space-y-2">
+          <div class="flex items-center text-sm">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>{{ .time }}</span>
+          </div>
+          <div class="flex items-center text-sm">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span>{{ .venue }}</span>
+          </div>
+          <div class="flex items-center text-sm font-sans font-bold">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
+            </svg>
+            <span>{{ .ticket_price }}</span>
+          </div>
+        </div>
+
+        <div class="flex gap-3">
+          {{ if .registration_url }}
+          <a href="{{ .registration_url }}" target="_blank" class="flex-1 text-center bg-theatre-gold hover:bg-yellow-600 text-theatre-navy font-sans font-bold py-3 px-6 rounded-lg transition duration-300">
+            More Info
+          </a>
+          {{ end }}
+          {{ if .contact_email }}
+          <a href="mailto:{{ .contact_email }}" class="flex-1 text-center border-2 border-white hover:bg-white hover:text-theatre-purple font-sans font-bold py-3 px-6 rounded-lg transition duration-300">
+            Contact Us
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Call to Action -->
+<section class="py-16 bg-theatre-purple text-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-sans font-bold mb-6">Stay Connected</h2>
+    <p class="text-xl mb-8 text-purple-100">
+      Don't miss out on our special events and monthly gatherings. Join our mailing list to receive updates!
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="mailto:{{ .Site.Params.contact_email }}?subject=Event Updates" class="bg-theatre-gold hover:bg-yellow-600 text-theatre-navy font-sans font-bold py-3 px-8 rounded-lg transition duration-300">
+        Get Event Updates
+      </a>
+      <a href="/shows" class="border-2 border-white hover:bg-white hover:text-theatre-purple font-sans font-bold py-3 px-8 rounded-lg transition duration-300">
+        View Shows
+      </a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

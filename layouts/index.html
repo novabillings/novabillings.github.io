@@ -1,0 +1,748 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="relative text-white py-24 overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img src="/cropped-nova_bg-1.jpg" alt="Theatre Performance" class="w-full h-full object-cover">
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <h1 class="text-5xl md:text-6xl font-sans font-bold mb-6 text-shadow-lg">
+        NOVA Center for the Performing Arts
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+        {{ .Site.Params.description }}
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/shows" class="btn-secondary">View Current Shows</a>
+        <a href="https://novabillings.ludus.com/index.php?sections=events" target="_blank"
+          class="bg-white hover:bg-gray-100 text-theatre-purple font-sans font-bold py-3 px-6 rounded-lg transition duration-300">
+          Buy Tickets
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave SVG -->
+  <div class="absolute bottom-0 left-0 right-0 z-10">
+    <svg class="w-full h-16 text-gray-50" preserveAspectRatio="none" viewBox="0 0 1440 74" fill="currentColor">
+      <path d="M0,0 C480,74 960,74 1440,0 L1440,74 L0,74 Z"></path>
+    </svg>
+  </div>
+</section>
+
+<!-- Current Production Section -->
+{{ with .Site.Data.shows.current }}
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="section-title text-center">Now Showing</h2>
+    {{ range . }}
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <!-- Poster -->
+      <div class="bg-gray-200 rounded-lg overflow-hidden shadow-lg aspect-[11/17]">
+        {{ if .poster_placeholder }}
+        <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-theatre-purple to-purple-600">
+          <div class="text-center text-white p-8">
+            <div class="text-6xl mb-4">🎭</div>
+            <p class="text-2xl font-sans font-bold">{{ .title }}</p>
+          </div>
+        </div>
+        {{ else }}
+        <img src="{{ .poster }}" alt="{{ .title }} Poster" class="w-full h-full object-cover">
+        {{ end }}
+      </div>
+
+      <!-- Show Details -->
+      <div>
+        <h3 class="text-3xl font-sans font-bold text-theatre-purple mb-4">{{ .title }}</h3>
+        <p class="text-lg text-gray-600 mb-4">By {{ .playwright }}</p>
+        {{ if .director }}
+        <p class="text-md text-gray-600 mb-4">Directed by {{ .director }}</p>
+        {{ end }}
+        <p class="text-gray-700 mb-6 leading-relaxed">
+          {{ .description }}
+        </p>
+        <div class="bg-theatre-gold bg-opacity-10 border-l-4 border-theatre-gold p-4 mb-6">
+          <p class="font-sans font-bold text-theatre-navy mb-2">Performance Details</p>
+          <p class="text-gray-700">{{ .dates }}</p>
+          {{ range .showtimes }}
+          <p class="text-gray-700">{{ . }}</p>
+          {{ end }}
+        </div>
+        {{ if .tickets_url }}
+        <a href="{{ .tickets_url }}" target="_blank" class="btn-primary inline-block">Get Tickets</a>
+        {{ else }}
+        <a href="https://novabillings.ludus.com/index.php?sections=events" target="_blank"
+          class="btn-primary inline-block">Get Tickets</a>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+<!-- Upcoming Auditions Section -->
+{{ with .Site.Data.shows.upcoming }}
+<section class="py-16 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="section-title text-center">Upcoming Auditions</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      {{ range first 4 . }}
+      {{ if .audition_date }}
+      <div
+        class="bg-white rounded-lg shadow-lg p-6 border-t-4 border-theatre-purple hover:shadow-xl transition duration-300">
+        <h3 class="text-2xl font-sans font-bold text-theatre-navy mb-3">{{ .title }}</h3>
+        <p class="text-gray-600 mb-4">{{ .playwright }}</p>
+        <div class="space-y-2 mb-4">
+          <p class="text-gray-700"><span class="font-semibold">Audition Date:</span> {{ .audition_date }}</p>
+          <p class="text-gray-700"><span class="font-semibold">Performance Dates:</span> {{ .dates }}</p>
+        </div>
+        <a href="/auditions" class="text-theatre-purple font-semibold hover:text-purple-700 transition duration-300">
+          Learn More →
+        </a>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Get Involved Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="section-title text-center">Get Involved</h2>
+    <div class="grid md:grid-cols-3 gap-8 mt-12">
+      <div class="text-center">
+        <div
+          class="bg-theatre-purple bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-10 h-10 text-theatre-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-sans font-bold text-theatre-navy mb-3">Perform</h3>
+        <p class="text-gray-600 mb-4">
+          Whether you're a seasoned actor or trying theatre for the first time, we welcome all skill levels to our
+          auditions.
+        </p>
+        <a href="/auditions" class="text-theatre-purple font-semibold hover:text-purple-700 transition duration-300">
+          Audition Info →
+        </a>
+      </div>
+      <div class="text-center">
+        <div class="bg-theatre-gold bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-10 h-10 text-theatre-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-sans font-bold text-theatre-navy mb-3">Create</h3>
+        <p class="text-gray-600 mb-4">
+          Join our production team! We need help with sets, costumes, lighting, sound, stage management, and more.
+        </p>
+        <a href="{{ .Site.Params.volunteer_url }}"
+          class="text-theatre-purple font-semibold hover:text-purple-700 transition duration-300">
+          Volunteer →
+        </a>
+      </div>
+      <div class="text-center">
+        <div
+          class="bg-theatre-purple bg-opacity-10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+          <svg class="w-10 h-10 text-theatre-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-sans font-bold text-theatre-navy mb-3">Support</h3>
+        <p class="text-gray-600 mb-4">
+          Your donations help us continue bringing quality live theatre to our community. Every contribution makes a
+          difference.
+        </p>
+        <a href="{{ .Site.Params.donate_url }}"
+          class="text-theatre-purple font-semibold hover:text-purple-700 transition duration-300">
+          Donate →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="section-title">Stay Connected</h2>
+    <p class="text-lg text-gray-600 mb-8">
+      Subscribe to our newsletter for show announcements, audition notices, and exclusive behind-the-scenes content.
+    </p>
+    <div id="mc_embed_shell">
+      <style type="text/css">
+        #mc_embed_signup {
+          background: transparent;
+          clear: both;
+          font-family: system-ui, -apple-system, sans-serif;
+          max-width: 500px;
+          margin: 0 auto;
+        }
+
+        #mc_embed_signup h2 {
+          display: none;
+        }
+
+        #mc_embed_signup .indicates-required {
+          text-align: left;
+          font-size: 0.875rem;
+          color: #6B7280;
+          margin-bottom: 1rem;
+        }
+
+        #mc_embed_signup .asterisk {
+          color: #7B2CBF;
+          font-weight: bold;
+        }
+
+        #mc_embed_signup .mc-field-group {
+          margin-bottom: 1.5rem;
+          text-align: left;
+        }
+
+        #mc_embed_signup label {
+          display: block;
+          font-weight: 600;
+          color: #1E293B;
+          margin-bottom: 0.5rem;
+          font-size: 1rem;
+        }
+
+        #mc_embed_signup input[type="email"] {
+          width: 100%;
+          padding: 0.75rem 1rem;
+          font-size: 1rem;
+          border: 2px solid #E5E7EB;
+          border-radius: 0.5rem;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          background: white;
+        }
+
+        #mc_embed_signup input[type="email"]:focus {
+          outline: none;
+          border-color: #7B2CBF;
+          box-shadow: 0 0 0 3px rgba(123, 44, 191, 0.1);
+        }
+
+        #mc_embed_signup .button {
+          width: 100%;
+          background-color: #7B2CBF;
+          color: white;
+          font-weight: bold;
+          padding: 0.75rem 1.5rem;
+          border: none;
+          border-radius: 0.5rem;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          transform: scale(1);
+        }
+
+        #mc_embed_signup .button:hover {
+          background-color: #6922A6;
+          transform: scale(1.02);
+        }
+
+        #mc_embed_signup .response {
+          padding: 0.75rem;
+          margin-top: 1rem;
+          border-radius: 0.5rem;
+          font-size: 0.875rem;
+        }
+
+        #mc_embed_signup #mce-error-response {
+          background-color: #FEE2E2;
+          color: #991B1B;
+          border: 1px solid #FCA5A5;
+        }
+
+        #mc_embed_signup #mce-success-response {
+          background-color: #D1FAE5;
+          color: #065F46;
+          border: 1px solid #6EE7B7;
+        }
+
+        #mc_embed_signup .clear {
+          clear: both;
+        }
+      </style>
+      <div id="mc_embed_signup">
+        <form
+          action="https://novabillings.us5.list-manage.com/subscribe/post?u=2df9ea64c2a446bda65d9f51b&amp;id=293d9c09fa&amp;f_id=00f241edf0"
+          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+          target="_blank">
+          <div id="mc_embed_signup_scroll">
+            <h2>Subscribe</h2>
+            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+            <div class="mc-field-group">
+              <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" placeholder="your@email.com">
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display: none;"></div>
+              <div class="response" id="mce-success-response" style="display: none;"></div>
+            </div>
+            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+              <input type="text" name="b_2df9ea64c2a446bda65d9f51b_293d9c09fa" tabindex="-1" value="">
+            </div>
+            <div class="clear">
+              <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+            </div>
+          </div>
+        </form>
+      </div>
+      <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+      <script type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery)); var $mcj = jQuery.noConflict(true);
+        // SMS Phone Multi-Country Functionality
+        if (!window.MC) {
+          window.MC = {};
+        }
+        window.MC.smsPhoneData = {
+          defaultCountryCode: 'US',
+          programs: [],
+          smsProgramDataCountryNames: []
+        };
+
+        function getCountryUnicodeFlag(countryCode) {
+          return countryCode.toUpperCase().replace(/./g, (char) => String.fromCodePoint(char.charCodeAt(0) + 127397))
+        };
+
+        // HTML sanitization function to prevent XSS
+        function sanitizeHtml(str) {
+          if (typeof str !== 'string') return '';
+          return str
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#x27;')
+            .replace(/\//g, '&#x2F;');
+        }
+
+        // URL sanitization function to prevent javascript: and data: URLs
+        function sanitizeUrl(url) {
+          if (typeof url !== 'string') return '';
+          const trimmedUrl = url.trim().toLowerCase();
+          if (trimmedUrl.startsWith('javascript:') || trimmedUrl.startsWith('data:') || trimmedUrl.startsWith('vbscript:')) {
+            return '#';
+          }
+          return url;
+        }
+
+        const getBrowserLanguage = () => {
+          if (!window?.navigator?.language?.split('-')[1]) {
+            return window?.navigator?.language?.toUpperCase();
+          }
+          return window?.navigator?.language?.split('-')[1];
+        };
+
+        function getDefaultCountryProgram(defaultCountryCode, smsProgramData) {
+          if (!smsProgramData || smsProgramData.length === 0) {
+            return null;
+          }
+
+          const browserLanguage = getBrowserLanguage();
+
+          if (browserLanguage) {
+            const foundProgram = smsProgramData.find(
+              (program) => program?.countryCode === browserLanguage,
+            );
+            if (foundProgram) {
+              return foundProgram;
+            }
+          }
+
+          if (defaultCountryCode) {
+            const foundProgram = smsProgramData.find(
+              (program) => program?.countryCode === defaultCountryCode,
+            );
+            if (foundProgram) {
+              return foundProgram;
+            }
+          }
+
+          return smsProgramData[0];
+        }
+
+        function updateSmsLegalText(countryCode, fieldName) {
+          if (!countryCode || !fieldName) {
+            return;
+          }
+
+          const programs = window?.MC?.smsPhoneData?.programs;
+          if (!programs || !Array.isArray(programs)) {
+            return;
+          }
+
+          const program = programs.find(program => program?.countryCode === countryCode);
+          if (!program || !program.requiredTemplate) {
+            return;
+          }
+
+          const legalTextElement = document.querySelector('#legal-text-' + fieldName);
+          if (!legalTextElement) {
+            return;
+          }
+
+          // Remove HTML tags and clean up the text
+          const divRegex = new RegExp('</?[div][^>]*>', 'gi');
+          const fullAnchorRegex = new RegExp('<a.*?</a>', 'g');
+          const anchorRegex = new RegExp('<a href="(.*?)" target="(.*?)">(.*?)</a>');
+
+          const requiredLegalText = program.requiredTemplate
+            .replace(divRegex, '')
+            .replace(fullAnchorRegex, '')
+            .slice(0, -1);
+
+          const anchorMatches = program.requiredTemplate.match(anchorRegex);
+
+          if (anchorMatches && anchorMatches.length >= 4) {
+            // Create link element safely using DOM methods instead of innerHTML
+            const linkElement = document.createElement('a');
+            linkElement.href = sanitizeUrl(anchorMatches[1]);
+            linkElement.target = sanitizeHtml(anchorMatches[2]);
+            linkElement.textContent = sanitizeHtml(anchorMatches[3]);
+
+            legalTextElement.textContent = requiredLegalText + ' ';
+            legalTextElement.appendChild(linkElement);
+            legalTextElement.appendChild(document.createTextNode('.'));
+          } else {
+            legalTextElement.textContent = requiredLegalText + '.';
+          }
+        }
+
+        function generateDropdownOptions(smsProgramData) {
+          if (!smsProgramData || smsProgramData.length === 0) {
+            return '';
+          }
+
+          return smsProgramData.map(program => {
+            const flag = getCountryUnicodeFlag(program.countryCode);
+            const countryName = getCountryName(program.countryCode);
+            const callingCode = program.countryCallingCode || '';
+            // Sanitize all values to prevent XSS
+            const sanitizedCountryCode = sanitizeHtml(program.countryCode || '');
+            const sanitizedCountryName = sanitizeHtml(countryName || '');
+            const sanitizedCallingCode = sanitizeHtml(callingCode || '');
+            return '<option value="' + sanitizedCountryCode + '">' + sanitizedCountryName + ' ' + sanitizedCallingCode + '</option>';
+          }).join('');
+        }
+
+        function getCountryName(countryCode) {
+          if (window.MC?.smsPhoneData?.smsProgramDataCountryNames && Array.isArray(window.MC.smsPhoneData.smsProgramDataCountryNames)) {
+            for (let i = 0; i < window.MC.smsPhoneData.smsProgramDataCountryNames.length; i++) {
+              if (window.MC.smsPhoneData.smsProgramDataCountryNames[i].code === countryCode) {
+                return window.MC.smsPhoneData.smsProgramDataCountryNames[i].name;
+              }
+            }
+          }
+          return countryCode;
+        }
+
+        function getDefaultPlaceholder(countryCode) {
+          if (!countryCode || typeof countryCode !== 'string') {
+            return '+1 000 000 0000'; // Default US placeholder
+          }
+
+          const mockPlaceholders = [
+            {
+              countryCode: 'US',
+              placeholder: '+1 000 000 0000',
+              helpText: 'Include the US country code +1 before the phone number',
+            },
+            {
+              countryCode: 'GB',
+              placeholder: '+44 0000 000000',
+              helpText: 'Include the GB country code +44 before the phone number',
+            },
+            {
+              countryCode: 'CA',
+              placeholder: '+1 000 000 0000',
+              helpText: 'Include the CA country code +1 before the phone number',
+            },
+            {
+              countryCode: 'AU',
+              placeholder: '+61 000 000 000',
+              helpText: 'Include the AU country code +61 before the phone number',
+            },
+            {
+              countryCode: 'DE',
+              placeholder: '+49 000 0000000',
+              helpText: 'Fügen Sie vor der Telefonnummer die DE-Ländervorwahl +49 ein',
+            },
+            {
+              countryCode: 'FR',
+              placeholder: '+33 0 00 00 00 00',
+              helpText: 'Incluez le code pays FR +33 avant le numéro de téléphone',
+            },
+            {
+              countryCode: 'ES',
+              placeholder: '+34 000 000 000',
+              helpText: 'Incluya el código de país ES +34 antes del número de teléfono',
+            },
+            {
+              countryCode: 'NL',
+              placeholder: '+31 0 00000000',
+              helpText: 'Voeg de NL-landcode +31 toe vóór het telefoonnummer',
+            },
+            {
+              countryCode: 'BE',
+              placeholder: '+32 000 00 00 00',
+              helpText: 'Incluez le code pays BE +32 avant le numéro de téléphone',
+            },
+            {
+              countryCode: 'CH',
+              placeholder: '+41 00 000 00 00',
+              helpText: 'Fügen Sie vor der Telefonnummer die CH-Ländervorwahl +41 ein',
+            },
+            {
+              countryCode: 'AT',
+              placeholder: '+43 000 000 0000',
+              helpText: 'Fügen Sie vor der Telefonnummer die AT-Ländervorwahl +43 ein',
+            },
+            {
+              countryCode: 'IE',
+              placeholder: '+353 00 000 0000',
+              helpText: 'Include the IE country code +353 before the phone number',
+            },
+            {
+              countryCode: 'IT',
+              placeholder: '+39 000 000 0000',
+              helpText:
+                'Includere il prefisso internazionale IT +39 prima del numero di telefono',
+            },
+          ];
+
+          const selectedPlaceholder = mockPlaceholders.find(function (item) {
+            return item && item.countryCode === countryCode;
+          });
+
+          return selectedPlaceholder ? selectedPlaceholder.placeholder : mockPlaceholders[0].placeholder;
+        }
+
+        function updatePlaceholder(countryCode, fieldName) {
+          if (!countryCode || !fieldName) {
+            return;
+          }
+
+          const phoneInput = document.querySelector('#mce-' + fieldName);
+          if (!phoneInput) {
+            return;
+          }
+
+          const placeholder = getDefaultPlaceholder(countryCode);
+          if (placeholder) {
+            phoneInput.placeholder = placeholder;
+          }
+        }
+
+        function updateCountryCodeInstruction(countryCode, fieldName) {
+          updatePlaceholder(countryCode, fieldName);
+
+        }
+
+        function getDefaultHelpText(countryCode) {
+          const mockPlaceholders = [
+            {
+              countryCode: 'US',
+              placeholder: '+1 000 000 0000',
+              helpText: 'Include the US country code +1 before the phone number',
+            },
+            {
+              countryCode: 'GB',
+              placeholder: '+44 0000 000000',
+              helpText: 'Include the GB country code +44 before the phone number',
+            },
+            {
+              countryCode: 'CA',
+              placeholder: '+1 000 000 0000',
+              helpText: 'Include the CA country code +1 before the phone number',
+            },
+            {
+              countryCode: 'AU',
+              placeholder: '+61 000 000 000',
+              helpText: 'Include the AU country code +61 before the phone number',
+            },
+            {
+              countryCode: 'DE',
+              placeholder: '+49 000 0000000',
+              helpText: 'Fügen Sie vor der Telefonnummer die DE-Ländervorwahl +49 ein',
+            },
+            {
+              countryCode: 'FR',
+              placeholder: '+33 0 00 00 00 00',
+              helpText: 'Incluez le code pays FR +33 avant le numéro de téléphone',
+            },
+            {
+              countryCode: 'ES',
+              placeholder: '+34 000 000 000',
+              helpText: 'Incluya el código de país ES +34 antes del número de teléfono',
+            },
+            {
+              countryCode: 'NL',
+              placeholder: '+31 0 00000000',
+              helpText: 'Voeg de NL-landcode +31 toe vóór het telefoonnummer',
+            },
+            {
+              countryCode: 'BE',
+              placeholder: '+32 000 00 00 00',
+              helpText: 'Incluez le code pays BE +32 avant le numéro de téléphone',
+            },
+            {
+              countryCode: 'CH',
+              placeholder: '+41 00 000 00 00',
+              helpText: 'Fügen Sie vor der Telefonnummer die CH-Ländervorwahl +41 ein',
+            },
+            {
+              countryCode: 'AT',
+              placeholder: '+43 000 000 0000',
+              helpText: 'Fügen Sie vor der Telefonnummer die AT-Ländervorwahl +43 ein',
+            },
+            {
+              countryCode: 'IE',
+              placeholder: '+353 00 000 0000',
+              helpText: 'Include the IE country code +353 before the phone number',
+            },
+            {
+              countryCode: 'IT',
+              placeholder: '+39 000 000 0000',
+              helpText: 'Includere il prefisso internazionale IT +39 prima del numero di telefono',
+            },
+          ];
+
+          if (!countryCode || typeof countryCode !== 'string') {
+            return mockPlaceholders[0].helpText;
+          }
+
+          const selectedHelpText = mockPlaceholders.find(function (item) {
+            return item && item.countryCode === countryCode;
+          });
+
+          return selectedHelpText ? selectedHelpText.helpText : mockPlaceholders[0].helpText;
+        }
+
+        function setDefaultHelpText(countryCode) {
+          const helpTextSpan = document.querySelector('#help-text');
+          if (!helpTextSpan) {
+            return;
+          }
+
+
+        }
+
+        function updateHelpTextCountryCode(countryCode, fieldName) {
+          if (!countryCode || !fieldName) {
+            return;
+          }
+
+          setDefaultHelpText(countryCode);
+        }
+
+        function initializeSmsPhoneDropdown(fieldName) {
+          if (!fieldName || typeof fieldName !== 'string') {
+            return;
+          }
+
+          const dropdown = document.querySelector('#country-select-' + fieldName);
+          const displayFlag = document.querySelector('#flag-display-' + fieldName);
+
+          if (!dropdown || !displayFlag) {
+            return;
+          }
+
+          const smsPhoneData = window.MC?.smsPhoneData;
+          if (smsPhoneData && smsPhoneData.programs && Array.isArray(smsPhoneData.programs)) {
+            dropdown.innerHTML = generateDropdownOptions(smsPhoneData.programs);
+          }
+
+          const defaultProgram = getDefaultCountryProgram(smsPhoneData?.defaultCountryCode, smsPhoneData?.programs);
+          if (defaultProgram && defaultProgram.countryCode) {
+            dropdown.value = defaultProgram.countryCode;
+
+            const flagSpan = displayFlag?.querySelector('#flag-emoji-' + fieldName);
+            if (flagSpan) {
+              flagSpan.textContent = getCountryUnicodeFlag(defaultProgram.countryCode);
+              flagSpan.setAttribute('aria-label', sanitizeHtml(defaultProgram.countryCode) + ' flag');
+            }
+
+            updateSmsLegalText(defaultProgram.countryCode, fieldName);
+            updatePlaceholder(defaultProgram.countryCode, fieldName);
+            updateCountryCodeInstruction(defaultProgram.countryCode, fieldName);
+          }
+
+
+          var smsNotRequiredRemoveCountryCodeEnabled = true;
+          var smsField = Object.values({ "EMAIL": { "name": "EMAIL", "label": "Email Address", "helper_text": "", "merge_id": 0, "type": "email", "required": true, "audience_field_name": "Email Address", "field_type": "merge", "enabled": true, "order": null }, "FNAME": { "name": "FNAME", "label": "First Name", "helper_text": "", "type": "text", "required": false, "audience_field_name": "First Name", "enabled": false, "order": null, "field_type": "merge", "merge_id": 1 }, "LNAME": { "name": "LNAME", "label": "Last Name", "helper_text": "", "type": "text", "required": false, "audience_field_name": "Last Name", "enabled": false, "order": null, "field_type": "merge", "merge_id": 2 }, "ADDRESS": { "name": "ADDRESS", "label": "Address", "helper_text": "", "type": "address", "required": false, "audience_field_name": "Address", "enabled": false, "order": null, "field_type": "merge", "merge_id": 3, "countries": { "2": "Albania", "3": "Algeria", "4": "Andorra", "5": "Angola", "6": "Argentina", "7": "Armenia", "8": "Australia", "9": "Austria", "10": "Azerbaijan", "11": "Bahamas", "12": "Bahrain", "13": "Bangladesh", "14": "Barbados", "15": "Belarus", "16": "Belgium", "17": "Belize", "18": "Benin", "19": "Bermuda", "20": "Bhutan", "21": "Bolivia", "22": "Bosnia and Herzegovina", "23": "Botswana", "24": "Brazil", "25": "Bulgaria", "26": "Burkina Faso", "27": "Burundi", "28": "Cambodia", "29": "Cameroon", "30": "Canada", "31": "Cape Verde", "32": "Cayman Islands", "33": "Central African Republic", "34": "Chad", "35": "Chile", "36": "China", "37": "Colombia", "38": "Congo", "40": "Croatia", "41": "Cyprus", "42": "Czech Republic", "43": "Denmark", "44": "Djibouti", "45": "Ecuador", "46": "Egypt", "47": "El Salvador", "48": "Equatorial Guinea", "49": "Eritrea", "50": "Estonia", "51": "Ethiopia", "52": "Fiji", "53": "Finland", "54": "France", "56": "Gabon", "57": "Gambia", "58": "Georgia", "59": "Germany", "60": "Ghana", "61": "Greece", "62": "Guam", "63": "Guinea", "64": "Guinea-Bissau", "65": "Guyana", "66": "Honduras", "67": "Hong Kong", "68": "Hungary", "69": "Iceland", "70": "India", "71": "Indonesia", "74": "Ireland", "75": "Israel", "76": "Italy", "78": "Japan", "79": "Jordan", "80": "Kazakhstan", "81": "Kenya", "82": "Kuwait", "83": "Kyrgyzstan", "84": "Lao People's Democratic Republic", "85": "Latvia", "86": "Lebanon", "87": "Lesotho", "88": "Liberia", "90": "Liechtenstein", "91": "Lithuania", "92": "Luxembourg", "93": "Macedonia", "94": "Madagascar", "95": "Malawi", "96": "Malaysia", "97": "Maldives", "98": "Mali", "99": "Malta", "100": "Mauritania", "101": "Mexico", "102": "Moldova", "103": "Monaco", "104": "Mongolia", "105": "Morocco", "106": "Mozambique", "107": "Namibia", "108": "Nepal", "109": "Netherlands", "110": "Netherlands Antilles", "111": "New Zealand", "112": "Nicaragua", "113": "Niger", "114": "Nigeria", "116": "Norway", "117": "Oman", "118": "Pakistan", "119": "Panama", "120": "Paraguay", "121": "Peru", "122": "Philippines", "123": "Poland", "124": "Portugal", "126": "Qatar", "127": "Reunion", "128": "Romania", "129": "Russia", "130": "Rwanda", "132": "Samoa (Independent)", "133": "Saudi Arabia", "134": "Senegal", "135": "Seychelles", "136": "Sierra Leone", "137": "Singapore", "138": "Slovakia", "139": "Slovenia", "140": "Somalia", "141": "South Africa", "142": "South Korea", "143": "Spain", "144": "Sri Lanka", "146": "Suriname", "147": "Swaziland", "148": "Sweden", "149": "Switzerland", "152": "Taiwan", "153": "Tanzania", "154": "Thailand", "155": "Togo", "156": "Tunisia", "157": "Turkiye", "158": "Turkmenistan", "159": "Uganda", "161": "Ukraine", "162": "United Arab Emirates", "163": "Uruguay", "164": "USA", "165": "Uzbekistan", "166": "Vatican City State (Holy See)", "167": "Venezuela", "168": "Vietnam", "169": "Virgin Islands (British)", "170": "Yemen", "173": "Zambia", "174": "Zimbabwe", "175": "Antigua And Barbuda", "176": "Anguilla", "178": "American Samoa", "179": "Aruba", "180": "Brunei Darussalam", "181": "Bouvet Island", "183": "Cook Islands", "185": "Christmas Island", "187": "Dominican Republic", "188": "Western Sahara", "189": "Falkland Islands", "191": "Faroe Islands", "192": "Grenada", "193": "French Guiana", "194": "Gibraltar", "195": "Greenland", "196": "Guadeloupe", "198": "Guatemala", "200": "Haiti", "202": "Jamaica", "203": "Kiribati", "204": "Comoros", "205": "Saint Kitts and Nevis", "206": "Saint Lucia", "207": "Marshall Islands", "208": "Macau", "210": "Martinique", "212": "Mauritius", "213": "New Caledonia", "214": "Norfolk Island", "215": "Nauru", "217": "Niue", "219": "Papua New Guinea", "221": "Pitcairn", "222": "Palau", "223": "Solomon Islands", "225": "Svalbard and Jan Mayen Islands", "227": "San Marino", "232": "Tonga", "233": "Timor-Leste", "234": "Trinidad and Tobago", "235": "Tuvalu", "237": "Saint Vincent and the Grenadines", "238": "Virgin Islands (U.S.)", "239": "Vanuatu", "241": "Mayotte", "242": "Myanmar", "255": "Sao Tome and Principe", "257": "South Georgia and the South Sandwich Islands", "260": "Tajikistan", "262": "United Kingdom", "268": "Costa Rica", "270": "Guernsey", "272": "North Korea", "274": "Afghanistan", "275": "Cote D'Ivoire", "276": "Cuba", "277": "French Polynesia", "278": "Iran", "279": "Iraq", "281": "Libya", "282": "Palestine", "285": "Syria", "286": "Aaland Islands", "287": "Turks & Caicos Islands", "288": "Jersey  (Channel Islands)", "289": "Dominica", "290": "Montenegro", "293": "Sudan", "294": "Montserrat", "298": "Curacao", "302": "Sint Maarten", "311": "South Sudan", "315": "Republic of Kosovo", "318": "Congo, Democratic Republic of the", "323": "Isle of Man", "324": "Saint Martin", "325": "Bonaire, Saint Eustatius and Saba", "326": "Serbia" }, "defaultcountry": 164 }, "PHONE": { "name": "PHONE", "label": "Phone Number", "helper_text": "", "type": "phone", "required": false, "audience_field_name": "Phone Number", "phoneformat": "", "enabled": false, "order": null, "field_type": "merge", "merge_id": 4 } }).find(function (f) { return f.name === fieldName && f.type === 'smsphone'; });
+          var isRequired = smsField ? smsField.required : false;
+          var shouldAppendCountryCode = smsNotRequiredRemoveCountryCodeEnabled ? isRequired : true;
+
+          var phoneInput = document.querySelector('#mce-' + fieldName);
+          if (phoneInput && defaultProgram.countryCallingCode && shouldAppendCountryCode) {
+            phoneInput.value = defaultProgram.countryCallingCode;
+          }
+
+
+
+          displayFlag?.addEventListener('click', function (e) {
+            dropdown.focus();
+          });
+
+
+          dropdown?.addEventListener('change', function () {
+            const selectedCountry = this.value;
+
+            if (!selectedCountry || typeof selectedCountry !== 'string') {
+              return;
+            }
+
+            const flagSpan = displayFlag?.querySelector('#flag-emoji-' + fieldName);
+            if (flagSpan) {
+              flagSpan.textContent = getCountryUnicodeFlag(selectedCountry);
+              flagSpan.setAttribute('aria-label', sanitizeHtml(selectedCountry) + ' flag');
+            }
+
+
+            const selectedProgram = window.MC?.smsPhoneData?.programs.find(function (program) {
+              return program && program.countryCode === selectedCountry;
+            });
+
+            var smsNotRequiredRemoveCountryCodeEnabled = true;
+            var smsField = Object.values({ "EMAIL": { "name": "EMAIL", "label": "Email Address", "helper_text": "", "merge_id": 0, "type": "email", "required": true, "audience_field_name": "Email Address", "field_type": "merge", "enabled": true, "order": null }, "FNAME": { "name": "FNAME", "label": "First Name", "helper_text": "", "type": "text", "required": false, "audience_field_name": "First Name", "enabled": false, "order": null, "field_type": "merge", "merge_id": 1 }, "LNAME": { "name": "LNAME", "label": "Last Name", "helper_text": "", "type": "text", "required": false, "audience_field_name": "Last Name", "enabled": false, "order": null, "field_type": "merge", "merge_id": 2 }, "ADDRESS": { "name": "ADDRESS", "label": "Address", "helper_text": "", "type": "address", "required": false, "audience_field_name": "Address", "enabled": false, "order": null, "field_type": "merge", "merge_id": 3, "countries": { "2": "Albania", "3": "Algeria", "4": "Andorra", "5": "Angola", "6": "Argentina", "7": "Armenia", "8": "Australia", "9": "Austria", "10": "Azerbaijan", "11": "Bahamas", "12": "Bahrain", "13": "Bangladesh", "14": "Barbados", "15": "Belarus", "16": "Belgium", "17": "Belize", "18": "Benin", "19": "Bermuda", "20": "Bhutan", "21": "Bolivia", "22": "Bosnia and Herzegovina", "23": "Botswana", "24": "Brazil", "25": "Bulgaria", "26": "Burkina Faso", "27": "Burundi", "28": "Cambodia", "29": "Cameroon", "30": "Canada", "31": "Cape Verde", "32": "Cayman Islands", "33": "Central African Republic", "34": "Chad", "35": "Chile", "36": "China", "37": "Colombia", "38": "Congo", "40": "Croatia", "41": "Cyprus", "42": "Czech Republic", "43": "Denmark", "44": "Djibouti", "45": "Ecuador", "46": "Egypt", "47": "El Salvador", "48": "Equatorial Guinea", "49": "Eritrea", "50": "Estonia", "51": "Ethiopia", "52": "Fiji", "53": "Finland", "54": "France", "56": "Gabon", "57": "Gambia", "58": "Georgia", "59": "Germany", "60": "Ghana", "61": "Greece", "62": "Guam", "63": "Guinea", "64": "Guinea-Bissau", "65": "Guyana", "66": "Honduras", "67": "Hong Kong", "68": "Hungary", "69": "Iceland", "70": "India", "71": "Indonesia", "74": "Ireland", "75": "Israel", "76": "Italy", "78": "Japan", "79": "Jordan", "80": "Kazakhstan", "81": "Kenya", "82": "Kuwait", "83": "Kyrgyzstan", "84": "Lao People's Democratic Republic", "85": "Latvia", "86": "Lebanon", "87": "Lesotho", "88": "Liberia", "90": "Liechtenstein", "91": "Lithuania", "92": "Luxembourg", "93": "Macedonia", "94": "Madagascar", "95": "Malawi", "96": "Malaysia", "97": "Maldives", "98": "Mali", "99": "Malta", "100": "Mauritania", "101": "Mexico", "102": "Moldova", "103": "Monaco", "104": "Mongolia", "105": "Morocco", "106": "Mozambique", "107": "Namibia", "108": "Nepal", "109": "Netherlands", "110": "Netherlands Antilles", "111": "New Zealand", "112": "Nicaragua", "113": "Niger", "114": "Nigeria", "116": "Norway", "117": "Oman", "118": "Pakistan", "119": "Panama", "120": "Paraguay", "121": "Peru", "122": "Philippines", "123": "Poland", "124": "Portugal", "126": "Qatar", "127": "Reunion", "128": "Romania", "129": "Russia", "130": "Rwanda", "132": "Samoa (Independent)", "133": "Saudi Arabia", "134": "Senegal", "135": "Seychelles", "136": "Sierra Leone", "137": "Singapore", "138": "Slovakia", "139": "Slovenia", "140": "Somalia", "141": "South Africa", "142": "South Korea", "143": "Spain", "144": "Sri Lanka", "146": "Suriname", "147": "Swaziland", "148": "Sweden", "149": "Switzerland", "152": "Taiwan", "153": "Tanzania", "154": "Thailand", "155": "Togo", "156": "Tunisia", "157": "Turkiye", "158": "Turkmenistan", "159": "Uganda", "161": "Ukraine", "162": "United Arab Emirates", "163": "Uruguay", "164": "USA", "165": "Uzbekistan", "166": "Vatican City State (Holy See)", "167": "Venezuela", "168": "Vietnam", "169": "Virgin Islands (British)", "170": "Yemen", "173": "Zambia", "174": "Zimbabwe", "175": "Antigua And Barbuda", "176": "Anguilla", "178": "American Samoa", "179": "Aruba", "180": "Brunei Darussalam", "181": "Bouvet Island", "183": "Cook Islands", "185": "Christmas Island", "187": "Dominican Republic", "188": "Western Sahara", "189": "Falkland Islands", "191": "Faroe Islands", "192": "Grenada", "193": "French Guiana", "194": "Gibraltar", "195": "Greenland", "196": "Guadeloupe", "198": "Guatemala", "200": "Haiti", "202": "Jamaica", "203": "Kiribati", "204": "Comoros", "205": "Saint Kitts and Nevis", "206": "Saint Lucia", "207": "Marshall Islands", "208": "Macau", "210": "Martinique", "212": "Mauritius", "213": "New Caledonia", "214": "Norfolk Island", "215": "Nauru", "217": "Niue", "219": "Papua New Guinea", "221": "Pitcairn", "222": "Palau", "223": "Solomon Islands", "225": "Svalbard and Jan Mayen Islands", "227": "San Marino", "232": "Tonga", "233": "Timor-Leste", "234": "Trinidad and Tobago", "235": "Tuvalu", "237": "Saint Vincent and the Grenadines", "238": "Virgin Islands (U.S.)", "239": "Vanuatu", "241": "Mayotte", "242": "Myanmar", "255": "Sao Tome and Principe", "257": "South Georgia and the South Sandwich Islands", "260": "Tajikistan", "262": "United Kingdom", "268": "Costa Rica", "270": "Guernsey", "272": "North Korea", "274": "Afghanistan", "275": "Cote D'Ivoire", "276": "Cuba", "277": "French Polynesia", "278": "Iran", "279": "Iraq", "281": "Libya", "282": "Palestine", "285": "Syria", "286": "Aaland Islands", "287": "Turks & Caicos Islands", "288": "Jersey  (Channel Islands)", "289": "Dominica", "290": "Montenegro", "293": "Sudan", "294": "Montserrat", "298": "Curacao", "302": "Sint Maarten", "311": "South Sudan", "315": "Republic of Kosovo", "318": "Congo, Democratic Republic of the", "323": "Isle of Man", "324": "Saint Martin", "325": "Bonaire, Saint Eustatius and Saba", "326": "Serbia" }, "defaultcountry": 164 }, "PHONE": { "name": "PHONE", "label": "Phone Number", "helper_text": "", "type": "phone", "required": false, "audience_field_name": "Phone Number", "phoneformat": "", "enabled": false, "order": null, "field_type": "merge", "merge_id": 4 } }).find(function (f) { return f.name === fieldName && f.type === 'smsphone'; });
+            var isRequired = smsField ? smsField.required : false;
+            var shouldAppendCountryCode = smsNotRequiredRemoveCountryCodeEnabled ? isRequired : true;
+
+            var phoneInput = document.querySelector('#mce-' + fieldName);
+            if (phoneInput && selectedProgram.countryCallingCode && shouldAppendCountryCode) {
+              phoneInput.value = selectedProgram.countryCallingCode;
+            }
+
+
+            updateSmsLegalText(selectedCountry, fieldName);
+            updatePlaceholder(selectedCountry, fieldName);
+            updateCountryCodeInstruction(selectedCountry, fieldName);
+          });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+          const smsPhoneFields = document.querySelectorAll('[id^="country-select-"]');
+
+          smsPhoneFields.forEach(function (dropdown) {
+            const fieldName = dropdown?.id.replace('country-select-', '');
+            initializeSmsPhoneDropdown(fieldName);
+          });
+        });
+      </script>
+    </div>
+  </div>
+</section>
+
+{{ end }}

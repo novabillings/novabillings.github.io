@@ -1,0 +1,132 @@
+season: "2014-2015"
+shows:
+  - title: "Big the Musical"
+    playwright: "John Weidman, Music and Lyrics by David Shire and Richard Maltby"
+    director: "..."
+    description: "Adult struggles emerge as a boy finds himself to have grown up overnight after being granted a wish by a carnival machine."
+    dates: "August 14-24, 2014"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "Vanya and Sonia and Masha and Spike"
+    playwright: "Christopher Durang"
+    director: "Craig Huisenga"
+    description: "NOVA Center for the Performing Arts is excited to present the Montana premiere of the 2013 Tony Winner for Best Play, Vanya and Sonia and Masha and Spike by Christopher Durang. This hilarious new comedy will open NOVA’s 2014-2015 Season, running from September 12 through September 27."
+    dates: "September 12-27, 2014"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2014-Vanya.webp"
+    poster_placeholder: false
+
+  - title: "The Boy at the Edge of Everything"
+    playwright: "Finegan Kruckemeyer"
+    director: "Dan Nickerson"
+    description: "Take a trip on an intergalactic journey through space and time– a quirky and fun play that exudes a young boy’s imagination and adventure."
+    dates: "October 3-12, 2014"
+    venue: "NOVA Black Box"
+    poster_placeholder: true
+
+  - title: "The 25th Annual Putnam County Spelling Bee"
+    playwright: "Rachel Sheinkin, William Finn (Music & Lyrics), Rebecca Feldman (Concept), Jay Reiss (Additional Material)"
+    director: "Wendy Carlin"
+    description: "A hit musical about six kids (played by young adults) vying for the coveted spelling bee championship.  Quirky and fun!"
+    dates: "October 10-25, 2014"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2014-Spelling-Bee.webp"
+    poster_placeholder: false
+
+  - title: "La Traviata"
+    playwright: "Giuseppe Verde, Francesco Maria Paive (Libretto)"
+    director: "Matt Haney (Stage), Barbara Day Turner (Conductor)"
+    description: "Violetta Valéry, La Traviata’s 'fallen woman' may be the most heart-wrenching character in all of opera: a high-spirited but deceptively delicate woman who unexpectedly finds, and then selflessly gives up, the love of her brief life. Rousing, soaring, heartbreaking melodies so familiar you will need to restrain yourself from humming along. Sung in the original Italian."
+    dates: "November 1, 2014"
+    venue: "Alberta Bair Theater"
+    poster: "/posters/2014-Traviata.webp"
+    poster_placeholder: false
+
+  - title: "Mauritius"
+    playwright: "Theresa Rebeck"
+    director: "Amanda Megyesi-McCave"
+    description: "A thriller that exposes the criminal underworld of stamp collecting opens Friday at NOVA Center for the Performing Arts."
+    dates: "November 7-22, 2014"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2014-Mauritius.webp"
+    poster_placeholder: false
+
+  - title: "It’s A Wonderful Life: A Live Radio Play"
+    playwright: "Joe Landry"
+    director: "Susan Sommerfeld"
+    description: "It’s A Wonderful Life sparkles as a radio show. The audience sees and hears this American Holiday Classic come to life as actors bounce from character to character and sound effect to sound effect."
+    dates: "December 5-20, 2014"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2014-Wonderful-Life.webp"
+    poster_placeholder: false
+
+  - title: "Amahl and the Night Visitors"
+    playwright: "Gian Carlo Menotti"
+    director: "William Mouat"
+    description: "Amahl and the Night Visitors – This one act Menotti opera, is a wonderful holiday story of Amahl, a precocious, disabled boy; his loving, care-worn mother; and the regal visitors who arrive one night and change Amahl’s life forever. With its beautiful score and touching libretto Amahl and the Night Visitors is appealing to all ages and musical backgrounds and is an inspiring story of how faith, charity, unselfish love and good deeds can truly work miracles."
+    dates: "January 9-11, 2015"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2015-Amahl.webp"
+    poster_placeholder: false
+
+  - title: "Peter and the Wolf"
+    playwright: "Sergei Prokofiev"
+    director: "Anne Harrigan (Conductor), Dan Nickerson (Youth Coach)"
+    description: "A Billings Symphony Production featuring NOVA's Youth Actors.  Sergei Prokofiev’s timeless tale told by musical instruments is given added dimension by the acting talents of NOVA’s Youth Actors."
+    dates: "January 17, 2015"
+    venue: "Alberta Bair Theater"
+    poster: "/posters/2015-Peter.webp"
+    poster_placeholder: false
+
+  - title: "Twelfth Night or What You Will"
+    playwright: "William Shakespeare"
+    director: "Danielle Turlainen"
+    description: "Shakespeare’s comedy of gender confusion, in which a girl disguises herself as a man to be near the Count she adores, only to be pursued by the woman he loves."    
+    dates: "January 16-31, 2015"
+    venue: "NOVA Black Box"
+    poster: "/posters/2015-Twelfth-Night.webp"
+    poster_placeholder: false
+
+  - title: "Susannah"
+    playwright: "Carlisle Floyd"
+    director: "Douglas Nagel"
+    description: "Chaos ensues after a group of church elders find a beautiful young woman bathing nude in a local stream, only to find them hiding their own desire for her in this tale of passion and deceit."
+    dates: "February 6-15, 2015"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2015-Susannah.webp"
+    poster_placeholder: false
+
+  - title: "The Lion, the Witch and the Wardrobe"
+    playwright: "C.S. Lewis Dramatized by Joseph Robinette"
+    director: "Dawn Nickerson"
+    description: "Young Peter, Edmund, Susan and Lucy discover a mystical land called Narnia where an evil witch has reigned for many years. Join their conquest in conquering evil to restore the land’s once happy state."
+    dates: "February 27-March 8, 2015"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "Communicating Doors"
+    playwright: "Alan Ayckbourn"
+    director: "Craig Huisenga"
+    description: "Murder and time travel all in one small hotel suite. A funny and thrilling combination of science-fiction and film noir."
+    dates: "March 20-April 4, 2015"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2015-Communicating-Doors.webp"
+    poster_placeholder: false
+
+  - title: "Dinosaurs Before Dark"
+    playwright: "Mary Pope Osborne"
+    director: "Mary Ann Connors"
+    description: "A wild adventure begins when two friends find themselves living inside a book where dinosaurs and ancient creatures rule the earth."
+    dates: "April 17-26, 2015"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "A Little Night Music"
+    playwright: "Hugh Wheeler (Book), Stephen Sondheim (Music & Lyrics)"
+    director: "Vint Lavender"
+    description: "Romance and newly awakened passions abound in this beautiful musical. Lovely waltz rhythms glide the charm and wit of this Tony award winning gem."
+    dates: "May 15-30, 2015"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2015-Night-Music.webp"
+    poster_placeholder: false

@@ -1,0 +1,74 @@
+{{ define "main" }}
+
+<!-- Page Header -->
+<section class="bg-gradient-to-r from-theatre-purple to-purple-800 text-white py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-5xl font-sans font-bold mb-4">Instructors</h1>
+    <p class="text-xl text-purple-100">Experienced educators sharing their passion for the performing arts</p>
+  </div>
+</section>
+
+<!-- Instructors Info -->
+<section class="py-16 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+    <p class="text-lg text-gray-700 leading-relaxed">
+      Our instructors are experienced performers and educators dedicated to nurturing talent and
+      fostering a love for the performing arts in students of all ages and skill levels.
+    </p>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {{ range $index, $instructor := .Site.Data.instructors.members }}
+      <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+        <!-- Headshot -->
+        {{ if .headshot_placeholder }}
+        <div class="aspect-w-3 aspect-h-4 bg-gradient-to-br {{ if (mod $index 2) }}from-theatre-gold to-yellow-600 text-theatre-navy{{ else }}from-theatre-purple to-purple-600 text-white{{ end }}">
+          <div class="flex items-center justify-center text-6xl">
+            👤
+          </div>
+        </div>
+        {{ else if .headshot }}
+        <div class="aspect-w-3 aspect-h-4">
+          <img src="{{ .headshot }}" alt="{{ .name }}" class="w-full h-full object-cover">
+        </div>
+        {{ end }}
+
+        <!-- Instructor Info -->
+        <div class="p-6">
+          <h3 class="text-xl font-sans font-bold text-theatre-navy mb-1">{{ .name }}</h3>
+          <p class="text-theatre-gold font-semibold mb-3">{{ .specialty }}</p>
+          <div class="text-gray-700 text-sm mb-4 space-y-3">
+            {{ .bio | markdownify }}
+          </div>
+          {{ if .email }}
+          <a href="mailto:{{ .email }}" class="text-theatre-purple hover:text-purple-700 text-sm font-semibold">
+            Contact →
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Classes CTA -->
+<section class="py-16 bg-theatre-purple text-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-sans font-bold mb-6">Ready to Learn?</h2>
+    <p class="text-xl mb-8 text-purple-100">
+      Check out our current classes and workshops taught by these amazing instructors.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/education" class="bg-theatre-gold hover:bg-yellow-600 text-theatre-navy font-sans font-bold py-3 px-8 rounded-lg transition duration-300">
+        View Classes
+      </a>
+      <a href="mailto:{{ .Site.Params.contact_email }}" class="border-2 border-white hover:bg-white hover:text-theatre-purple font-sans font-bold py-3 px-8 rounded-lg transition duration-300">
+        Contact Us
+      </a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

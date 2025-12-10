@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-theatre-purple hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply bg-theatre-gold hover:bg-yellow-600 text-theatre-navy font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105;
+  }
+
+  .section-title {
+    @apply text-4xl font-sans font-bold text-theatre-navy mb-6;
+  }
+}

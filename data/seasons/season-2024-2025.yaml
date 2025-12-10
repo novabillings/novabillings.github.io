@@ -1,0 +1,101 @@
+season: "2024-2025"
+shows:
+  - title: "Space Pirates"
+    playwright: ""
+    director: "Janie Sutton"
+    description: ""
+    dates: "September 13-22, 2024"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2024-Space.webp"
+    poster_placeholder: false
+
+  - title: "Jake's Women"
+    playwright: "Neil Simon"
+    director: "Cole Johnson"
+    description: ""
+    dates: "October 11-20, 2024"
+    venue: "NOVA Black Box"
+    poster: "/posters/2024-Jake.webp"
+    poster_placeholder: false
+
+  - title: "Festival of One-Act Operas: Little Red Riding Hood / The Impresario"
+    playwright: "Seymour Barab (Little Red Riding Hood) / Wolfgang Amadeus Mozart (The Impresario)"
+    director: "William Stearns"
+    description: ""
+    dates: "November 1-10, 2024"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2024-OneActs.webp"
+    poster_placeholder: false
+
+  - title: "A Christmas Carol"
+    playwright: "Patrick Barlow"
+    director: "Gustavo Belotta"
+    description: ""
+    dates: "December 6-22, 2024"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2024-Christmas.webp"
+    poster_placeholder: false
+
+  - title: "Over the River and Through the Woods"
+    playwright: ""
+    director: ""
+    description: ""
+    dates: "January 17-26, 2025"
+    venue: "NOVA Black Box"
+    poster: "/posters/2025-OTR.webp"
+    poster_placeholder: false
+
+  - title: "The Enchanted Bookshop"
+    playwright: ""
+    director: "DeLaney Hardy Ray"
+    description: ""
+    dates: "January 31-February 9, 2025"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2025-Bookshop.webp"
+    poster_placeholder: false
+
+  - title: "Hansel and Gretel"
+    playwright: "Engelbert Humperdinck"
+    director: "Anthony Buck"
+    description: ""
+    dates: "March 14-23, 2025"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2025-Hansel.webp"
+    poster_placeholder: false
+
+  - title: "Once Upon a Mattress"
+    playwright: "Jay Thompson, Dean Fuller, and Marshall Barer, Music by Mary Rodgers, Lyrics by Marshall Barer"
+    director: "Ben Bishop"
+    description: ""
+    dates: "April 25-May 4, 2025"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2025-Once.webp"
+    poster_placeholder: false
+
+  - title: "Itty Bitty"
+    playwright: "Sherrill S Cannon"
+    director: "Janie Sutton"
+    description: ""
+    dates: "May 10-11, 2025"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2025-Itty.webp"
+    poster_placeholder: false
+
+  - title: "Comic Book Artist"
+    playwright: "Pat Lydersen"
+    director: "Marisa Clark"
+    description: ""
+    dates: "May 16-25, 2025"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2025-Comic.webp"
+    poster_placeholder: false
+
+  - title: "Pride and Prejudice"
+    playwright: "Kate Hamill based on a novel by Jane Austen"
+    director: "Precious McKenzie"
+    description: ""
+    dates: "June 13-22, 2025"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2025-Pride.webp"
+    poster_placeholder: false
+  

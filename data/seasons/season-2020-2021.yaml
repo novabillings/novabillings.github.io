@@ -1,0 +1,56 @@
+season: "2020-2021"
+shows:
+  - title: "Songs from the Attic"
+    playwright: "Various"
+    director: "Jan Michael Kliewer"
+    description: "NOVA Center for the Performing Arts announces the production of Songs from the Attic: you never know what you’ll hear! a musical theater performance piece that tells the story of a father and daughter who venture into the attic to clean out his mother’s belongings. As they sort through the items, they find objects and discover family history that inspires song, from Abba to Verdi. Throughout the production, the two characters are taken on a journey of self-discovery, understanding, and reconciliation. The cast includes Soprano, Bethany Smith-Jacobs and Baritone Jan Michael Kliewer."
+    dates: "October 9-17, 2020"
+    venue: "NOVA Black Box"
+    poster: "/posters/2020-Attic.webp"
+    poster_placeholder: false
+
+  - title: "The Impresario"
+    playwright: "Wolfgang Amadeus Mozart"
+    director: "Mary Ann Connors, Douglas Nagel (Music Director)"
+    description: "The Impresario (Wolfgang Amadeus Mozart) Frank, the impresario (along with the buffo singer, Buff, who assists him) audition two actresses to be part of his new theatrical company. While both are hired, they then argue over who will get the prime role and who will be paid the most."
+    dates: "November 6-15, 2020"
+    venue: "NOVA Black Box"
+    poster: "/posters/2020-Impresario.webp"
+    poster_placeholder: false
+
+  - title: "The Vote"
+    playwright: "DeLaney Hardy Ray"
+    director: "DeLaney Hardy Ray"
+    description: "NOVA celebrates Montana's own Jeannette Rankin, the first woman to serve in Congress."
+    dates: "February 19-28, 2021"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2021-Vote.webp"
+    poster_placeholder: false
+
+  - title: "From Chekhov With Love and Laughter"
+    playwright: "Anton Chekhov"
+    director: "Mary Ann Connors"
+    description: "'The Bear' is a farce about a newly widowed woman who is grieving the loss of her beloved husband when there is a knock at the door. A man has come to claim the money her deceased husband owed him. When she informs him that she cannot pay him at the time of his demands, he becomes angry and refuses to leave. After a few rounds of squabbling, the two fall madly in love with each other and all is forgiven. 'The Proposal' is about a man coming to his neighbor to ask for her daughter’s hand in marriage. Before the man gets the chance to get down on one knee, however, the man and the daughter begin to argue. As they argue, the man’s health begins spiraling downwards until he faints onto the floor. The mother and the daughter are both convinced the man has passed away before he becomes conscious again. The couple quickly agree to the marriage and live happily ever after as the couple that can’t stop arguing."
+    dates: "March 12-21, 2021"
+    venue: "NOVA Black Box"
+    poster: "/posters/2021-Chekov.webp"
+    poster_placeholder: false
+
+  - title: "The Stinky Cheese Man and Other Fairly Stupid Tales"
+    playwright: "Jon Scieszka and Lane Smith by John Glory"
+    director: "Ginger Roll"
+    description: "The Stinky Cheese Man and other Fairly Stupid Tales is a rollicking, sly look at familiar children’s tales. Based on the book, this production features a small number of young actors in a myriad of parts."
+    dates: "April 16-25, 2021"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2021-StinkyCM.webp"
+    poster_placeholder: false
+
+  - title: "Springtime With the Sopranos"
+    playwright: "Various"
+    director: ""
+    description: "Come join our cabaret as sopranos sing their way through the season!"
+    dates: "May 14-16, 2021"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2021-Springtime_Sopranos.webp"
+    poster_placeholder: false
+

@@ -1,0 +1,12 @@
+baseURL = 'https://novabillings.org/'
+languageCode = 'en-us'
+title = 'NOVA Center for the Performing Arts'
+
+[params]
+description = 'Our mission is to enhance the performing arts culture of the greater Billings region through education, development and performance.'
+contact_email = 'producer@novabillings.org'
+contact_phone = '406-591-9535'
+address = '2317 Montana Avenue, Billings, MT 59101'
+volunteer_url = 'https://novabillings.ludus.com/volunteer'
+donate_url = 'https://novabillings.ludus.com/donate.php'
+site_version = '1.0.0'

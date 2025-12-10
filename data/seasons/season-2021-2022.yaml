@@ -1,0 +1,89 @@
+season: "2021-2022"
+shows:
+  - title: "Treasure Island"
+    playwright: ""
+    director: ""
+    description: ""
+    dates: "September 17-26, 2021"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "Pagliacci"
+    playwright: "Ruggero Leoncavallo"
+    director: "Michelle Berger"
+    description: "Pagliacci is a dramatic tale of love and betrayal that revolves around a commedia del arte troupe."
+    dates: "October 15-24, 2021"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2021-Pagliaci.webp"
+    poster_placeholder: false
+
+  - title: "Perfect Arrangement"
+    playwright: "Topher Payne"
+    director: "Gustavo Belotta"
+    description: "Perfect Arrangement, a socially conscious comedy on what has come to be called the “Lavender Scare” of the 1950’s. A story of the government’s persecution of gay people in the 1950’s borrows from the popular sitcom of the day “I Love Lucy”."
+    dates: "November 5-14, 2021"
+    venue: "NOVA Black Box"
+    poster_placeholder: true
+
+  - title: "A Christmas Carol"
+    playwright: ""
+    director: ""
+    description: ""
+    dates: "December 3-18, 2021"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2021_Christmas_Carol_sold_out.webp"
+    poster_placeholder: false
+
+  - title: "#DesigningADiva"
+    playwright: "Michelle Berger"
+    director: "Michelle Berger"
+    description: "From Vienna to Munich and back again chasing the dream! A biographical, one-woman, tour-de-force"
+    dates: "January 7-16, 2022"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "The Vote"
+    playwright: "DeLaney Hardy Ray"
+    director: "DeLaney Hardy Ray"
+    description: "The Vote, written by local playwright DeLaney Hardy Ray, presents Jeannette Rankin’s initial days in office as Montana’s congresswoman. Being the first woman to ever serve in a national office Ms. Rankin, a fiery and independent woman, was forward thinking in her views on women’s issues, war, and social responsibility."
+    dates: "February 4-13, 2022"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2022-Vote.webp"
+    poster_placeholder: false
+
+  - title: "La Fee Verte"
+    playwright: "Bridgette Dutta Portman"
+    director: ""
+    description: "1914. France bans absinthe, “the green fairy” (La Fée Verte). A struggling poet and his brother, a priest with a secret, do NOT walk into a bar. Hence the conflict."
+    dates: "March 4-13, 2022"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2022-LaFee_Verte.webp"
+    poster_placeholder: false
+
+  - title: "Twilight Tones"
+    playwright: "Leigh Verrill & Dulais Rhys"
+    director: "Leigh Verrill & Dulais Rhys"
+    description: "The Composer's Revenge, an original, humorous short in the style of “The Twilight Zone,” plus a wealth of arias sung by incredible local talent portraying opera through the age"
+    dates: "April 22-May 1, 2022"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2022-twilight_tones.webp"
+    poster_placeholder: false
+
+  - title: "Annie Jr."
+    playwright: ""
+    director: ""
+    description: ""
+    dates: "May 20-29, 2022"
+    venue: "NOVA Main Stage"
+    poster_placeholder: true
+
+  - title: "A Midsummer Night's Dream"
+    playwright: "William Shakespeare"
+    director: "Glenda Brauneis"
+    description: "A Midsummer Night’s Dream, Shakespeare’s comedy of miscommunication, fairy frolics, and royal ruminations."
+    dates: "June 17-26, 2022"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2022-mid_summer_night_dream.webp"
+    poster_placeholder: false
+    
+
