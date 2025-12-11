@@ -26,3 +26,17 @@ shows:
     venue: "NOVA Main Stage"
     poster: "/posters/2025-9To5.webp"
     poster_placeholder: false
+
+  - title: "A Seussified Christmas Carol"
+    playwright: "Peter Bloedel"
+    director: "Dakota Hunter"
+    description: "A whimsical reinvention of Dickens' most beloved Christmas story in wacky rhymed couplets. With zoot fruited juices and binka bird geese, from Bed-Headed Fred to Timmy Loo Hoo, this tale of glorious holiday cheer is similar to something Dr. Seuss might have come up with -- if he ever had his way with the story."
+    dates: "December 4-14, 2025"
+    showtimes:
+      - "Thursdays, Fridays & Saturdays at 7:30 PM"
+      - "Sundays at 2:00 PM"
+    venue: "NOVA Main Stage"
+    ticket_price: "$12-22"
+    poster: "/posters/2025-a-seussified-christmas-carol.webp"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/show_page.php?show_id=200486863"

@@ -1,19 +1,4 @@
 current:
-  - title: "A Seussified Christmas Carol"
-    playwright: "Peter Bloedel"
-    director: "Dakota Hunter"
-    description: "A whimsical reinvention of Dickens' most beloved Christmas story in wacky rhymed couplets. With zoot fruited juices and binka bird geese, from Bed-Headed Fred to Timmy Loo Hoo, this tale of glorious holiday cheer is similar to something Dr. Seuss might have come up with -- if he ever had his way with the story."
-    dates: "December 4-14, 2025"
-    showtimes:
-      - "Thursdays, Fridays & Saturdays at 7:30 PM"
-      - "Sundays at 2:00 PM"
-    venue: "NOVA Main Stage"
-    ticket_price: "$12-22"
-    poster: "/posters/2025-a-seussified-christmas-carol.webp"
-    poster_placeholder: false
-    tickets_url: "https://novabillings.ludus.com/show_page.php?show_id=200486863"
-
-upcoming:
   - title: "A Crazy Little Café Called Love"
     playwright: "Luigi Jannuzzi"
     director: "Ginger Role"
@@ -27,6 +12,8 @@ upcoming:
     poster: "https://81498.cdn.cke-cs.com/cg1lNgGCab87vY1cyfMd/images/8009345b3b79736003807d92e33ec1cb04743ba9806e54ef.png/w_1294"
     poster_placeholder: false
     tickets_url: "https://novabillings.ludus.com/show_page.php?show_id=200486865"
+
+upcoming:
 
   - title: "Snow White and the Seven Endings"
     playwright: "Tracy Wells"
