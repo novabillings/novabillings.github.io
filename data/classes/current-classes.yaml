@@ -6,7 +6,7 @@ classes:
    instructor: "Kyle Fergus"
    age_group: "All Ages"
    description: "In Movement for the Stage, students will learn how to walk, gesture, and interact with their space to create a character and to tell a story."
-   registration_url: "https://novabillings.ludus.com/index.php?sections=classes"
+   registration_url: "https://novabillings.ludus.com/200493356"
 
  - title: "Spring Classes - Storytime Theater"
    schedule: "Every Tuesday at 2:45 PM-3:45 PM"
@@ -15,7 +15,7 @@ classes:
    age_group: "Ages 3-5"
    description: "Join us for this 45 minute class where we introduce the magic of theater and storytelling to your child. Your child will learn how to tell a story through theater games, imagination, focused listening, and exploring."
    instructor: "TBD"
-   registration_url: "https://novabillings.ludus.com/index.php?sections=classes"
+   registration_url: "https://novabillings.ludus.com/200505801"
 
  - title: "Spring Classes - Creative Drama"
    schedule: "Every Tuesday at 4:00 PM-5:00 PM"
@@ -24,7 +24,16 @@ classes:
    age_group: "Ages 6-8"
    description: "Let’s play! Students will learn how to put on a play using theater games, learning how to follow stage directions, building an ensemble, and focused listening. They will also learn about their Actor’s Toolkit: Body, Voice, and Imagination!"
    instructor: "TBD"
-   registration_url: "https://novabillings.ludus.com/index.php?sections=classes"
+   registration_url: "https://novabillings.ludus.com/200505933"
+
+ - title: "Spring Classes - Creative Drama"
+   schedule: "Every Wednesday at 3:45 PM-4:45 PM"
+   dates: "February 25 - April 15, 2026"
+   price: "$180"
+   age_group: "Ages 8-9"
+   description: "Let’s play! Students will learn how to put on a play using theater games, learning how to follow stage directions, building an ensemble, and focused listening. They will also learn about their Actor’s Toolkit: Body, Voice, and Imagination!"
+   instructor: "TBD"
+   registration_url: "https://novabillings.ludus.com/200510893"
 
  - title: "Spring Classes - Intro to Theater"
    schedule: "Every Tuesday at 5:00 PM-6:00 PM"
@@ -33,7 +42,7 @@ classes:
    age_group: "Ages 9-11"
    description: "In Intro to Theater students will get a crash course in many different types of theater including improv, puppetry, reader’s theater, miming, to name a few. They will also learning other skills needed in theater such as projecting, enunciation, backstage etiquette, and more!"
    instructor: "TBD"
-   registration_url: "https://novabillings.ludus.com/index.php?sections=classes"
+   registration_url: "https://novabillings.ludus.com/200505937"
 
  - title: "Spring Classes - Acting 2"
    schedule: "Every Wednesday at 4:00 PM-5:00 PM"
@@ -42,7 +51,7 @@ classes:
    age_group: "Ages 12-14"
    description: "In this class students will get a taste of what it’s like to be in a play.  Students will get experience the audition and rehearsal process as well learn the fundamentals of acting such as listening, projecting, enunciation, and ensemble building. "
    instructor: "TBD"
-   registration_url: "https://novabillings.ludus.com/index.php?sections=classes"
+   registration_url: "https://novabillings.ludus.com/200505939"
 
  - title: "Spring Classes - Musical Theatre"
    schedule: "Every Thursday at 3:45 PM-4:45 PM"
@@ -51,7 +60,7 @@ classes:
    age_group: "All Ages"
    description: "Acting, singing, dancing, oh my! In this class students will learn how to become a triple threat! Students will learn the basics of musical theatre while learning music and choreography for a selection of songs. "
    instructor: "Janie Sutton"
-   registration_url: "https://novabillings.ludus.com/index.php?sections=classes"
+   registration_url: "https://novabillings.ludus.com/200505940"
 
  - title: "Spring Classes - Audition Prep"
    schedule: "Every Thursday at 5:00 PM-6:00 PM"
@@ -60,5 +69,5 @@ classes:
    age_group: "Ages 10-18"
    description: "Students will learn how to perfect their auditions by preparing an audition songbook, different dance combinations, and practice techniques for monologues and cold readings."
    instructor: "Jae Miller"
-   registration_url: "https://novabillings.ludus.com/index.php?sections=classes"
+   registration_url: "https://novabillings.ludus.com/200505941"
 
