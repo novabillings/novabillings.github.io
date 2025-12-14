@@ -32,6 +32,14 @@ special_events:
     poster_placeholder: false
 
 recurring_events:
+  - title: "Youth Improv Show!"
+    description: "Picture this: a stage full of fearless young performers with zero script, zero plan, and 100% pure creativity. These kids are making up entire scenes, characters, and stories on the spot – and they're absolutely crushing it. Limited seats. Unlimited laughs. Don't miss it!"
+    recurrence: "First Friday of Each Month (During the School Year)"
+    time: "7:30 PM"
+    venue: "NOVA Center for the Performing Arts"
+    ticket_price: "$12 at the Door"
+    contact_email: "youth@novabillings.org"
+    
   - title: "Reader's Theatre"
     description: "Experience the joy of live storytelling! Join us for readings of plays, scripts, and dramatic literature. Participate in bringing words to life. A casual, intimate way to enjoy theatre."
     recurrence: "First Sunday of Each Month"
