@@ -5,9 +5,10 @@ special_events:
     time: "6:00 PM - 10:00 PM"
     venue: "The Northern Hotel"
     ticket_price: "$80 per person"
-    registration_url: "https://novabillings.ludus.com/register/novature-gala"
+    registration_url: "https://novabillings.ludus.com/show_page.php?show_id=200510728"
     featured: true
-    poster_placeholder: true
+    poster: "/novature.png"
+    poster_placeholder: false
 
   - title: "Standing NOVAtion"
     description: "Celebrate the end of another spectacular season with performances from our talented company members, awards presentations, and a festive reception. It's our way of saying thank you to everyone who made this season unforgettable."
@@ -15,9 +16,9 @@ special_events:
     time: "7:00 PM"
     venue: "NOVA Center for the Performing Arts"
     ticket_price: "Free - Donations Welcome"
-    registration_url: "https://novabillings.ludus.com/register/standing-novation"
     featured: true
-    poster_placeholder: true
+    poster: "/novation.png"
+    poster_placeholder: false
 
   - title: "For the Love of the Arts"
     description: "A romantic Valentine's Day celebration featuring intimate performances, wine and desserts, and special surprises for couples. The perfect date night supporting the arts!"
@@ -25,9 +26,10 @@ special_events:
     time: "7:30 PM"
     venue: "NOVA Center for the Performing Arts"
     ticket_price: "$25 per person"
-    registration_url: "https://novabillings.ludus.com/register/love-of-arts"
+    registration_url: "https://novabillings.ludus.com/show_page.php?show_id=200510727"
     featured: true
-    poster_placeholder: true
+    poster: "/floata/png"
+    poster_placeholder: false
 
 recurring_events:
   - title: "Reader's Theatre"
@@ -36,7 +38,6 @@ recurring_events:
     time: "5:30 PM - 7:00 PM"
     venue: "NOVA Center for the Performing Arts"
     ticket_price: "Free - Donations Welcome"
-    registration_url: "https://novabillings.ludus.com/index.php?sections=events"
     contact_email: "producer@novabillings.org"
 
   - title: "Cabaret Club"
@@ -45,5 +46,4 @@ recurring_events:
     time: "5:30 PM - 7:00 PM"
     venue: "NOVA Center for the Performing Arts"
     ticket_price: "Free - Donations Welcome"
-    registration_url: "https://novabillings.ludus.com/index.php?sections=events"
     contact_email: "producer@novabillings.org"
