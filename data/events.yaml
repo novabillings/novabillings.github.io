@@ -28,7 +28,7 @@ special_events:
     ticket_price: "$25 per person"
     registration_url: "https://novabillings.ludus.com/show_page.php?show_id=200510727"
     featured: true
-    poster: "/floata/png"
+    poster: "/flota.png"
     poster_placeholder: false
 
 recurring_events:
