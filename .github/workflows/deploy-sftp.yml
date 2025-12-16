@@ -50,5 +50,5 @@ jobs:
           server: ${{ secrets.DH_EP }}
           password: ${{ secrets.DH_PWD }}
           local_path: './public/*'
-          remote_path: '/novabillings.org/'
+          remote_path: '/home/nova_webdev/novabillings.org/'
           sftp_only: true
