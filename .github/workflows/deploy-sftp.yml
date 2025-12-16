@@ -41,7 +41,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ secrets.DH_EP }}"
+            --baseURL "https://novabillings.org/"
 
       - name: Deploy to SFTP
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
