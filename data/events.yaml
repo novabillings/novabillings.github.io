@@ -1,7 +1,7 @@
 special_events:
   - title: "NOVAture Gala"
     description: "Join us for our annual gala celebration featuring performances, silent auction, dinner, and dancing. This elegant evening supports NOVA's mission to bring exceptional theatre to our community."
-    date: "April 24, 2025"
+    date: "April 24, 2026"
     time: "6:00 PM - 10:00 PM"
     venue: "The Northern Hotel"
     ticket_price: "$80 per person"
@@ -12,7 +12,7 @@ special_events:
 
   - title: "Standing NOVAtion"
     description: "Celebrate the end of another spectacular season with performances from our talented company members, awards presentations, and a festive reception. It's our way of saying thank you to everyone who made this season unforgettable."
-    date: "June 2025"
+    date: "June 2026"
     time: "7:00 PM"
     venue: "NOVA Center for the Performing Arts"
     ticket_price: "Free - Donations Welcome"
@@ -22,7 +22,7 @@ special_events:
 
   - title: "For the Love of the Arts"
     description: "A romantic Valentine's Day celebration featuring intimate performances, wine and desserts, and special surprises for couples. The perfect date night supporting the arts!"
-    date: "February 14, 2025"
+    date: "February 14, 2026"
     time: "7:30 PM"
     venue: "NOVA Center for the Performing Arts"
     ticket_price: "$25 per person"
