@@ -45,6 +45,9 @@ shows:
         name: "Daphne Stearns"
       - role: "Director"
         name: "William Stearns"
+    production_photos:
+      - url: "/photos/productions/trouble_in_tahiti_1.jpg"
+        caption: "Sam (Kyle) & Dinah (Mandi) in Trouble in Tahiti"
 
   - title: "9 to 5 the Musical"
     playwright: "Patricia Resnick, Music and Lyrics by Dolly Parton, Based on the Twentieth Century Fox Film"
