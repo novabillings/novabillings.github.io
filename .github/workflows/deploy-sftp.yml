@@ -44,7 +44,7 @@ jobs:
             --baseURL "https://novabillings.org/"
 
       - name: Deploy to SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
           username: ${{ secrets.DH_USER }}
           server: ${{ secrets.DH_EP }}
