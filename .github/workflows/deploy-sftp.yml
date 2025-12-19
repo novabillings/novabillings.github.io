@@ -44,12 +44,11 @@ jobs:
             --baseURL "https://novabillings.org/"
 
       - name: Deploy to SFTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
-          server: ${{ secrets.DH_EP }}
           username: ${{ secrets.DH_USER }}
+          server: ${{ secrets.DH_EP }}
           password: ${{ secrets.DH_PWD }}
-          protocol: ftps
-          local-dir: ./public/
-          server-dir: /home/nova_webdev/novabillings.org/
-          dangerous-clean-slate: false
+          local_path: './public/*'
+          remote_path: '/home/nova_webdev/novabillings.org/'
+          sftp_only: true
