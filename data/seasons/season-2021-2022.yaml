@@ -24,7 +24,8 @@ shows:
     description: "Perfect Arrangement, a socially conscious comedy on what has come to be called the “Lavender Scare” of the 1950’s. A story of the government’s persecution of gay people in the 1950’s borrows from the popular sitcom of the day “I Love Lucy”."
     dates: "November 5-14, 2021"
     venue: "NOVA Black Box"
-    poster_placeholder: true
+    poster: "/posters/pefect-arrangment-2021-11x17-poster.webp"
+    poster_placeholder: false
 
   - title: "A Christmas Carol"
     playwright: ""
