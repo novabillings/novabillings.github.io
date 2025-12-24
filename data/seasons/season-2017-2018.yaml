@@ -7,7 +7,7 @@ shows:
     dates: "September 8-24, 2017"
     venue: "NOVA Main Stage"
     poster: "/posters/7-2017-complete-history-am-abridged-11x17-poster.webp"
-    poster_placeholder: true
+    poster_placeholder: false
 
   - title: "Brundibar: A Children's Opera"
     playwright: "Hans Krasa"

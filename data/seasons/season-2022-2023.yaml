@@ -34,7 +34,7 @@ shows:
     dates: "December 2-18, 2022"
     venue: "NOVA Main Stage"
     poster: "/posters/2022-a-celtic-christmas.webp"
-    poster_placeholder: true
+    poster_placeholder: false
 
   - title: "Itty Bitty Festival"
     playwright: ""
