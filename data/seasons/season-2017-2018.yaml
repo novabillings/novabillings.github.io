@@ -6,6 +6,7 @@ shows:
     description: "Tackling such controversial questions as: Who really discovered America? Why did Abe Lincoln free the slaves? How many Democrats does it take to screw in a light bulb?"
     dates: "September 8-24, 2017"
     venue: "NOVA Main Stage"
+    poster: "/posters/7-2017-complete-history-am-abridged-11x17-poster.webp"
     poster_placeholder: true
 
   - title: "Brundibar: A Children's Opera"
@@ -50,7 +51,8 @@ shows:
     description: ""
     dates: "January 27-February 11, 2018"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/gullivers-travels-11x17-poster.webp"
+    poster_placeholder: false
 
   - title: "Quilters"
     playwright: "Barbara Damashek and Molly Newman"
@@ -85,4 +87,5 @@ shows:
     description: "Follows Tom, a nerve-wracked school teacher who is nervous about his first day of teaching. He tries to relax by watching TV, when various characters representing facets of his personality emerge from the set and how him how to win students over with imagination, music, and through  such songs as, 'Just a Bill', 'Lolly, Lolly, Lolly', and 'Conjunction Junction.'"
     dates: "July 14-29, 2018"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/schoolhouse-rock-11x17-poster.webp"
+    poster_placeholder: false

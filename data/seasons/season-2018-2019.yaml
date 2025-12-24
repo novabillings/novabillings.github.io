@@ -24,7 +24,8 @@ shows:
     description: "Based on F.W. Murnau's 1922 silent vampire film--a classic of German Expressionist cinema-- Nosferatu creates a poetic version of the Dracula story."
     dates: "October 27, 2018"
     venue: "Alberta Bair Theater"
-    poster_placeholder: true
+    poster: "/posters/nosferatu11x17.webp"
+    poster_placeholder: false
 
   - title: "The Mikado (sort of...)"
     playwright: "Gilbert & Sullivan"
@@ -59,7 +60,8 @@ shows:
     description: "Narrated by a stage manager and performed with minimal props and sets, audiences follow the Webb and Gibbs families as their children fall in love, marry, and eventually – in one of the most famous scenes in American theatre – die."
     dates: "February 15-24, 2019"
     venue: "NOVA Black Box"
-    poster_placeholder: true
+    poster: "/posters/our-town-poster-11x17.webp"
+    poster_placeholder: false
 
   - title: "Festival of One-Act Operas: Buoso's Ghost / Bastien und Bastienne / Musical Event at Choufleuri's"
     playwright: "Playwright Name"
@@ -67,7 +69,8 @@ shows:
     description: "Brief description of the show. This is placeholder content that should be replaced with actual show information from the 2018-2019 season."
     dates: "March 29-April 7, 2019"
     venue: "NOVA Black Box"
-    poster_placeholder: true
+    poster: "/posters/2019-festival-of-one-acts-11x17-poster-1.webp"
+    poster_placeholder: false
 
   - title: "Metamorphoses"
     playwright: "Mary Zimmerman"
@@ -84,7 +87,8 @@ shows:
     description: "Following the pattern of Romantic Italian opera, the story takes place in 14 th century Wales and includes a wedding, lovers, dying heroes and a dramatic final twist. The opera’s stirring music shows Parry at his dramatic best: heroic and romantic solos, exciting ensembles, powerful choruses and of course, the famous ‘Hywel a Blodwen’ love duet which remains popular as a concert item and is considered one of the highlights of amateur performances of the opera."
     dates: "May 10-19, 2019"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/2019-blodwen-11x17-poster-1.webp"
+    poster_placeholder: false
 
   - title: "Much Ado About Nothing"
     playwright: "Playwright Name"
@@ -92,7 +96,8 @@ shows:
     description: "Brief description of the show. This is placeholder content that should be replaced with actual show information from the 2018-2019 season."
     dates: "May 31-June 9, 2019"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/2019-much-ado-11x17-poster.webp"
+    poster_placeholder: false
 
   - title: "BFG"
     playwright: "Playwright Name"

@@ -6,7 +6,8 @@ shows:
     description: ""
     dates: "September 17-26, 2021"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/2021-treasure-island-11x17-poster.webp"
+    poster_placeholder: false
 
   - title: "Pagliacci"
     playwright: "Ruggero Leoncavallo"
@@ -40,7 +41,8 @@ shows:
     description: "From Vienna to Munich and back again chasing the dream! A biographical, one-woman, tour-de-force"
     dates: "January 7-16, 2022"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/designing-a-diva-2022-11x17-poster.webp"
+    poster_placeholder: false
 
   - title: "The Vote"
     playwright: "DeLaney Hardy Ray"
@@ -75,7 +77,8 @@ shows:
     description: ""
     dates: "May 20-29, 2022"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/3-2022-11x17-nova-annie-poster.webp"
+    poster_placeholder: false
 
   - title: "A Midsummer Night's Dream"
     playwright: "William Shakespeare"

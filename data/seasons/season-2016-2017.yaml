@@ -15,7 +15,7 @@ shows:
     description: "Based on the book In Conflict: Iraq War Veterans Speak Out on Duty, Loss and the Fight to Stay Alive by Yvonne Letty and Adapted by Douglas C. Wager In Conflict is a collection of true accounts from Iraqi war veterans. This moving piece uncovers the hidden world of war and explores what it means to be both human and hero."
     dates: "September 2-11, 2016"
     venue: "NOVA Main Stage"
-    poster: "/posters/2016-In_Conflict_Logo.webp"
+    poster: "/posters/5-2016-in-conflict-11x17-poster.webp"
     poster_placeholder: false
 
   - title: "Don Pasquale"
@@ -24,7 +24,7 @@ shows:
     description: "Composed by Gaetano Danozetti, the opera made its debut in Paris in 1843, but the tale of a rich heir falling for the poor girl is a story that could be told today. NOVA Center for the Performing Arts is giving it a 1960s twist, performing it in English and dressing the performers in a mod wardrobe."
     dates: "October 7-16, 2016"
     venue: "NOVA Main Stage"
-    poster: "/posters/2016-Don_P_Logo.webp"
+    poster: "/posters/6-216-11x17-don-pas-poster.webp"
     poster_placeholder: false
 
   - title: "Cinderella: A Children's Opera"
@@ -51,7 +51,7 @@ shows:
     description: "This play tells the story of two badly scorned women who hire two hitmen to take care of their boyfriends. Uff-da! — those Norwegian hitmen aren’t exactly what the girls had in mind."
     dates: "January 6-15, 2017"
     venue: "NOVA Black Box"
-    poster: "/posters/2017-The_Norwegians_Logo.webp"
+    poster: "/posters/10-2016-the-norwegians-11x17-poster.webp"
     poster_placeholder: false
 
   - title: "The Magic Flute"
@@ -69,7 +69,7 @@ shows:
     description: "James and the Giant Peach is sure to have you amazed! Adapted by David Wood from Roald Dahl’s popular children’s story, James and the Giant Peach tells the story of James Henry Trotter and his incredible escape from his evil aunts."
     dates: "March 10-19, 2017"
     venue: "NOVA Main Stage"
-    poster: "/posters/2017-Peach_Logo.webp"
+    poster: "/posters/james-the-giant-peach-poster-11x17.webp"
     poster_placeholder: false
 
   - title: "Love, Loss and What I Wore"
@@ -87,7 +87,8 @@ shows:
     description: "The Scarf takes place in an isolated farmhouse during a snowy February night. The story follows Miriam, a young woman, unhappily married to the oppressive Reuel. Miriam invokes witch craft to hypnotize the postman to love her."
     dates: "April 28-May 7, 2017"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/2017-11x17-1-act-festival-poster.webp"
+    poster_placeholder: false
 
   - title: "Suds the Musical"
     playwright: "Steve Gundersen, Bryan Scott, & Melinda Guild"

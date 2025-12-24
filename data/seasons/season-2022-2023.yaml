@@ -6,7 +6,8 @@ shows:
     description: "Everyone thinks they know Peter Pan, but until you have heard Tinker Bell’s side of the store, you really have not heard it at all."
     dates: "September 16-25, 2022"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/8-2022-11x17-nova-tinkerbell-poster.webp"
+    poster_placeholder: false
 
   - title: "Carmen's Tragedy"
     playwright: ""
@@ -14,7 +15,8 @@ shows:
     description: "Carmen is a sizzling seductress–but when you play with fire, you’re going to get burned!"
     dates: "September 30-October 9, 2022"
     venue: "NOVA Black Box"
-    poster_placeholder: true
+    poster: "/posters/carmen-2022-11x17-nova-poster.webp"
+    poster_placeholder: false
 
   - title: "Spider's Web"
     playwright: ""
@@ -22,7 +24,8 @@ shows:
     description: "Spider’s Web is a conscious parody of the detective thriller. Christie delivers a unique blend of suspense and humor."
     dates: "November 11-20, 2022"
     venue: "NOVA Black Box"
-    poster_placeholder: true
+    poster: "/posters/spiders-web-2022-11x17-nova-poster.webp"
+    poster_placeholder: false
 
   - title: "A Celtic Christmas"
     playwright: "Steve Zediker and Teri Hammerquist"
@@ -30,6 +33,7 @@ shows:
     description: "A Celtic Christmas combines the music and traditions of Ireland, Scotland, Wales and beyond; from jigs and reels to Christmas favorites performed with Celtic flair."
     dates: "December 2-18, 2022"
     venue: "NOVA Main Stage"
+    poster: "/posters/2022-a-celtic-christmas.webp"
     poster_placeholder: true
 
   - title: "Itty Bitty Festival"
@@ -38,7 +42,8 @@ shows:
     description: "Fun and familiar tales and tunes filled with imagination and creativity from the minds of youngsters under the age of 8."
     dates: "January 13-22, 2023"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/itty-poster-white-january.webp"
+    poster_placeholder: false
 
   - title: "The Taming of the Shrew"
     playwright: "William Shakespeare"
@@ -64,7 +69,8 @@ shows:
     description: "912, a prosperous family dinner is interrupted with the news that shakes every member of the family. A scathing criticism of hypocrisy and an example of the interconnected nature of society."
     dates: "April 21-30, 2023"
     venue: "NOVA Black Box"
-    poster_placeholder: true
+    poster: "/posters/an-inspcalls-2023-11x17-poster.webp"
+    poster_placeholder: false
 
   - title: "The Borrowers"
     playwright: ""
@@ -81,4 +87,5 @@ shows:
     description: "Funny Girl is a musical that first opened on Broadway in 1964. The semi-biographical plot is based on the life and career of Broadway star, film actress, and comedian Fanny Brice."
     dates: "June 16-25, 2023"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/funny-girl-2023-11x17-poster.webp"
+    poster_placeholder: false

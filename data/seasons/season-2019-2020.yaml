@@ -6,7 +6,8 @@ shows:
     description: "Jungle Book (Rudyard Kipling, adapted by Monica Flory) - In this action-packed adaptation of the classic adventure story, precocious Mowgli grows up believing he's as fierce a wolf as any of the members of his pack. When he learns he is actually a human, he must discover how to reconcile these very different identities, and decide whether to remain with the pack, or return to the human world from which he was born. What will he choose? And will he be trained in the Law of the Jungle in time to defeat Shere Khan, the most feared animal of all?"
     dates: "October 4-13, 2019"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/the-jungle-book-poster-11x17.webp"
+    poster_placeholder: false
 
   - title: "The Marriage of Figaro"
     playwright: "Wolfgang Amadeus Mozart"
@@ -14,7 +15,8 @@ shows:
     description: "Marriage of Figaro (Wolfgang Amadeus Mozart) continues the plot of The Barber of Seville several years later, and recounts a single 'day of madness' in the palace of Count Almaviva near Seville, Spain. Rosina is now the Countess; Dr. Bartolo is seeking revenge against Figaro for thwarting his plans to marry Rosina himself; and Count Almaviva has degenerated from the romantic youth as the Barber into a scheming, bullying, skirt-chasing man. Having gratefully given Figaro a job as head of his servant-staff, the Count is now persistently trying to exercise his right to bed a servant girl on her wedding night with Figaro's bride-to-be, Susanna, who is the Countess's maid. The Count continually attempts to delay the civil part of the wedding of his two servants. Figaro, Susanna, and the Countess conspire to embarrass the Count and expose his scheming. Will the love between the Count and Countess be restored?"
     dates: "November 8-17, 2019"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/2019-marriage-of-figaro-11x17-poster.webp"
+    poster_placeholder: false
 
   - title: "A Christmas Carol"
     playwright: ""
@@ -22,7 +24,8 @@ shows:
     description: "The Dickens tale is a journey from greedy self-absorption to the warmth and hope recognized in every human heart, a poignant reminder that each of us has the power to see what’s best in ourselves and others."
     dates: "December 6-15, 2019"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/2019-a-christmas-carol-11x17-poster.webp"
+    poster_placeholder: false
 
   - title: "One-Act Play Double Feature: No Exit & Free Birdie"
     playwright: ""
@@ -30,7 +33,8 @@ shows:
     description: ""
     dates: "January 10-19, 2020"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/2019-one-act-double-play-11x17-poster.webp"
+    poster_placeholder: false
 
   - title: "An Evening With Sherlock Holmes"
     playwright: "Jules Tasca"

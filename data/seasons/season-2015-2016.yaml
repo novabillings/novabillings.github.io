@@ -42,7 +42,7 @@ shows:
     description: "Imagine going to a real cabaret show: cafe’ tables, intimate lighting, and an emcee to guide you through the evening. The young actors will showcase a variety of solo, duet and ensemble numbers."
     dates: "November 13-15, 2015"
     venue: "NOVA Main Stage"
-    poster: "/posters/2015-Youth_Cabaret_Logo.webp"
+    poster: "/posters/cabaret-poster-v3.webp"
     poster_placeholder: false
 
   - title: "The Greek Myth Projects"
@@ -60,7 +60,8 @@ shows:
     description: "Come on in...pull up your rockin' chair and sit a spell. Join us for a down-home Christmas with some of the best local bluegrass musicians and performers Billins has to offer. It's a cozy get-together of friends, family, and a whole lot of fun and hi-jinxed entertainment. You never know who may stop by!"
     dates: "December 4-19, 2015"
     venue: "NOVA Main Stage"
-    poster_placeholder: true    
+    poster: "/posters/8-2015-11x17-christmas-times-poster.webp"
+    poster_placeholder: false
 
   - title: "The Complete Works of William Shakespeare (abridged)"
     playwright: "Alan Long, Daniel Singer, & Jess Winfield"
@@ -86,7 +87,8 @@ shows:
     description: "It follows the story of how Wilbur, the runt of the litter, overcomes this and shows the world, or at least the county, that he is 'some pig!'"
     dates: "March 11-20, 2016"
     venue: "NOVA Main Stage"
-    poster_placeholder: true
+    poster: "/posters/charlottesweb-poster-v1-prf2.webp"
+    poster_placeholder: false
 
   - title: "Five Women Wearing the Same Dress"
     playwright: "Alan Ball"
@@ -94,7 +96,7 @@ shows:
     description: "An ostentatious show about five women of different backgrounds, who are brought together for a wedding."
     dates: "April 1-16, 2016"
     venue: "NOVA Black Box"
-    poster: "/posters/2016-Five_Women_Logo.webp"
+    poster: "/posters/2-2016-11x17-5-women-poster.webp"
     poster_placeholder: false
 
   - title: "Rita"
