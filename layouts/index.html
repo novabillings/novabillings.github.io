@@ -71,12 +71,20 @@
           <p class="text-gray-700">{{ . }}</p>
           {{ end }}
         </div>
-        {{ if .tickets_url }}
-        <a href="{{ .tickets_url }}" target="_blank" class="btn-primary inline-block">Get Tickets</a>
-        {{ else }}
-        <a href="https://novabillings.ludus.com/index.php?sections=events" target="_blank"
-          class="btn-primary inline-block">Get Tickets</a>
-        {{ end }}
+
+        <div class="flex gap-3 flex-wrap">
+          {{ if .tickets_url }}
+          <a href="{{ .tickets_url }}" target="_blank" class="btn-primary inline-block">Get Tickets</a>
+          {{ else }}
+          <a href="https://novabillings.ludus.com/index.php?sections=events" target="_blank"
+            class="btn-primary inline-block">Get Tickets</a>
+          {{ end }}
+          {{ if or .cast .crew }}
+          <button onclick="openCastModal('{{ .title | urlize }}')" class="bg-theatre-purple hover:bg-purple-700 text-white font-sans font-bold py-3 px-6 rounded-lg transition duration-300 inline-block">
+            View Cast & Crew
+          </button>
+          {{ end }}
+        </div>
       </div>
     </div>
     {{ end }}
@@ -744,5 +752,158 @@
     </div>
   </div>
 </section>
+
+<!-- Cast & Crew Modals -->
+{{ with .Site.Data.shows.current }}
+  {{ range . }}
+    {{ if or .cast .crew }}
+    <div id="cast-modal-{{ .title | urlize }}" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4" onclick="closeModalOnBackdrop(event, '{{ .title | urlize }}')">
+      <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto" onclick="event.stopPropagation()">
+        <div class="bg-theatre-purple text-white p-6 rounded-t-lg flex justify-between items-center sticky top-0">
+          <h3 class="text-2xl font-sans font-bold">{{ .title }} - Cast & Crew</h3>
+          <button onclick="closeCastModal('{{ .title | urlize }}')" class="text-white hover:text-theatre-gold text-3xl leading-none">
+            &times;
+          </button>
+        </div>
+        <div class="p-6">
+          {{ if .cast }}
+          <div class="mb-6">
+            <h4 class="text-xl font-sans font-bold text-theatre-purple mb-4">Cast</h4>
+            <div class="grid md:grid-cols-2 gap-4">
+              {{ range .cast }}
+              <div class="bg-gray-50 p-3 rounded flex gap-3 items-center">
+                {{ if .photo }}
+                <div class="flex-shrink-0">
+                  <img src="{{ .photo }}" alt="{{ .actor }}" class="w-16 h-16 rounded-full object-cover">
+                </div>
+                {{ end }}
+                <div>
+                  <p class="font-semibold text-theatre-navy">{{ .role }}</p>
+                  <p class="text-gray-700">{{ .actor }}</p>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+          {{ if .crew }}
+          <div class="mb-6">
+            <h4 class="text-xl font-sans font-bold text-theatre-purple mb-4">Production Team</h4>
+            <div class="grid md:grid-cols-2 gap-3">
+              {{ range .crew }}
+              <div class="bg-gray-50 p-3 rounded">
+                <p class="font-semibold text-theatre-navy">{{ .role }}</p>
+                <p class="text-gray-700">{{ .name }}</p>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+          {{ if .production_photos }}
+          <div>
+            <h4 class="text-xl font-sans font-bold text-theatre-purple mb-4">Production Photos</h4>
+            <div class="grid md:grid-cols-2 gap-4">
+              {{ range .production_photos }}
+              <div class="bg-gray-50 rounded overflow-hidden group cursor-pointer" onclick="openPhotoModal('{{ .url }}', '{{ .caption }}')">
+                <div class="aspect-video bg-gray-200 overflow-hidden">
+                  <img src="{{ .url }}" alt="{{ .caption }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                {{ if .caption }}
+                <p class="p-2 text-sm text-gray-700 text-center">{{ .caption }}</p>
+                {{ end }}
+              </div>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+        <div class="bg-gray-50 p-4 rounded-b-lg text-center">
+          <button onclick="closeCastModal('{{ .title | urlize }}')" class="bg-theatre-purple hover:bg-purple-700 text-white font-sans font-bold py-2 px-6 rounded-lg transition duration-300">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<script>
+  function openCastModal(showId) {
+    const modal = document.getElementById('cast-modal-' + showId);
+    if (modal) {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeCastModal(showId) {
+    const modal = document.getElementById('cast-modal-' + showId);
+    if (modal) {
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+  }
+
+  function closeModalOnBackdrop(event, showId) {
+    if (event.target === event.currentTarget) {
+      closeCastModal(showId);
+    }
+  }
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      const modals = document.querySelectorAll('[id^="cast-modal-"]');
+      modals.forEach(modal => {
+        if (!modal.classList.contains('hidden')) {
+          modal.classList.add('hidden');
+          document.body.style.overflow = 'auto';
+        }
+      });
+      // Also close photo modal
+      const photoModal = document.getElementById('photo-modal');
+      if (photoModal && !photoModal.classList.contains('hidden')) {
+        photoModal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    }
+  });
+
+  function openPhotoModal(url, caption) {
+    let photoModal = document.getElementById('photo-modal');
+    if (!photoModal) {
+      // Create photo modal dynamically if it doesn't exist
+      photoModal = document.createElement('div');
+      photoModal.id = 'photo-modal';
+      photoModal.className = 'fixed inset-0 bg-black bg-opacity-90 hidden z-50 flex items-center justify-center p-4';
+      photoModal.onclick = function(e) { if (e.target === photoModal) closePhotoModal(); };
+      photoModal.innerHTML = `
+        <div class="max-w-5xl w-full">
+          <div class="flex justify-end mb-2">
+            <button onclick="closePhotoModal()" class="text-white hover:text-theatre-gold text-4xl leading-none">&times;</button>
+          </div>
+          <img id="photo-modal-img" src="" alt="" class="w-full h-auto rounded-lg">
+          <p id="photo-modal-caption" class="text-white text-center mt-4 text-lg"></p>
+        </div>
+      `;
+      document.body.appendChild(photoModal);
+    }
+
+    document.getElementById('photo-modal-img').src = url;
+    document.getElementById('photo-modal-img').alt = caption || '';
+    document.getElementById('photo-modal-caption').textContent = caption || '';
+    photoModal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closePhotoModal() {
+    const photoModal = document.getElementById('photo-modal');
+    if (photoModal) {
+      photoModal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+  }
+</script>
 
 {{ end }}
