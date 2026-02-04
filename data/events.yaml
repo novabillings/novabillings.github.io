@@ -13,7 +13,7 @@ special_events:
   - title: "Standing NOVAtion"
     description: "Celebrate the end of another spectacular season with performances from our talented company members, awards presentations, and a festive reception. It's our way of saying thank you to everyone who made this season unforgettable."
     date: "June 2026"
-    time: "7:00 PM"
+    time: "3:00 - 5:00 PM"
     venue: "NOVA Center for the Performing Arts"
     ticket_price: "Free - Donations Welcome"
     featured: true
@@ -23,7 +23,7 @@ special_events:
   - title: "For the Love of the Arts"
     description: "A romantic Valentine's Day celebration featuring intimate performances, wine and desserts, and special surprises for couples. The perfect date night supporting the arts!"
     date: "February 14, 2026"
-    time: "7:30 PM"
+    time: "6:30 PM"
     venue: "NOVA Center for the Performing Arts"
     ticket_price: "$25 per person"
     registration_url: "https://novabillings.ludus.com/show_page.php?show_id=200510727"
