@@ -124,7 +124,48 @@ shows:
         actor: "Elyina Miller"
       - role: "Ensemble"
         actor: "Ainsley Andersen"
-        
+
+  - title: "A Crazy Little Café Called Love"
+    playwright: "Luigi Jannuzzi"
+    director: "Ginger Role"
+    description: "Linda has a blind date, Bob is casting a movie, the waitress likes the monk, old Mr. Philips wants a séance and the bride's dad is livid! Throw in a frantic bride, her theatrical mother, a dancing nun and an apologetic groom, and you have a comic hit! And all happening one crazy day in the one-set Love Café."
+    dates: "January 30-February, 8 2026"
+    showtimes:
+      - "Fridays & Saturdays at 7:30 PM"
+      - "Sundays at 2:00 PM"
+    venue: "NOVA Black Box"
+    ticket_price: "$12-22"
+    poster: "https://81498.cdn.cke-cs.com/cg1lNgGCab87vY1cyfMd/images/8009345b3b79736003807d92e33ec1cb04743ba9806e54ef.png/w_1294"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/show_page.php?show_id=200486865"
+    cast:
+      - role: "The Waitress & Betty"
+        actor: "Grace Mock"
+      - role: "Bob, Bruce, & Man/Monk"
+        actor: "Cruz Martinez"
+      - role: "Larry, Sidney, & Groom"
+        actor: "Garrett Barnett"
+      - role: "Mr. Phillips & Father"
+        actor: "Steve Zediker"
+      - role: "Nun & Mother"
+        actor: "Katelynn Hampton"
+      - role: "Linda"
+        actor: "Hannah Robinson"
+      - role: "The Bride & Eveline"
+        actor: "Elizabeth Paul"
+      - role: "Leslie"
+        actor: "Meghan Kilroy"
+    crew:
+      - role: "Director"
+        name: "Ginger Roll"
+    # production_photos:
+    #   - url: "/photos/productions/cafe-love-scene1.jpg"
+    #     caption: "Opening scene at the Love Café"
+    #   - url: "/photos/productions/cafe-love-scene2.jpg"
+    #     caption: "The bride and groom's dramatic moment"
+    #   - url: "/photos/productions/cafe-love-scene3.jpg"
+    #     caption: "The dancing nun steals the show"
+    
     # cast:
     #   - role: "Scrooge"
     #     actor: "John Smith"
