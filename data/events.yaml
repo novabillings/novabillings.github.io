@@ -15,7 +15,7 @@ special_events:
     date: "March 6-8, 2026"
     time: "Friday 7:30 PM, Saturday 9:00 AM - 5:00 PM, Sunday 10:00 AM - 4:00 PM"
     venue: "NOVA Center for the Performing Arts"
-    ticket_price: "Free - Donations Welcome"
+    ticket_price: "Friday Night $12 | Sat & Sun Free - Donations Welcome"
     featured: true
     poster: "/novation.png"
     poster_placeholder: true
@@ -25,7 +25,7 @@ special_events:
     date: "June 2026"
     time: "3:00 - 5:00 PM"
     venue: "NOVA Center for the Performing Arts"
-    ticket_price: "Friday Night $12 | Sat & Sun Free - Donations Welcome"
+    ticket_price: "Free - Donations Welcome"
     featured: true
     poster: "/novation.png"
     poster_placeholder: false
