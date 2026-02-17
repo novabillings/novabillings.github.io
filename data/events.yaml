@@ -15,7 +15,8 @@ special_events:
     date: "March 6-8, 2026"
     time: "Friday 7:30 PM, Saturday 9:00 AM - 5:00 PM, Sunday 10:00 AM - 4:00 PM"
     venue: "NOVA Center for the Performing Arts"
-    ticket_price: "Friday Night $12 | Sat & Sun Free - Donations Welcome"
+    ticket_price: "Friday Night $12 @ the door | Sat & Sun Free - Donations Welcome | Registration Below"
+    registration_url: "https://novabillings.ludus.com/index.php?show_id=200518156"
     featured: true
     poster: "/novation.png"
     poster_placeholder: true
