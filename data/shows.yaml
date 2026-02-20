@@ -96,7 +96,7 @@ upcoming:
       - "Sundays at 2:00 PM"
     venue: "NOVA Black Box"
     ticket_price: "$12-22"
-    poster: "https://81498.cdn.cke-cs.com/cg1lNgGCab87vY1cyfMd/images/5e58a38aacd0e66226dedb8746573eb66ee5ec5ccd3f2af5.png/w_1294"
+    poster: "/posters/2026_as_you_like_it.webp"
     poster_placeholder: false
     tickets_url: "https://novabillings.ludus.com/show_page.php?show_id=200486873"
     cast:
@@ -160,7 +160,7 @@ upcoming:
       - "Sundays at 2:00 PM"
     venue: "NOVA Main Stage"
     ticket_price: "$12-22"
-    audition_date: "February 15, 2026 at 2:00 PM & February 16, 2026 at 4:00 PM"
+    # audition_date: "February 15, 2026 at 2:00 PM & February 16, 2026 at 4:00 PM"
     poster: "https://81498.cdn.cke-cs.com/cg1lNgGCab87vY1cyfMd/images/c342a9e69277cba7d529a5cb65506571c404727dbb4bf886.png/w_1294"
     poster_placeholder: false
     tickets_url: "https://novabillings.ludus.com/show_page.php?show_id=200486874"

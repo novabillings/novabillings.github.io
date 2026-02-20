@@ -1,15 +1,4 @@
 special_events:
-  - title: "NOVAture Gala"
-    description: "Join us for our annual gala celebration featuring performances, silent auction, dinner, and dancing. This elegant evening supports NOVA's mission to bring exceptional theatre to our community."
-    date: "April 24, 2026"
-    time: "6:00 PM - 10:00 PM"
-    venue: "The Northern Hotel"
-    ticket_price: "$80 per person / $1000 table sponsor (8 top)"
-    registration_url: "https://novabillings.ludus.com/show_page.php?show_id=200510728"
-    featured: true
-    poster: "/novature.png"
-    poster_placeholder: false
-
   - title: "'Write on Time' Youth Playwriting Festival"
     description: "Calling all youth writers, actors and directors! NOVA will be hosting a three day play festival where students will get to write, act, and direct their original works. The event will take place March 6, 7, & 8. The event will start on March 6 with the Funky Bunch Improv Show where writers will get prompts for their plays. The following day will be for writing and rehearsing, and the festival will end with a matinee performance on Sunday! Who - Write on Time is open for youth ages 10 - 18. Schedule- Friday, March 6 - 7:30-Funky Bunch performance followed by talk back with Write on Time participants. Saturday, March 7 - 9:00 - 12:00 Writers will work on their one-acts 1:00 - 5:00 Actors and directors rehearse their pieces. Sunday, March 8 - 10:00 - Final Dress Rehearsal 2:00- PERFORMANCE."    
     date: "March 6-8, 2026"
@@ -18,8 +7,19 @@ special_events:
     ticket_price: "Friday Night $12 @ the door | Sat & Sun Free - Donations Welcome | Registration Below"
     registration_url: "https://novabillings.ludus.com/index.php?show_id=200518156"
     featured: true
-    poster: "/novation.png"
-    poster_placeholder: true
+    poster: "/posters/2026_write_on_time.webp"
+    poster_placeholder: false
+
+  - title: "NOVAture Gala"
+    description: "Join us for our annual gala celebration featuring performances, silent auction, dinner, and dancing. This elegant evening supports NOVA's mission to bring exceptional theatre to our community."
+    date: "April 24, 2026"
+    time: "6:00 PM - 10:00 PM"
+    venue: "The Northern Hotel"
+    ticket_price: "$80 per person / $1000 table sponsor (8 top)"
+    registration_url: "https://novabillings.ludus.com/show_page.php?show_id=200510728"
+    featured: true
+    poster: "/posters/2026_novature.webp"
+    poster_placeholder: false
 
   - title: "Standing NOVAtion"
     description: "Celebrate the end of another spectacular season with performances from our talented company members, awards presentations, and a festive reception. It's our way of saying thank you to everyone who made this season unforgettable."
