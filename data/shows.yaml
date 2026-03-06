@@ -146,7 +146,7 @@ upcoming:
       - "Fridays & Saturdays at 7:30 PM"
       - "Sundays at 2:00 PM"
     venue: "NOVA Main Stage"
-    audition_date: "March 1-2, 2026 at 6:30 PM"
+    # audition_date: "March 1-2, 2026 at 6:30 PM"
     ticket_price: "$12-22"
     poster: "https://81498.cdn.cke-cs.com/cg1lNgGCab87vY1cyfMd/images/4b9ab1cd31e52bb1795ebee543afa1975faef79c7bc52975.png/w_1170"
     poster_placeholder: false
