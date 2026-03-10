@@ -1,14 +1,14 @@
 special_events:
-  - title: "'Write on Time' Youth Playwriting Festival"
-    description: "Calling all youth writers, actors and directors! NOVA will be hosting a three day play festival where students will get to write, act, and direct their original works. The event will take place March 6, 7, & 8. The event will start on March 6 with the Funky Bunch Improv Show where writers will get prompts for their plays. The following day will be for writing and rehearsing, and the festival will end with a matinee performance on Sunday! Who - Write on Time is open for youth ages 10 - 18. Schedule- Friday, March 6 - 7:30-Funky Bunch performance followed by talk back with Write on Time participants. Saturday, March 7 - 9:00 - 12:00 Writers will work on their one-acts 1:00 - 5:00 Actors and directors rehearse their pieces. Sunday, March 8 - 10:00 - Final Dress Rehearsal 2:00- PERFORMANCE."    
-    date: "March 6-8, 2026"
-    time: "Friday 7:30 PM, Saturday 9:00 AM - 5:00 PM, Sunday 10:00 AM - 4:00 PM"
-    venue: "NOVA Center for the Performing Arts"
-    ticket_price: "Friday Night $12 @ the door | Sat & Sun Free - Donations Welcome | Registration Below"
-    registration_url: "https://novabillings.ludus.com/index.php?show_id=200518156"
-    featured: true
-    poster: "/posters/2026_write_on_time.webp"
-    poster_placeholder: false
+  # - title: "'Write on Time' Youth Playwriting Festival"
+  #   description: "Calling all youth writers, actors and directors! NOVA will be hosting a three day play festival where students will get to write, act, and direct their original works. The event will take place March 6, 7, & 8. The event will start on March 6 with the Funky Bunch Improv Show where writers will get prompts for their plays. The following day will be for writing and rehearsing, and the festival will end with a matinee performance on Sunday! Who - Write on Time is open for youth ages 10 - 18. Schedule- Friday, March 6 - 7:30-Funky Bunch performance followed by talk back with Write on Time participants. Saturday, March 7 - 9:00 - 12:00 Writers will work on their one-acts 1:00 - 5:00 Actors and directors rehearse their pieces. Sunday, March 8 - 10:00 - Final Dress Rehearsal 2:00- PERFORMANCE."    
+  #   date: "March 6-8, 2026"
+  #   time: "Friday 7:30 PM, Saturday 9:00 AM - 5:00 PM, Sunday 10:00 AM - 4:00 PM"
+  #   venue: "NOVA Center for the Performing Arts"
+  #   ticket_price: "Friday Night $12 @ the door | Sat & Sun Free - Donations Welcome | Registration Below"
+  #   registration_url: "https://novabillings.ludus.com/index.php?show_id=200518156"
+  #   featured: true
+  #   poster: "/posters/2026_write_on_time.webp"
+  #   poster_placeholder: false
 
   - title: "NOVAture Gala"
     description: "Join us for our annual gala celebration featuring performances, silent auction, dinner, and dancing. This elegant evening supports NOVA's mission to bring exceptional theatre to our community."
@@ -21,15 +21,15 @@ special_events:
     poster: "/posters/2026_novature.webp"
     poster_placeholder: false
 
-  - title: "Standing NOVAtion"
-    description: "Celebrate the end of another spectacular season with performances from our talented company members, awards presentations, and a festive reception. It's our way of saying thank you to everyone who made this season unforgettable."
-    date: "June 2026"
-    time: "3:00 - 5:00 PM"
-    venue: "NOVA Center for the Performing Arts"
-    ticket_price: "Free - Donations Welcome"
-    featured: true
-    poster: "/novation.png"
-    poster_placeholder: false
+  # - title: "Standing NOVAtion"
+  #   description: "Celebrate the end of another spectacular season with performances from our talented company members, awards presentations, and a festive reception. It's our way of saying thank you to everyone who made this season unforgettable."
+  #   date: "June 2026"
+  #   time: "3:00 - 5:00 PM"
+  #   venue: "NOVA Center for the Performing Arts"
+  #   ticket_price: "Free - Donations Welcome"
+  #   featured: true
+  #   poster: "/novation.png"
+  #   poster_placeholder: false
 
 #  - title: "For the Love of the Arts"
 #    description: "A romantic Valentine's Day celebration featuring intimate performances, wine and desserts, and special surprises for couples. The perfect date night supporting the arts!"
