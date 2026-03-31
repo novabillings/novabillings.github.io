@@ -136,6 +136,9 @@ upcoming:
         actor: "Meghan Kilroy"
       - role: "ALWYN GREY/LUCY"	
         actor: "Emma Barr"
+    production_photos:
+      - url: "https://www.youtube.com/watch?v=x9TY6PBhU4M"
+        caption: "Show Promo"
 
   - title: "Chicago"
     playwright: "Book by Fred Ebb & Bob Fosse | Music by John Kander | Lyrics by Fred Ebb"
