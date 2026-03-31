@@ -205,6 +205,43 @@
             <h4 class="text-xl font-sans font-bold text-theatre-purple mb-4">Production Photos</h4>
             <div class="grid md:grid-cols-2 gap-4">
               {{ range .production_photos }}
+              {{ $url := .url }}
+              {{ $isYT := or (strings.Contains $url "youtube.com") (strings.Contains $url "youtu.be") }}
+              {{ $isVimeo := strings.Contains $url "vimeo.com" }}
+              {{ $isVideo := or $isYT $isVimeo }}
+              {{ if $isVideo }}
+                {{ $videoId := "" }}
+                {{ $embedUrl := $url }}
+                {{ $thumbUrl := "" }}
+                {{ if $isYT }}
+                  {{ if strings.Contains $url "youtu.be/" }}
+                    {{ $videoId = index (split (index (split $url "youtu.be/") 1) "?") 0 }}
+                  {{ else if strings.Contains $url "v=" }}
+                    {{ $videoId = index (split (index (split $url "v=") 1) "&") 0 }}
+                  {{ end }}
+                  {{ $thumbUrl = printf "https://img.youtube.com/vi/%s/hqdefault.jpg" $videoId }}
+                  {{ $embedUrl = printf "https://www.youtube.com/embed/%s" $videoId }}
+                {{ end }}
+              <div class="bg-gray-50 rounded overflow-hidden group cursor-pointer relative" onclick="openVideoModal('{{ $embedUrl }}', '{{ .caption }}')">
+                <div class="aspect-video bg-gray-200 overflow-hidden relative">
+                  {{ if $thumbUrl }}
+                  <img src="{{ $thumbUrl }}" alt="{{ .caption }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                  {{ else }}
+                  <div class="w-full h-full flex items-center justify-center bg-gray-300">
+                    <span class="text-gray-500 text-sm">Video Preview Unavailable</span>
+                  </div>
+                  {{ end }}
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-14 h-14 bg-red-600 bg-opacity-85 rounded-full flex items-center justify-center group-hover:bg-opacity-100 transition duration-300 shadow-lg">
+                      <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                  </div>
+                </div>
+                {{ if .caption }}
+                <p class="p-2 text-sm text-gray-700 text-center">{{ .caption }}</p>
+                {{ end }}
+              </div>
+              {{ else }}
               <div class="bg-gray-50 rounded overflow-hidden group cursor-pointer" onclick="openPhotoModal('{{ .url }}', '{{ .caption }}')">
                 <div class="aspect-video bg-gray-200 overflow-hidden">
                   <img src="{{ .url }}" alt="{{ .caption }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
@@ -213,6 +250,7 @@
                 <p class="p-2 text-sm text-gray-700 text-center">{{ .caption }}</p>
                 {{ end }}
               </div>
+              {{ end }}
               {{ end }}
             </div>
           </div>
@@ -279,6 +317,43 @@
             <h4 class="text-xl font-sans font-bold text-theatre-purple mb-4">Production Photos</h4>
             <div class="grid md:grid-cols-2 gap-4">
               {{ range .production_photos }}
+              {{ $url := .url }}
+              {{ $isYT := or (strings.Contains $url "youtube.com") (strings.Contains $url "youtu.be") }}
+              {{ $isVimeo := strings.Contains $url "vimeo.com" }}
+              {{ $isVideo := or $isYT $isVimeo }}
+              {{ if $isVideo }}
+                {{ $videoId := "" }}
+                {{ $embedUrl := $url }}
+                {{ $thumbUrl := "" }}
+                {{ if $isYT }}
+                  {{ if strings.Contains $url "youtu.be/" }}
+                    {{ $videoId = index (split (index (split $url "youtu.be/") 1) "?") 0 }}
+                  {{ else if strings.Contains $url "v=" }}
+                    {{ $videoId = index (split (index (split $url "v=") 1) "&") 0 }}
+                  {{ end }}
+                  {{ $thumbUrl = printf "https://img.youtube.com/vi/%s/hqdefault.jpg" $videoId }}
+                  {{ $embedUrl = printf "https://www.youtube.com/embed/%s" $videoId }}
+                {{ end }}
+              <div class="bg-gray-50 rounded overflow-hidden group cursor-pointer relative" onclick="openVideoModal('{{ $embedUrl }}', '{{ .caption }}')">
+                <div class="aspect-video bg-gray-200 overflow-hidden relative">
+                  {{ if $thumbUrl }}
+                  <img src="{{ $thumbUrl }}" alt="{{ .caption }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                  {{ else }}
+                  <div class="w-full h-full flex items-center justify-center bg-gray-300">
+                    <span class="text-gray-500 text-sm">Video Preview Unavailable</span>
+                  </div>
+                  {{ end }}
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-14 h-14 bg-red-600 bg-opacity-85 rounded-full flex items-center justify-center group-hover:bg-opacity-100 transition duration-300 shadow-lg">
+                      <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                  </div>
+                </div>
+                {{ if .caption }}
+                <p class="p-2 text-sm text-gray-700 text-center">{{ .caption }}</p>
+                {{ end }}
+              </div>
+              {{ else }}
               <div class="bg-gray-50 rounded overflow-hidden group cursor-pointer" onclick="openPhotoModal('{{ .url }}', '{{ .caption }}')">
                 <div class="aspect-video bg-gray-200 overflow-hidden">
                   <img src="{{ .url }}" alt="{{ .caption }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
@@ -287,6 +362,7 @@
                 <p class="p-2 text-sm text-gray-700 text-center">{{ .caption }}</p>
                 {{ end }}
               </div>
+              {{ end }}
               {{ end }}
             </div>
           </div>
@@ -342,6 +418,11 @@
         photoModal.classList.add('hidden');
         document.body.style.overflow = 'auto';
       }
+      // Also close video modal
+      const videoModal = document.getElementById('video-modal');
+      if (videoModal && !videoModal.classList.contains('hidden')) {
+        closeVideoModal();
+      }
     }
   });
 
@@ -376,6 +457,44 @@
     const photoModal = document.getElementById('photo-modal');
     if (photoModal) {
       photoModal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+  }
+
+  function openVideoModal(embedUrl, caption) {
+    let videoModal = document.getElementById('video-modal');
+    if (!videoModal) {
+      videoModal = document.createElement('div');
+      videoModal.id = 'video-modal';
+      videoModal.className = 'fixed inset-0 bg-black bg-opacity-90 hidden z-50 flex items-center justify-center p-4';
+      videoModal.onclick = function(e) { if (e.target === videoModal) closeVideoModal(); };
+      videoModal.innerHTML = `
+        <div class="max-w-4xl w-full">
+          <div class="flex justify-end mb-2">
+            <button onclick="closeVideoModal()" class="text-white hover:text-yellow-400 text-4xl leading-none">&times;</button>
+          </div>
+          <div class="aspect-video w-full">
+            <iframe id="video-modal-iframe" src="" class="w-full h-full rounded-lg" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          </div>
+          <p id="video-modal-caption" class="text-white text-center mt-4 text-lg"></p>
+        </div>
+      `;
+      document.body.appendChild(videoModal);
+    }
+
+    const autoplayUrl = embedUrl + (embedUrl.includes('?') ? '&' : '?') + 'autoplay=1';
+    document.getElementById('video-modal-iframe').src = autoplayUrl;
+    document.getElementById('video-modal-caption').textContent = caption || '';
+    videoModal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeVideoModal() {
+    const videoModal = document.getElementById('video-modal');
+    if (videoModal) {
+      const iframe = document.getElementById('video-modal-iframe');
+      if (iframe) iframe.src = '';
+      videoModal.classList.add('hidden');
       document.body.style.overflow = 'auto';
     }
   }
