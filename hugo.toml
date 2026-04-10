@@ -1,6 +1,7 @@
 baseURL = 'https://novabillings.org/'
 languageCode = 'en-us'
 title = 'NOVA Center for the Performing Arts'
+buildFuture = true
 
 [params]
 description = 'Our mission is to enhance the performing arts culture of the greater Billings region through education, development and performance.'

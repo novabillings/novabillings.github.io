@@ -20,6 +20,19 @@ special_events:
     featured: true
     poster: "/posters/2026_novature.webp"
     poster_placeholder: false
+    page_slug: "novature-gala"
+
+  - title: "Wet Ink"
+    description: "Wet Ink is a 24-hour play festival.  That is: within 24 hours, plays are cast, written, directed, rehearsed, and ultimately performed."
+    date: "June 26-27, 2026"
+    time: "8:00PM"
+    venue: "NOVA Center for the Performing Arts"
+    ticket_price: "$20 for Friday + Saturday / $15 for Saturday"
+    registration_url: "https://novabillings.ludus.com/show_page.php?show_id=200528347"
+    featured: true
+    poster: "/posters/wet_ink_2026.webp"
+    poster_placeholder: false
+    page_slug: "wet-ink"
 
   # - title: "Standing NOVAtion"
   #   description: "Celebrate the end of another spectacular season with performances from our talented company members, awards presentations, and a festive reception. It's our way of saying thank you to everyone who made this season unforgettable."
