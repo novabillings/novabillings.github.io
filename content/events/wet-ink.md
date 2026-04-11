@@ -24,6 +24,7 @@ Actors "audition" for the festival before the audience of writers, directors, ot
 Projectile Comedy creates improv scenes based on those auditions, from which the audience's favorite lines are extracted
 All favorite lines are condensed to 12 (two per play)
 Writers, Directors, Actors, and lines are randomized and paired together
+
 **10:00 PM**
 Writer begins writing for actors, while incorporating two lines from above
 
@@ -40,7 +41,7 @@ Performance of 6 new plays
 ## CURRENT YEAR
 
 - [Link to 2026 Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdDAFiS9KiiNRqA8mEdpymRyeV7p1u7FqfsL0h1518eTFCNjA/viewform) (writers, actors, directors, helpers)
-- Link to 2026 Facebook page/group
+- [Link to 2026 Facebook page/group](https://www.facebook.com/profile.php?id=61574701757182)
 
 
 ## PAST YEARS
