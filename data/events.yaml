@@ -10,17 +10,27 @@ special_events:
   #   poster: "/posters/2026_write_on_time.webp"
   #   poster_placeholder: false
 
-  - title: "NOVAture Gala"
-    description: "Join us for our annual gala celebration featuring performances, silent auction, dinner, and dancing. This elegant evening supports NOVA's mission to bring exceptional theatre to our community."
-    date: "April 24, 2026"
-    time: "6:00 PM - 10:00 PM"
-    venue: "The Northern Hotel"
-    ticket_price: "$80 per person / $1000 table sponsor (8 top)"
-    registration_url: "https://novabillings.ludus.com/show_page.php?show_id=200510728"
+  # - title: "NOVAture Gala"
+  #   description: "Join us for our annual gala celebration featuring performances, silent auction, dinner, and dancing. This elegant evening supports NOVA's mission to bring exceptional theatre to our community."
+  #   date: "April 24, 2026"
+  #   time: "6:00 PM - 10:00 PM"
+  #   venue: "The Northern Hotel"
+  #   ticket_price: "$80 per person / $1000 table sponsor (8 top)"
+  #   registration_url: "https://novabillings.ludus.com/show_page.php?show_id=200510728"
+  #   featured: true
+  #   poster: "/posters/2026_novature.webp"
+  #   poster_placeholder: false
+  #   page_slug: "novature-gala"
+
+  - title: "Standing NOVAtion"
+    description: "Celebrate the end of another spectacular season with a festive reception! It's our way of saying thank you to everyone who made this season unforgettable."
+    date: "June 13, 2026"
+    time: "10:00 AM - 1:00 PM"
+    venue: "NOVA Center for the Performing Arts"
+    ticket_price: "Free - Donations Welcome"
     featured: true
-    poster: "/posters/2026_novature.webp"
+    poster: "/novation.png"
     poster_placeholder: false
-    page_slug: "novature-gala"
 
   - title: "Wet Ink"
     description: "Wet Ink is a 24-hour play festival.  That is: within 24 hours, plays are cast, written, directed, rehearsed, and ultimately performed."
@@ -34,15 +44,7 @@ special_events:
     poster_placeholder: false
     page_slug: "wet-ink"
 
-  # - title: "Standing NOVAtion"
-  #   description: "Celebrate the end of another spectacular season with performances from our talented company members, awards presentations, and a festive reception. It's our way of saying thank you to everyone who made this season unforgettable."
-  #   date: "June 2026"
-  #   time: "3:00 - 5:00 PM"
-  #   venue: "NOVA Center for the Performing Arts"
-  #   ticket_price: "Free - Donations Welcome"
-  #   featured: true
-  #   poster: "/novation.png"
-  #   poster_placeholder: false
+ 
 
 #  - title: "For the Love of the Arts"
 #    description: "A romantic Valentine's Day celebration featuring intimate performances, wine and desserts, and special surprises for couples. The perfect date night supporting the arts!"
@@ -56,13 +58,13 @@ special_events:
 #    poster_placeholder: false
 
 recurring_events:
-  - title: "Youth Improv Show!"
-    description: "Picture this: a stage full of fearless young performers with zero script, zero plan, and 100% pure creativity. These kids are making up entire scenes, characters, and stories on the spot – and they're absolutely crushing it. Limited seats. Unlimited laughs. Don't miss it!"
-    recurrence: "First Friday of Each Month (During the School Year)"
-    time: "7:30 PM"
-    venue: "NOVA Center for the Performing Arts"
-    ticket_price: "$12 at the Door"
-    contact_email: "youth@novabillings.org"
+  # - title: "Youth Improv Show!"
+  #   description: "Picture this: a stage full of fearless young performers with zero script, zero plan, and 100% pure creativity. These kids are making up entire scenes, characters, and stories on the spot – and they're absolutely crushing it. Limited seats. Unlimited laughs. Don't miss it!"
+  #   recurrence: "First Friday of Each Month (During the School Year)"
+  #   time: "7:30 PM"
+  #   venue: "NOVA Center for the Performing Arts"
+  #   ticket_price: "$12 at the Door"
+  #   contact_email: "youth@novabillings.org"
     
   - title: "Reader's Theatre"
     description: "Experience the joy of live storytelling! Join us for readings of plays, scripts, and dramatic literature. Participate in bringing words to life. A casual, intimate way to enjoy theatre."
@@ -72,10 +74,10 @@ recurring_events:
     ticket_price: "Free - Donations Welcome"
     contact_email: "producer@novabillings.org"
 
-  - title: "Cabaret Club"
-    description: "Local performers showcase their talents in this monthly meetup. Cabaret Club is a great path to performance!"
-    recurrence: "Third Sunday of Each Month"
-    time: "5:30 PM - 7:00 PM"
-    venue: "NOVA Center for the Performing Arts"
-    ticket_price: "Free - Donations Welcome"
-    contact_email: "producer@novabillings.org"
+  # - title: "Cabaret Club"
+  #   description: "Local performers showcase their talents in this monthly meetup. Cabaret Club is a great path to performance!"
+  #   recurrence: "Third Sunday of Each Month"
+  #   time: "5:30 PM - 7:00 PM"
+  #   venue: "NOVA Center for the Performing Arts"
+  #   ticket_price: "Free - Donations Welcome"
+  #   contact_email: "producer@novabillings.org"
