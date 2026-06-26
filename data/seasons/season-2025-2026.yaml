@@ -457,3 +457,17 @@ shows:
     production_photos:
       - url: "https://www.youtube.com/watch?v=x9TY6PBhU4M"
         caption: "Show Promo"
+
+  - title: "Chicago"
+    playwright: "Book by Fred Ebb & Bob Fosse | Music by John Kander | Lyrics by Fred Ebb"
+    director: "DeLaney Hardy Ray"
+    description: "In roaring twenties Chicago, Roxie Hart murders a faithless lover and convinces her hapless husband, Amos, to take the rap...until he finds out he's been duped and turns on Roxie. Convicted and sent to death row, Roxie and another 'Merry Murderess', Velma Kelly, vie for the spotlight and the headlines, ultimately joining forces in search of the 'American Dream': fame, fortune, and acquittal. This sharp-edged satire features a dazzling score that sparked immortal staging by Bob Fosse."
+    dates: "June 12-21, 2026"
+    showtimes:
+      - "Fridays & Saturdays at 7:30 PM"
+      - "Sundays at 2:00 PM"
+    venue: "NOVA Main Stage"
+    ticket_price: "$12-22"
+    poster: "https://81498.cdn.cke-cs.com/cg1lNgGCab87vY1cyfMd/images/933e5150ef0c779ffd05aca732572310b34611f4c4e9d120.png/w_1170"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/show_page.php?show_id=200486876"

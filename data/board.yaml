@@ -5,26 +5,38 @@ members:
     headshot: ""
     headshot_placeholder: true
 
-  - name: "Dan Struckman"
+  - name: "Janie Sutton"
     position: "First Vice President"
     bio: ""
     headshot: ""
     headshot_placeholder: true
 
-  - name: "Steve Zediker"
+  - name: "Marisa Clark"
     position: "Second Vice President"
-    bio: ""
-    headshot: ""
-    headshot_placeholder: true
-
-  - name: "Janie Sutton"
-    position: "Secretary"
     bio: ""
     headshot: ""
     headshot_placeholder: true
 
   - name: "Kathy Boileau"
     position: "Treasurer"
+    bio: ""
+    headshot: ""
+    headshot_placeholder: true
+
+  - name: "Casey Roth"
+    position: "Secretary"
+    bio: ""
+    headshot: ""
+    headshot_placeholder: true
+
+  - name: "Dan Struckman"
+    position: "Board Member"
+    bio: ""
+    headshot: ""
+    headshot_placeholder: true
+
+  - name: "Steve Zediker"
+    position: "Board Member"
     bio: ""
     headshot: ""
     headshot_placeholder: true
@@ -42,12 +54,6 @@ members:
     headshot: ""
     headshot_placeholder: true
 
-  - name: "Marisa Clark"
-    position: "Board Member"
-    bio: ""
-    headshot: ""
-    headshot_placeholder: true
-
   - name: "Michael Boileau"
     position: "Board Member"
     bio: ""
@@ -55,12 +61,6 @@ members:
     headshot_placeholder: true
 
   - name: "Lynea Wallace"
-    position: "Board Member"
-    bio: ""
-    headshot: ""
-    headshot_placeholder: true
-
-  - name: "Casey Roth"
     position: "Board Member"
     bio: ""
     headshot: ""
@@ -77,4 +77,12 @@ members:
     bio: ""
     headshot: ""
     headshot_placeholder: true
+
+  - name: "Amanda Sowden"
+    position: "Board Member"
+    bio: ""
+    headshot: ""
+    headshot_placeholder: true
+
+
 

@@ -1,18 +1,115 @@
 current:
 
-  - title: "Chicago"
-    playwright: "Book by Fred Ebb & Bob Fosse | Music by John Kander | Lyrics by Fred Ebb"
-    director: "DeLaney Hardy Ray"
-    description: "In roaring twenties Chicago, Roxie Hart murders a faithless lover and convinces her hapless husband, Amos, to take the rap...until he finds out he's been duped and turns on Roxie. Convicted and sent to death row, Roxie and another 'Merry Murderess', Velma Kelly, vie for the spotlight and the headlines, ultimately joining forces in search of the 'American Dream': fame, fortune, and acquittal. This sharp-edged satire features a dazzling score that sparked immortal staging by Bob Fosse."
-    dates: "June 12-21, 2026"
-    showtimes:
-      - "Fridays & Saturdays at 7:30 PM"
-      - "Sundays at 2:00 PM"
+  - title: "2026-2027 Season"
+    playwright: "Board of Directors"
+    director: ""
+    description: "Welcome to our 14th Season.  The season begins in September, reserve your season passes or individual tickets now!"
+    dates: "September 11, 2026 - June 20, 2027"
     venue: "NOVA Main Stage"
-    ticket_price: "$12-22"
-    poster: "https://81498.cdn.cke-cs.com/cg1lNgGCab87vY1cyfMd/images/933e5150ef0c779ffd05aca732572310b34611f4c4e9d120.png/w_1170"
+    poster: "/posters/2026-2027_season.webp"
     poster_placeholder: false
-    tickets_url: "https://novabillings.ludus.com/show_page.php?show_id=200486876"
+    tickets_url: "https://novabillings.ludus.com/index.php?sections=events"
 
 upcoming:
+
+  - title: "Olympus The Greek Rock Musical"
+    playwright: "Beat By Beat Press"
+    director: "Janie Sutton"
+    description: "Olympus is a laugh out loud rock musical where ancient myths meet modern mischief! The Greek gods, tired of their immortal routines, spark a competition to meddle with mortals and prove who's the greatest Greek god of all time. When a group of modern-day cousins set off on a hike to 'Olympus Overlook' they have no idea they're about to be tested by ancient deities. With catchy songs, heartfelt moments, and plenty of laughs, Olympus is a mythic adventure about family, connection, and discovering that the real view from the top is the one you share together.  "
+    dates: "September 11-20, 2026"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2026_olympus_a_greek_rock_musical.webp"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/200535012"
+
+  - title: "And Then There Were None"
+    playwright: "Agatha Cristie"
+    director: "Jorden Gilfeather"
+    description: "Ten strangers are summoned to a remote island. All that the guests have in common is a wicked past they're unwilling to reveal and a secret that will seal their fate. For each has been marked for murder. As the weather turns and the group is cut off from the mainland, the bloodbath begins and one by one they are brutally murdered in accordance with the lines of a sinister nursery rhyme."
+    dates: "October 9-18, 2026"
+    venue: "NOVA Black Box"
+    poster: "/posters/2026_and_then_there_were_none.webp"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/200535014"
+
+  - title: "HMS Pinafore"
+    playwright: "Gilbert and Sullivan"
+    director: "William Stearns"
+    description: "The fourth collaboration between Gilbert & Sullivan was their first major success: H.M.S. Pinafore; or, The Lass That Loved a Sailor. It opened on May 25, 1878 at the Opera Comique where it ran for 571 performances. Touring companies spread its popularity throughout Britain and in America numerous companies 'pirated' the work by staging productions without the consent of the authors and without paying them any royalties. Gilbert, Sullivan and Carte tried to beat the pirates by mounting their own production in New York. Today, Pinafore remains one of the most popular Gilbert and Sullivan operas."
+    dates: "October 16-25, 2026"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2026_hms_pinafore.webp"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/200535163"
+
+  - title: "Mrs. Dickens & A Christmas Carol"
+    playwright: "Charles Dickens, Adapted by Precious McKenzie"
+    director: "Steven Zediker"
+    description: "Mrs. Dickens and A Christmas Carol is a play set in Victorian London. It follows the lives of Charles and Catherine Dickens and the making of Dickens's famous Christmas Carol. The play weaves actual events from the Dickens' private lives around the Christmas Carol. It is a ghost story that deals with themes of love, loss, regret, and the choices that we make."
+    dates: "December 10-20, 2026"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2026_mrs_dickens_and_a_christmas_carol.webp"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/200535225"
+
+  - title: "Drinking Habits"
+    playwright: "Tom Smith"
+    director: "Cora Brink"
+    description: "Accusations, mistaken identities and romances run wild in this traditional, laugh-out-loud farce. Two nuns at the Sisters of Perpetual Sewing have been secretly making wine to keep the convent’s doors open, but Paul and Sally, reporters and former fiancés, are hot on their trail. They go undercover as a nun and priest, but their presence, combined with the addition of a new nun, spurs paranoia throughout the convent that spies have been sent from Rome to shut them down. Wine and secrets are inevitably spilled as everyone tries to preserve the convent and reconnect with lost loves."
+    dates: "January 22-31, 2027"
+    venue: "NOVA Black Box"
+    poster: "/posters/2027_drinking_habits.webp"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/200535226"
+
+  - title: "Thumbelina"
+    playwright: "Hans Christian Anderson, Adapted by Vera Morris"
+    director: "Deyja Whitcomb"
+    description: "Once there was a girl no taller than a thumb, so she was called Thumbelina.  Based on the classic tale by Hans Christian Andersen, this wonderfully imaginative production takes us into Thumbelina’s world, fraught with dangers for one so small.  A water rat named Walter and an unpleasant family of toads are both determined to capture her.  Plus, a grumpy old mole thinks she’ll make a fine companion in his gloomy house.  If only Thumbelina can find Prince, the boy who promised to take her to the Land of the Little People, where she’ll be safe.  This charming play is amazingly simple to produce and full of marvelous characters — Old Mother Fieldmouse; Swallow, the flighty bird; Suzi, a spider who can spin a wedding dress; and many more."
+    dates: "February 19-28, 2027"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2027_thumbelina.webp"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/200535227"
+
+  - title: "The Tempest"
+    playwright: "William Shakespeare"
+    director: "DeLaney Hardy Ray"
+    description: "William Shakespeare’s The Tempest tells the story of Prospero, a powerful magician and the rightful Duke of Milan, who lives on a mysterious island with his daughter Miranda. With the help of the airy spirit Ariel, Prospero conjures a storm to shipwreck his enemies on the island. As princes and nobles wander the strange place, monsters and clowns plot silly schemes, a prince and a young woman fall in love, and magic leads not to revenge - but to forgiveness."
+    dates: "March 12-21, 2027"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2027_the_tempest.webp"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/200535233"
+
+  - title: "Copies"
+    playwright: "Brad Slaight"
+    director: "Gustavo Belotta"
+    description: "An an orientation camp for new teenage clones, teens are sent to “Camp I.M.U.” fresh from the lab to make a transition into the world of the “Originals” who have ordered them made. The newest “Copy” (a word they prefer to “clone”) to arrive is a very bright and positive teenager named Michael who soon realizes what the other copies in his cottage have known for awhile – that their stay at the camp is much longer than they had thought. Michael befriends a rebellious Copy named Melissa, who does not get along with her Original and refuses to change her attitude in order to please her. She informs Michael, and the other Copies, that she is going to escape from the camp and fight for what she calls “copy rights”. This is a story right out of tomorrow’s headlines. Not good at math? Have a clone of yourself made from your own DNA, but gifted in math to do your problems for you. Need a spare part for the future? Your clone is a walking talking parts store. Copies explores the heart and soul of clones, bred specifically to do all those things you don’t want to do."
+    dates: "April 2-11, 2027"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2027_copies.webp"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/200535236"
+
+  - title: "Bedtime Stories: (As Told By Our Dad) (Who Messed Them Up)"
+    playwright: "Ed Monk"
+    director: "DeLaney Hardy Ray"
+    description: "Description:: It's Dad's turn to tell his three rambunctious kids their bedtime stories, but when he gets fuzzy on the details, the classics get creative; a prince with a snoring problem spices up  The Princess and the Pea, The Boy Who Cried Wolf cries dinosaur instead, and Rumpelstiltskin helps turn all that pesky gold into straw. These fairy tales may seem familiar, but not the way Dad tells them!"
+    dates: "May 14-23, 2027"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2027_bedtime_stories.webp"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/200535237"
+
+  - title: "The Lightning Thief: The Percy Jackson Musical"
+    playwright: "Joe Tracz, Music & Lyrics by Rob Rokicki"
+    director: "Ben Bishop"
+    description: "As the half-blood son of a Greek god, Percy Jackson has newly-discovered powers he can’t control, a destiny he doesn’t want, and a mythology textbook’s worth of monsters on his trail. When Zeus”s master lightning bolt is stolen and Percy becomes the prime suspect, he has to find and return the bolt to prove his innocence and prevent a war between the gods. But to succeed on his quest, Percy will have to do more than catch the thief. He must travel to the Underworld and back; solve the riddle of the Oracle, which warns him of betrayal by a friend; and come to terms with the father who abandoned him. Adapted from the best-selling book The Lightning Thief by Rick Riordan and featuring a thrilling original rock score, The Lightning Thief: The Percy Jackson Musical is an action-packed mythical adventure 'worthy of the gods' (Time Out New York). "
+    dates: "June 11-20, 2027"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2027_the_lightning_thief.webp"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/200535239"
+
 
