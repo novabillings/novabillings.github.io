@@ -6,7 +6,7 @@ poster: "/posters/wet_ink_2026.webp"
 event_date: "June 26-27, 2026"
 time: "8:00 PM"
 venue: "Roebling Theater"
-ticket_price: "$20 for Friday + Saturday / $15 for Saturday"
+ticket_price: "Pay What You Want Performances"
 registration_url: "https://novabillings.ludus.com/show_page.php?show_id=200528347"
 ---
 
