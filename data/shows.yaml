@@ -1,17 +1,5 @@
 current:
 
-  - title: "2026-2027 Season"
-    playwright: "Board of Directors"
-    director: ""
-    description: "Welcome to our 14th Season.  The season begins in September, reserve your season passes or individual tickets now!"
-    dates: "September 11, 2026 - June 20, 2027"
-    venue: "NOVA Main Stage"
-    poster: "/posters/2026-2027_season.webp"
-    poster_placeholder: false
-    tickets_url: "https://novabillings.ludus.com/index.php?sections=events"
-
-upcoming:
-
   - title: "Olympus The Greek Rock Musical"
     playwright: "Beat By Beat Press"
     director: "Janie Sutton"
@@ -22,6 +10,7 @@ upcoming:
     poster_placeholder: false
     tickets_url: "https://novabillings.ludus.com/200535012"
 
+upcoming:
   - title: "And Then There Were None"
     playwright: "Agatha Cristie"
     director: "Jorden Gilfeather"
