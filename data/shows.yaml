@@ -1,16 +1,5 @@
 current:
 
-  - title: "Olympus The Greek Rock Musical"
-    playwright: "Beat By Beat Press"
-    director: "Janie Sutton"
-    description: "Olympus is a laugh out loud rock musical where ancient myths meet modern mischief! The Greek gods, tired of their immortal routines, spark a competition to meddle with mortals and prove who's the greatest Greek god of all time. When a group of modern-day cousins set off on a hike to 'Olympus Overlook' they have no idea they're about to be tested by ancient deities. With catchy songs, heartfelt moments, and plenty of laughs, Olympus is a mythic adventure about family, connection, and discovering that the real view from the top is the one you share together.  "
-    dates: "September 11-20, 2026"
-    venue: "NOVA Main Stage"
-    poster: "/posters/2026_olympus_a_greek_rock_musical.webp"
-    poster_placeholder: false
-    tickets_url: "https://novabillings.ludus.com/200535012"
-
-upcoming:
   - title: "And Then There Were None"
     playwright: "Agatha Cristie"
     director: "Jorden Gilfeather"
@@ -30,6 +19,8 @@ upcoming:
     poster: "/posters/2026_hms_pinafore.webp"
     poster_placeholder: false
     tickets_url: "https://novabillings.ludus.com/200535163"
+
+upcoming:
 
   - title: "Mrs. Dickens & A Christmas Carol"
     playwright: "Charles Dickens, Adapted by Precious McKenzie"
