@@ -29,24 +29,11 @@ members:
     headshot: ""
     headshot_placeholder: true
 
-  - name: "Dan Struckman"
-    position: "Board Member"
-    bio: ""
-    headshot: ""
-    headshot_placeholder: true
-
   - name: "Steve Zediker"
     position: "Board Member"
     bio: ""
     headshot: ""
     headshot_placeholder: true
-
-  - name: "Karen Postema"
-    position: "Board Member"
-    bio: ""
-    headshot: ""
-    headshot_placeholder: true
-
 
   - name: "Precious McKenzie, Ph.D."
     position: "Board Member"

@@ -19,3 +19,13 @@ shows:
     poster: "/posters/2026_olympus_a_greek_rock_musical.webp"
     poster_placeholder: false
     tickets_url: "https://novabillings.ludus.com/200535012"
+
+  - title: "And Then There Were None"
+    playwright: "Agatha Cristie"
+    director: "Jorden Gilfeather"
+    description: "Ten strangers are summoned to a remote island. All that the guests have in common is a wicked past they're unwilling to reveal and a secret that will seal their fate. For each has been marked for murder. As the weather turns and the group is cut off from the mainland, the bloodbath begins and one by one they are brutally murdered in accordance with the lines of a sinister nursery rhyme."
+    dates: "October 9-18, 2026"
+    venue: "NOVA Black Box"
+    poster: "/posters/2026_and_then_there_were_none.webp"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/200535014"
