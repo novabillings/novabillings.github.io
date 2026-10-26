@@ -29,3 +29,13 @@ shows:
     poster: "/posters/2026_and_then_there_were_none.webp"
     poster_placeholder: false
     tickets_url: "https://novabillings.ludus.com/200535014"
+
+  - title: "HMS Pinafore"
+    playwright: "Gilbert and Sullivan"
+    director: "William Stearns"
+    description: "The fourth collaboration between Gilbert & Sullivan was their first major success: H.M.S. Pinafore; or, The Lass That Loved a Sailor. It opened on May 25, 1878 at the Opera Comique where it ran for 571 performances. Touring companies spread its popularity throughout Britain and in America numerous companies 'pirated' the work by staging productions without the consent of the authors and without paying them any royalties. Gilbert, Sullivan and Carte tried to beat the pirates by mounting their own production in New York. Today, Pinafore remains one of the most popular Gilbert and Sullivan operas."
+    dates: "October 16-25, 2026"
+    venue: "NOVA Main Stage"
+    poster: "/posters/2026_hms_pinafore.webp"
+    poster_placeholder: false
+    tickets_url: "https://novabillings.ludus.com/200535163"
