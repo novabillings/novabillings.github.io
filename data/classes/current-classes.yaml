@@ -69,3 +69,10 @@ classes:
    age_group: "Ages 6-16"
    description: "Get ready to shine at your next audition! In this workshop students will learn what to expect at a typical NOVA audition and will be taught basic dance combinations, how to prepare an audition songbook, and practice techniques for cold reads and monologues. Feedback will be given by three NOVA teachers and directors Caydance Billings, Janie Sutton, and DeLaney Hardy Ray."
    registration_url: "https://novabillings.ludus.com/200555313"
+
+ - title: "What's Behind the Curtain: A Youth Stage Management Workshop"
+   schedule: "10:00 AM - 12:00 PM"
+   dates: "01/23/2027"
+   price: "$50"
+   description: "Students will gain hands-on experience for stage managing focusing on organization, backstage etiquette, interpersonal communication, and more!"
+   registration_url: "https://novabillings.ludus.com/200556421"
